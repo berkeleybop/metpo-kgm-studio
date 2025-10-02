@@ -22,8 +22,8 @@ jobs:
         with:
           version: "latest"
 
-      - name: Set up Python {% raw %}${{ matrix.python-version }}{% endraw %}
-        run: uv python install {% raw %}${{ matrix.python-version }}{% endraw %}
+      - name: Set up Python ${{ matrix.python-version }}
+        run: uv python install ${{ matrix.python-version }}
 
       - name: Install dependencies
         run: uv sync --group dev
@@ -32,7 +32,7 @@ jobs:
         run: uv run pytest tests/ -v --tb=short
 
       - name: Run type checking
-        run: uv run mypy src/{{project_slug}}
+        run: uv run mypy src/metpo_kgm_studio
 
       - name: Run linting
         run: uv run ruff check src/ tests/

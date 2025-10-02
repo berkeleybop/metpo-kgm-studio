@@ -141,7 +141,7 @@ def create_overlapping_subsets(
 
         subset = items_copy[start_idx:end_idx]
         subsets.append(subset)
-        logger.info(f"Subset {i+1}: {len(subset)} items (indices {start_idx}-{end_idx})")
+        logger.info(f"Subset {i + 1}: {len(subset)} items (indices {start_idx}-{end_idx})")
 
     return subsets
 
@@ -219,7 +219,7 @@ def split_assignments(
 
     # Generate curator names if not provided
     if not curator_names:
-        curator_names = [f"curator{i+1}" for i in range(num_curators)]
+        curator_names = [f"curator{i + 1}" for i in range(num_curators)]
 
     # Write files
     output_files = []

@@ -1,31 +1,31 @@
 ID	label	TYPE	parent class	description	definition source	comment	biolink equivalent	confirmed exact synonym	literature mining synonyms	madin synonym or field	synonym source	bacdive keyword synonym	bactotraits synonym
 ID	LABEL	TYPE	SC %	A IAO:0000115	>A IAO:0000119	A rdfs:comment	AI skos:closeMatch	A oboInOwl:hasExactSynonym SPLIT=|	A oboInOwl:hasRelatedSynonym SPLIT=|	A oboInOwl:hasRelatedSynonym SPLIT=|	>AI IAO:0000119	A oboInOwl:hasRelatedSynonym SPLIT=|	A oboInOwl:hasRelatedSynonym SPLIT=|
-METPO:1000059	phenotype	owl:Class	quality	A (combination of) quality(ies) of an organism determined by the interaction of its genetic make-up and environment that differentiates specific instances of a species from other instances of the same species.	OGMS:0000023		https://biolink.github.io/biolink-model/PhenotypicQuality						
-METPO:1000689	disc shaped	owl:Class	cell shape							disc			
-METPO:1000695	tailed shaped	owl:Class	cell shape							tailed			
-METPO:1003011	osmophilic	owl:Class	trophic type	high solute									
+METPO:1000059	phenotype	owl:Class	quality	A (combination of) quality(ies) of an organism determined by the interaction of its genetic make-up and environment that differentiates specific instances of a species from other instances of the same species.	OGMS:0000023		https://biolink.github.io/biolink-model/PhenotypicQuality
+METPO:1000689	disc shaped	owl:Class	cell shape							disc
+METPO:1000695	tailed shaped	owl:Class	cell shape							tailed
+METPO:1003011	osmophilic	owl:Class	trophic type	high solute
 METPO:1000702	motile	owl:Class	motility							yes	https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	yes	motile
-METPO:1000690	fusiform shaped	owl:Class	cell shape							fusiform			
-METPO:1001105	biosafety level 4	owl:Class	biosafety level										
+METPO:1000690	fusiform shaped	owl:Class	cell shape							fusiform
+METPO:1001105	biosafety level 4	owl:Class	biosafety level
 METPO:1000685	star shaped	owl:Class	cell shape							star	https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	star-shaped	s_star_dumbbell_pleomorphic
-METPO:1003009	alkalotolerant	owl:Class	pH growth preference					alkalitolerant					
-METPO:1000804	Substrate-level phosphorylation	owl:Class	metabolism										
-METPO:1000696	triangular shaped	owl:Class	cell shape							triangular			
-METPO:1000675	flask shaped	owl:Class	cell shape							flask		flask-shaped	
-METPO:1000652	mixotrophic	owl:Class	trophic type									mixotroph	
-METPO:1000633	carboxydotrophic	owl:Class	trophic type										
-METPO:1002035	Ammonia oxidation	owl:Class	Nitrogen compound respiration										
-METPO:1000601	oxygen preference	owl:Class	phenotype							metabolism		Physiology and metabolism.oxygen tolerance.oxygen tolerance|General.keywords	
-METPO:1000636	chemoheterotrophic	owl:Class	trophic type							aerobic_chemo_heterotrophy		chemoheterotroph	
-METPO:1000306	temperature range (growth tolerance)	owl:Class	phenotype	The span of temperatures within which an organism can grow									
-METPO:1000687	branched shaped	owl:Class	cell shape							branced			
-METPO:1000621	haloalkaliphilic	owl:Class	halophily preference									haloalkaliphilic	
-METPO:1001003	temperature range observation	owl:Class	observation	An observation specializing temperature observation for growth temperature range data.									
-METPO:1000870	sporulation	owl:Class	phenotype							sporulation		Physiology and metabolism.spore formation.spore formation|General.keywords	
-METPO:1002007	Sulfur disproportionation	owl:Class	Sulfur and sulfoxide compound respiration										
-METPO:1000640	chemoorganoheterotrophic	owl:Class	trophic type									chemoorganoheterotroph	
-METPO:1000680	ring shaped	owl:Class	cell shape							ring		ring-shaped	
-METPO:1000635	chemoautotrophic	owl:Class	trophic type									chemoautotroph	
-METPO:1003000	pH growth preference	owl:Class	phenotype										
-METPO:1000624	non halophilic	owl:Class	halophily preference							non-halophilic		non-halophilic	
-METPO:1002038	Methane oxidation	owl:Class	metabolism										
+METPO:1003009	alkalotolerant	owl:Class	pH growth preference					alkalitolerant
+METPO:1000804	Substrate-level phosphorylation	owl:Class	metabolism
+METPO:1000696	triangular shaped	owl:Class	cell shape							triangular
+METPO:1000675	flask shaped	owl:Class	cell shape							flask		flask-shaped
+METPO:1000652	mixotrophic	owl:Class	trophic type									mixotroph
+METPO:1000633	carboxydotrophic	owl:Class	trophic type
+METPO:1002035	Ammonia oxidation	owl:Class	Nitrogen compound respiration
+METPO:1000601	oxygen preference	owl:Class	phenotype							metabolism		Physiology and metabolism.oxygen tolerance.oxygen tolerance|General.keywords
+METPO:1000636	chemoheterotrophic	owl:Class	trophic type							aerobic_chemo_heterotrophy		chemoheterotroph
+METPO:1000306	temperature range (growth tolerance)	owl:Class	phenotype	The span of temperatures within which an organism can grow
+METPO:1000687	branched shaped	owl:Class	cell shape							branced
+METPO:1000621	haloalkaliphilic	owl:Class	halophily preference									haloalkaliphilic
+METPO:1001003	temperature range observation	owl:Class	observation	An observation specializing temperature observation for growth temperature range data.
+METPO:1000870	sporulation	owl:Class	phenotype							sporulation		Physiology and metabolism.spore formation.spore formation|General.keywords
+METPO:1002007	Sulfur disproportionation	owl:Class	Sulfur and sulfoxide compound respiration
+METPO:1000640	chemoorganoheterotrophic	owl:Class	trophic type									chemoorganoheterotroph
+METPO:1000680	ring shaped	owl:Class	cell shape							ring		ring-shaped
+METPO:1000635	chemoautotrophic	owl:Class	trophic type									chemoautotroph
+METPO:1003000	pH growth preference	owl:Class	phenotype
+METPO:1000624	non halophilic	owl:Class	halophily preference							non-halophilic		non-halophilic
+METPO:1002038	Methane oxidation	owl:Class	metabolism

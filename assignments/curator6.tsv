@@ -1,34 +1,34 @@
 ID	label	TYPE	parent class	description	definition source	comment	biolink equivalent	confirmed exact synonym	literature mining synonyms	madin synonym or field	synonym source	bacdive keyword synonym	bactotraits synonym
 ID	LABEL	TYPE	SC %	A IAO:0000115	>A IAO:0000119	A rdfs:comment	AI skos:closeMatch	A oboInOwl:hasExactSynonym SPLIT=|	A oboInOwl:hasRelatedSynonym SPLIT=|	A oboInOwl:hasRelatedSynonym SPLIT=|	>AI IAO:0000119	A oboInOwl:hasRelatedSynonym SPLIT=|	A oboInOwl:hasRelatedSynonym SPLIT=|
-METPO:1000059	phenotype	owl:Class	quality	A (combination of) quality(ies) of an organism determined by the interaction of its genetic make-up and environment that differentiates specific instances of a species from other instances of the same species.	OGMS:0000023		https://biolink.github.io/biolink-model/PhenotypicQuality						
-METPO:1000626	stenohaline	owl:Class	halophily preference							stenohaline			
-METPO:1000646	hydrogenotrophic	owl:Class	trophic type										
-METPO:1000658	photolithotrophic	owl:Class	trophic type									photolithotroph	
-METPO:1000697	gram stain	owl:Class	phenotype							gram_stain		Morphology.cell morphology.gram stain|General.keywords	
-METPO:1000333	NaCl optimum	owl:Class	phenotype	The specific concentration of sodium chloride at which a microorganism exhibits maximum growth rate and metabolic efficiency.									
-METPO:1000666	cell shape	owl:Class	phenotype							cell_shape		Morphology.cell morphology.cell shape|General.keywords	
-METPO:1000844	Methanogenesis	owl:Class	metabolism						Carbonate respiration|Biomethanation|Biological methanation	methanogenesis			
-METPO:1000673	ellipsoidal	owl:Class	cell shape									ellipsoidal	
-METPO:1002005	Fermentation	owl:Class	respiration										
-METPO:1000705	axially filamented	owl:Class	motile							axial filament			
+METPO:1000059	phenotype	owl:Class	quality	A (combination of) quality(ies) of an organism determined by the interaction of its genetic make-up and environment that differentiates specific instances of a species from other instances of the same species.	OGMS:0000023		https://biolink.github.io/biolink-model/PhenotypicQuality
+METPO:1000626	stenohaline	owl:Class	halophily preference							stenohaline
+METPO:1000646	hydrogenotrophic	owl:Class	trophic type
+METPO:1000658	photolithotrophic	owl:Class	trophic type									photolithotroph
+METPO:1000697	gram stain	owl:Class	phenotype							gram_stain		Morphology.cell morphology.gram stain|General.keywords
+METPO:1000333	NaCl optimum	owl:Class	phenotype	The specific concentration of sodium chloride at which a microorganism exhibits maximum growth rate and metabolic efficiency.
+METPO:1000666	cell shape	owl:Class	phenotype							cell_shape		Morphology.cell morphology.cell shape|General.keywords
+METPO:1000844	Methanogenesis	owl:Class	metabolism						Carbonate respiration|Biomethanation|Biological methanation	methanogenesis
+METPO:1000673	ellipsoidal	owl:Class	cell shape									ellipsoidal
+METPO:1002005	Fermentation	owl:Class	respiration
+METPO:1000705	axially filamented	owl:Class	motile							axial filament
 METPO:1000699	gram negative	owl:Class	gram stain							negative	https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	negative	G_negative
-METPO:1000236	pH tolerance	owl:Class	phenotype	The ability of an organism to survive exposure to pH values outside its optimal growth range									
-METPO:1003004	obligately alkaphilic	owl:Class	pH growth preference					obligate alkaliphile|obligately alkaliphilic|obligate alkaphilic					
+METPO:1000236	pH tolerance	owl:Class	phenotype	The ability of an organism to survive exposure to pH values outside its optimal growth range
+METPO:1003004	obligately alkaphilic	owl:Class	pH growth preference					obligate alkaliphile|obligately alkaliphilic|obligate alkaphilic
 METPO:1000684	spiral shaped	owl:Class	cell shape							spiral	https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	spiral-shaped	s_curved_spiral
-METPO:1000700	gram variable	owl:Class	gram stain									variable	
-METPO:1000127	GC content	owl:Class	quality	The percentage of guanine and cytosine nucleotides in DNA									
-METPO:1000669	crescent shaped	owl:Class	cell shape									crescent-shaped	
-METPO:1001005	culture temperature observation	owl:Class	observation	An observation specializing temperature observation for culture temperature data (e.g., reported culture conditions).									
-METPO:1000731	nutrient adaptation		trophic type										
-METPO:1001001	optimum temperature observation	owl:Class	observation	An observation specializing temperature observation for optimum temperature data.									
-METPO:1000332	pH range (cellular homeostasis)	owl:Class	phenotype	The span of hydrogen ion concentrations within which a microorganism can maintain cellular homeostasis and sustain growth.									
+METPO:1000700	gram variable	owl:Class	gram stain									variable
+METPO:1000127	GC content	owl:Class	quality	The percentage of guanine and cytosine nucleotides in DNA
+METPO:1000669	crescent shaped	owl:Class	cell shape									crescent-shaped
+METPO:1001005	culture temperature observation	owl:Class	observation	An observation specializing temperature observation for culture temperature data (e.g., reported culture conditions).
+METPO:1000731	nutrient adaptation		trophic type
+METPO:1001001	optimum temperature observation	owl:Class	observation	An observation specializing temperature observation for optimum temperature data.
+METPO:1000332	pH range (cellular homeostasis)	owl:Class	phenotype	The span of hydrogen ion concentrations within which a microorganism can maintain cellular homeostasis and sustain growth.
 METPO:1000677	ovoid shaped	owl:Class	cell shape								https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	ovoid-shaped	s_ovoid
-METPO:1000671	diplococcus shaped	owl:Class	cell shape									diplococcus-shaped	
+METPO:1000671	diplococcus shaped	owl:Class	cell shape									diplococcus-shaped
 METPO:1000674	filament shaped	owl:Class	cell shape							filament	https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	filament-shaped	s_filament
-METPO:1000525	microbe	owl:Class	material entity	An organism or virus or viron that is too small to be viewed by the unaided eye.	OHMI:0000460	METPO is primarily concerned with unicellular, prokaryotic life forms, i.e. bacteria and archea, including the cases of giant bacteria like Thiomargarita	https://biolink.github.io/biolink-model/OrganismTaxon						
-METPO:1000634	chemoautolithotrophic	owl:Class	trophic type									chemoautolithotroph	
-METPO:1000649	lithotrophic	owl:Class	trophic type									lithotroph	
+METPO:1000525	microbe	owl:Class	material entity	An organism or virus or viron that is too small to be viewed by the unaided eye.	OHMI:0000460	METPO is primarily concerned with unicellular, prokaryotic life forms, i.e. bacteria and archea, including the cases of giant bacteria like Thiomargarita	https://biolink.github.io/biolink-model/OrganismTaxon
+METPO:1000634	chemoautolithotrophic	owl:Class	trophic type									chemoautolithotroph
+METPO:1000649	lithotrophic	owl:Class	trophic type									lithotroph
 METPO:1000681	rod shaped	owl:Class	cell shape								https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	rod-shaped	s_rod
-METPO:1000631	trophic type	owl:Class	phenotype	The quality of how an organism obtains its carbon and energy.					nutritional type	pathways		Physiology and metabolism.nutrition type.type|General.keywords	
-METPO:1000650	methanotrophic	owl:Class	trophic type									methanotroph	
-METPO:1000657	photoheterotrophic	owl:Class	trophic type							photoheterotrophy		photoheterotroph	
+METPO:1000631	trophic type	owl:Class	phenotype	The quality of how an organism obtains its carbon and energy.					nutritional type	pathways		Physiology and metabolism.nutrition type.type|General.keywords
+METPO:1000650	methanotrophic	owl:Class	trophic type									methanotroph
+METPO:1000657	photoheterotrophic	owl:Class	trophic type							photoheterotrophy		photoheterotroph

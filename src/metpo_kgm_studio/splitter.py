@@ -7,12 +7,13 @@ inter-curator agreement assessment.
 Follows OBO Foundry principles and ROBOT template conventions.
 """
 
-from pathlib import Path
-from typing import List, Optional
 import csv
-import random
-import requests
 import logging
+import random
+from pathlib import Path
+from typing import Any
+
+import requests
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -23,7 +24,7 @@ class RobotTemplateRow:
 
     def __init__(self, data: dict):
         self.data = data
-        self.class_id = data.get('ID', '')
+        self.class_id = data.get("ID", "")
 
     def is_header_row(self) -> bool:
         """Check if this is a ROBOT header row.
@@ -34,19 +35,16 @@ class RobotTemplateRow:
         - Column names: 'ID', 'LABEL' (first row)
         """
         # Check if any value in the row has ROBOT markers
-        robot_markers = ['>', 'A ', 'AI ', 'SPLIT=|', 'SC %', 'TYPE', 'LABEL']
+        robot_markers = [">", "A ", "AI ", "SPLIT=|", "SC %", "TYPE", "LABEL"]
         values = [str(v) for v in self.data.values()]
 
         # First row often has: ID, LABEL, TYPE, etc.
         # Second row has: ID, LABEL, TYPE, SC %, A IAO:..., >A IAO:..., etc.
-        has_markers = any(
-            any(marker in str(v) for marker in robot_markers)
-            for v in values
-        )
+        has_markers = any(any(marker in str(v) for marker in robot_markers) for v in values)
 
         # Also check if first value is exactly 'ID' (common first header)
-        first_value = next(iter(self.data.values())) if self.data else ''
-        is_id_row = str(first_value).strip() == 'ID'
+        first_value = next(iter(self.data.values())) if self.data else ""
+        is_id_row = str(first_value).strip() == "ID"
 
         return has_markers or is_id_row
 
@@ -74,7 +72,7 @@ def fetch_google_sheet_as_tsv(sheet_id: str, gid: str) -> str:
     return response.text
 
 
-def parse_robot_template(tsv_content: str) -> tuple[List[dict], List[str]]:
+def parse_robot_template(tsv_content: str) -> tuple[list[dict[Any, Any]], list[dict[Any, Any]]]:
     """Parse ROBOT template TSV content.
 
     Args:
@@ -85,32 +83,28 @@ def parse_robot_template(tsv_content: str) -> tuple[List[dict], List[str]]:
         - header_rows: List of header row dicts (typically first 2 rows)
         - data_rows: List of data row dicts (class definitions)
     """
-    reader = csv.DictReader(tsv_content.splitlines(), delimiter='\t')
+    reader = csv.DictReader(tsv_content.splitlines(), delimiter="\t")
     rows = list(reader)
 
     # Identify header rows (first rows that start with > or special markers)
-    header_rows = []
-    data_rows = []
+    header_rows: list[dict[Any, Any]] = []
+    data_rows: list[dict[Any, Any]] = []
 
     for row in rows:
         robot_row = RobotTemplateRow(row)
         if robot_row.is_header_row() and len(header_rows) < 2:
             header_rows.append(row)
-        elif not robot_row.is_header_row():
+        elif not robot_row.is_header_row() and robot_row.class_id and robot_row.class_id.strip():
             # Only include rows with actual class IDs
-            if robot_row.class_id and robot_row.class_id.strip():
-                data_rows.append(row)
+            data_rows.append(row)
 
     logger.info(f"Parsed {len(header_rows)} header rows and {len(data_rows)} data rows")
     return header_rows, data_rows
 
 
 def create_overlapping_subsets(
-    items: List[any],
-    num_subsets: int,
-    overlap_percentage: int = 10,
-    randomize: bool = True
-) -> List[List[any]]:
+    items: list[Any], num_subsets: int, overlap_percentage: int = 10, randomize: bool = True
+) -> list[list[Any]]:
     """Create overlapping subsets for inter-curator agreement.
 
     Args:
@@ -154,9 +148,9 @@ def create_overlapping_subsets(
 
 def write_robot_template_tsv(
     filepath: Path,
-    header_rows: List[dict],
-    data_rows: List[dict],
-    fieldnames: Optional[List[str]] = None
+    header_rows: list[dict],
+    data_rows: list[dict],
+    fieldnames: list[str] | None = None,
 ) -> None:
     """Write ROBOT template to TSV file.
 
@@ -166,13 +160,15 @@ def write_robot_template_tsv(
         data_rows: List of data row dicts
         fieldnames: Column names (defaults to header_rows[0] keys)
     """
-    if not fieldnames and header_rows:
+    if not fieldnames:
+        if not header_rows:
+            raise ValueError("Either fieldnames or header_rows must be provided")
         fieldnames = list(header_rows[0].keys())
 
     filepath.parent.mkdir(parents=True, exist_ok=True)
 
-    with open(filepath, 'w', newline='', encoding='utf-8') as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter='\t')
+    with open(filepath, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter="\t")
 
         # Write column headers
         writer.writeheader()
@@ -194,8 +190,8 @@ def split_assignments(
     output_dir: Path,
     num_curators: int = 3,
     overlap_percentage: int = 10,
-    curator_names: Optional[List[str]] = None
-) -> List[Path]:
+    curator_names: list[str] | None = None,
+) -> list[Path]:
     """Fetch Google Sheet and split into curator assignments.
 
     Args:
@@ -218,10 +214,7 @@ def split_assignments(
 
     # Create overlapping subsets
     subsets = create_overlapping_subsets(
-        data_rows,
-        num_curators,
-        overlap_percentage,
-        randomize=True
+        data_rows, num_curators, overlap_percentage, randomize=True
     )
 
     # Generate curator names if not provided
@@ -232,7 +225,7 @@ def split_assignments(
     output_files = []
     fieldnames = list(header_rows[0].keys()) if header_rows else None
 
-    for i, (subset, curator_name) in enumerate(zip(subsets, curator_names)):
+    for subset, curator_name in zip(subsets, curator_names):
         output_file = output_dir / f"{curator_name}.tsv"
         write_robot_template_tsv(output_file, header_rows, subset, fieldnames)
         output_files.append(output_file)
@@ -246,7 +239,9 @@ if __name__ == "__main__":
     import sys
 
     if len(sys.argv) < 3:
-        print("Usage: python splitter.py <sheet_id> <gid> [output_dir] [num_curators] [overlap_pct]")
+        print(
+            "Usage: python splitter.py <sheet_id> <gid> [output_dir] [num_curators] [overlap_pct]"
+        )
         sys.exit(1)
 
     sheet_id = sys.argv[1]

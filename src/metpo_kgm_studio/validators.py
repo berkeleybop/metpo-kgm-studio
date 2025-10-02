@@ -11,10 +11,10 @@ References:
 - FP-012: https://obofoundry.org/principles/fp-012-naming-conventions.html
 """
 
-from dataclasses import dataclass
-from typing import List, Optional, Pattern
 import re
+from dataclasses import dataclass
 from pathlib import Path
+from typing import TypedDict
 
 # Common problematic patterns in definitions
 CIRCULAR_PATTERNS = [
@@ -29,20 +29,21 @@ POOR_GENUS_DIFFERENTIA = [
 
 # Valid source identifier patterns
 SOURCE_PATTERNS = {
-    'pmid': re.compile(r'^PMID:\d+$', re.IGNORECASE),
-    'doi': re.compile(r'^DOI:10\.\d+/\S+$', re.IGNORECASE),
-    'isbn': re.compile(r'^ISBN:[\d\-]+$', re.IGNORECASE),
-    'url': re.compile(r'^https?://\S+$', re.IGNORECASE),
+    "pmid": re.compile(r"^PMID:\d+$", re.IGNORECASE),
+    "doi": re.compile(r"^DOI:10\.\d+/\S+$", re.IGNORECASE),
+    "isbn": re.compile(r"^ISBN:[\d\-]+$", re.IGNORECASE),
+    "url": re.compile(r"^https?://\S+$", re.IGNORECASE),
 }
 
 
 @dataclass
 class ValidationResult:
     """Result of a validation check."""
+
     passed: bool
     message: str
     severity: str = "error"  # "error", "warning", "info"
-    field: Optional[str] = None
+    field: str | None = None
 
     def __str__(self) -> str:
         prefix = "✓" if self.passed else "✗"
@@ -54,16 +55,12 @@ class ValidationResult:
 class DefinitionValidator:
     """Validator for ontology class definitions."""
 
-    def __init__(self):
-        self.results: List[ValidationResult] = []
+    def __init__(self) -> None:
+        self.results: list[ValidationResult] = []
 
     def validate_all(
-        self,
-        definition: str,
-        class_id: str,
-        class_label: str,
-        sources: Optional[List[str]] = None
-    ) -> List[ValidationResult]:
+        self, definition: str, class_id: str, class_label: str, sources: list[str] | None = None
+    ) -> list[ValidationResult]:
         """Run all validation checks on a definition.
 
         Args:
@@ -98,45 +95,57 @@ class DefinitionValidator:
     def check_definition_exists(self, definition: str) -> None:
         """Check if definition is provided and non-empty."""
         if not definition or not definition.strip():
-            self.results.append(ValidationResult(
-                passed=False,
-                message="Definition is required but missing or empty",
-                severity="error",
-                field="definition"
-            ))
+            self.results.append(
+                ValidationResult(
+                    passed=False,
+                    message="Definition is required but missing or empty",
+                    severity="error",
+                    field="definition",
+                )
+            )
         else:
-            self.results.append(ValidationResult(
-                passed=True,
-                message="Definition is present",
-                severity="info",
-                field="definition"
-            ))
+            self.results.append(
+                ValidationResult(
+                    passed=True,
+                    message="Definition is present",
+                    severity="info",
+                    field="definition",
+                )
+            )
 
-    def check_definition_length(self, definition: str, min_length: int = 20, max_length: int = 500) -> None:
+    def check_definition_length(
+        self, definition: str, min_length: int = 20, max_length: int = 500
+    ) -> None:
         """Check if definition is within reasonable length bounds."""
         length = len(definition.strip())
 
         if length < min_length:
-            self.results.append(ValidationResult(
-                passed=False,
-                message=f"Definition too short ({length} chars, minimum {min_length})",
-                severity="warning",
-                field="definition"
-            ))
+            self.results.append(
+                ValidationResult(
+                    passed=False,
+                    message=f"Definition too short ({length} chars, minimum {min_length})",
+                    severity="warning",
+                    field="definition",
+                )
+            )
         elif length > max_length:
-            self.results.append(ValidationResult(
-                passed=False,
-                message=f"Definition too long ({length} chars, maximum {max_length})",
-                severity="warning",
-                field="definition"
-            ))
+            self.results.append(
+                ValidationResult(
+                    passed=False,
+                    message=f"Definition too long ({length} chars, maximum {max_length})",
+                    severity="warning",
+                    field="definition",
+                )
+            )
         else:
-            self.results.append(ValidationResult(
-                passed=True,
-                message=f"Definition length appropriate ({length} chars)",
-                severity="info",
-                field="definition"
-            ))
+            self.results.append(
+                ValidationResult(
+                    passed=True,
+                    message=f"Definition length appropriate ({length} chars)",
+                    severity="info",
+                    field="definition",
+                )
+            )
 
     def check_starts_with_article(self, definition: str, class_label: str) -> None:
         """Check if definition avoids starting with 'A/An [class_label]'."""
@@ -146,26 +155,32 @@ class DefinitionValidator:
 
         # Check if starts with "A/An <first word of label>"
         if label_words and definition_lower.startswith(f"a {label_words[0]}"):
-            self.results.append(ValidationResult(
-                passed=False,
-                message=f"Definition should not start with 'A {label_words[0]}' (avoid article + class name)",
-                severity="warning",
-                field="definition"
-            ))
+            self.results.append(
+                ValidationResult(
+                    passed=False,
+                    message=f"Definition should not start with 'A {label_words[0]}' (avoid article + class name)",
+                    severity="warning",
+                    field="definition",
+                )
+            )
         elif label_words and definition_lower.startswith(f"an {label_words[0]}"):
-            self.results.append(ValidationResult(
-                passed=False,
-                message=f"Definition should not start with 'An {label_words[0]}' (avoid article + class name)",
-                severity="warning",
-                field="definition"
-            ))
+            self.results.append(
+                ValidationResult(
+                    passed=False,
+                    message=f"Definition should not start with 'An {label_words[0]}' (avoid article + class name)",
+                    severity="warning",
+                    field="definition",
+                )
+            )
         else:
-            self.results.append(ValidationResult(
-                passed=True,
-                message="Definition does not start with article + class name",
-                severity="info",
-                field="definition"
-            ))
+            self.results.append(
+                ValidationResult(
+                    passed=True,
+                    message="Definition does not start with article + class name",
+                    severity="info",
+                    field="definition",
+                )
+            )
 
     def check_circularity(self, definition: str, class_label: str) -> None:
         """Check for circular definitions."""
@@ -174,114 +189,136 @@ class DefinitionValidator:
 
         # Check if label appears in definition (excluding parent class references)
         if label_lower in definition_lower:
-            self.results.append(ValidationResult(
-                passed=False,
-                message=f"Definition may be circular - contains class label '{class_label}'",
-                severity="warning",
-                field="definition"
-            ))
+            self.results.append(
+                ValidationResult(
+                    passed=False,
+                    message=f"Definition may be circular - contains class label '{class_label}'",
+                    severity="warning",
+                    field="definition",
+                )
+            )
         else:
-            self.results.append(ValidationResult(
-                passed=True,
-                message="No obvious circular definition detected",
-                severity="info",
-                field="definition"
-            ))
+            self.results.append(
+                ValidationResult(
+                    passed=True,
+                    message="No obvious circular definition detected",
+                    severity="info",
+                    field="definition",
+                )
+            )
 
     def check_genus_differentia_form(self, definition: str) -> None:
         """Check if definition follows genus-differentia form."""
         # Look for "A/An [parent] that [differentia]"
-        genus_diff_pattern = r'^An?\s+\w+(\s+\w+)*\s+that\s+\w+'
+        genus_diff_pattern = r"^An?\s+\w+(\s+\w+)*\s+that\s+\w+"
 
         if re.match(genus_diff_pattern, definition):
-            self.results.append(ValidationResult(
-                passed=True,
-                message="Definition appears to follow genus-differentia form",
-                severity="info",
-                field="definition"
-            ))
+            self.results.append(
+                ValidationResult(
+                    passed=True,
+                    message="Definition appears to follow genus-differentia form",
+                    severity="info",
+                    field="definition",
+                )
+            )
         else:
-            self.results.append(ValidationResult(
-                passed=False,
-                message="Definition may not follow genus-differentia form (should be 'An [parent] that [characteristics]')",
-                severity="warning",
-                field="definition"
-            ))
+            self.results.append(
+                ValidationResult(
+                    passed=False,
+                    message="Definition may not follow genus-differentia form (should be 'An [parent] that [characteristics]')",
+                    severity="warning",
+                    field="definition",
+                )
+            )
 
     def check_special_characters(self, definition: str) -> None:
         """Check for problematic special characters or formatting."""
         issues = []
 
-        if definition.startswith(' ') or definition.endswith(' '):
+        if definition.startswith(" ") or definition.endswith(" "):
             issues.append("has leading/trailing whitespace")
 
-        if '  ' in definition:
+        if "  " in definition:
             issues.append("contains double spaces")
 
-        if not definition.endswith('.'):
+        if not definition.endswith("."):
             issues.append("does not end with period")
 
         if issues:
-            self.results.append(ValidationResult(
-                passed=False,
-                message=f"Formatting issues: {', '.join(issues)}",
-                severity="warning",
-                field="definition"
-            ))
+            self.results.append(
+                ValidationResult(
+                    passed=False,
+                    message=f"Formatting issues: {', '.join(issues)}",
+                    severity="warning",
+                    field="definition",
+                )
+            )
         else:
-            self.results.append(ValidationResult(
-                passed=True,
-                message="No formatting issues detected",
-                severity="info",
-                field="definition"
-            ))
+            self.results.append(
+                ValidationResult(
+                    passed=True,
+                    message="No formatting issues detected",
+                    severity="info",
+                    field="definition",
+                )
+            )
 
     def check_class_id_format(self, class_id: str) -> None:
         """Check if class ID follows expected format."""
         # Expected format: PREFIX:1234567
-        id_pattern = r'^[A-Z]+:\d+$'
+        id_pattern = r"^[A-Z]+:\d+$"
 
         if re.match(id_pattern, class_id):
-            self.results.append(ValidationResult(
-                passed=True,
-                message=f"Class ID format valid: {class_id}",
-                severity="info",
-                field="class_id"
-            ))
+            self.results.append(
+                ValidationResult(
+                    passed=True,
+                    message=f"Class ID format valid: {class_id}",
+                    severity="info",
+                    field="class_id",
+                )
+            )
         else:
-            self.results.append(ValidationResult(
-                passed=False,
-                message=f"Class ID format invalid: {class_id} (expected PREFIX:1234567)",
-                severity="error",
-                field="class_id"
-            ))
+            self.results.append(
+                ValidationResult(
+                    passed=False,
+                    message=f"Class ID format invalid: {class_id} (expected PREFIX:1234567)",
+                    severity="error",
+                    field="class_id",
+                )
+            )
 
     def check_label_exists(self, class_label: str) -> None:
         """Check if class label is provided."""
         if not class_label or not class_label.strip():
-            self.results.append(ValidationResult(
-                passed=False,
-                message="Class label is required but missing",
-                severity="error",
-                field="class_label"
-            ))
+            self.results.append(
+                ValidationResult(
+                    passed=False,
+                    message="Class label is required but missing",
+                    severity="error",
+                    field="class_label",
+                )
+            )
         else:
-            self.results.append(ValidationResult(
-                passed=True,
-                message="Class label is present",
-                severity="info",
-                field="class_label"
-            ))
+            self.results.append(
+                ValidationResult(
+                    passed=True,
+                    message="Class label is present",
+                    severity="info",
+                    field="class_label",
+                )
+            )
 
-    def check_sources(self, sources: List[str]) -> None:
+    def check_sources(self, sources: list[str]) -> None:
         """Validate definition sources."""
         if not sources:
-            self.results.append(ValidationResult(
-                passed=False,
-                message="No definition sources provided (at least one required)",
-                severity="error",
-                field="sources"
-            ))
+            self.results.append(
+                ValidationResult(
+                    passed=False,
+                    message="No definition sources provided (at least one required)",
+                    severity="error",
+                    field="sources",
+                )
+            )
             return
 
         valid_sources = 0
@@ -294,29 +331,33 @@ class DefinitionValidator:
                     break
 
             if not source_valid:
-                self.results.append(ValidationResult(
-                    passed=False,
-                    message=f"Invalid source format: {source} (expected PMID:, DOI:, ISBN:, or URL)",
-                    severity="error",
-                    field="sources"
-                ))
+                self.results.append(
+                    ValidationResult(
+                        passed=False,
+                        message=f"Invalid source format: {source} (expected PMID:, DOI:, ISBN:, or URL)",
+                        severity="error",
+                        field="sources",
+                    )
+                )
 
         if valid_sources > 0:
-            self.results.append(ValidationResult(
-                passed=True,
-                message=f"{valid_sources} valid source(s) found",
-                severity="info",
-                field="sources"
-            ))
+            self.results.append(
+                ValidationResult(
+                    passed=True,
+                    message=f"{valid_sources} valid source(s) found",
+                    severity="info",
+                    field="sources",
+                )
+            )
 
 
 class LabelValidator:
     """Validator for class label naming conventions (FP-012)."""
 
-    def __init__(self):
-        self.results: List[ValidationResult] = []
+    def __init__(self) -> None:
+        self.results: list[ValidationResult] = []
 
-    def validate_label_case(self, label: str) -> List[ValidationResult]:
+    def validate_label_case(self, label: str) -> list[ValidationResult]:
         """Check label follows lowercase convention for multi-word terms.
 
         OBO Foundry FP-012: Labels should be lowercase except for proper nouns
@@ -337,21 +378,46 @@ class LabelValidator:
 
         if uppercase_words and not all(w.isupper() for w in uppercase_words):
             # Has capitalized words that aren't acronyms
-            self.results.append(ValidationResult(
-                passed=False,
-                message=f"Label may violate FP-012 case convention: '{label}'. Check if capitalized words are proper nouns.",
-                severity="warning",
-                field="class_label"
-            ))
+            self.results.append(
+                ValidationResult(
+                    passed=False,
+                    message=f"Label may violate FP-012 case convention: '{label}'. Check if capitalized words are proper nouns.",
+                    severity="warning",
+                    field="class_label",
+                )
+            )
         else:
-            self.results.append(ValidationResult(
-                passed=True,
-                message="Label case follows FP-012 convention",
-                severity="info",
-                field="class_label"
-            ))
+            self.results.append(
+                ValidationResult(
+                    passed=True,
+                    message="Label case follows FP-012 convention",
+                    severity="info",
+                    field="class_label",
+                )
+            )
 
         return self.results
+
+
+class RowValidationResult(TypedDict):
+    """Validation results for a single row."""
+
+    row: int
+    class_id: str
+    class_label: str
+    results: list[ValidationResult]
+    errors: int
+    warnings: int
+
+
+class ValidationFileResult(TypedDict):
+    """Overall file validation results."""
+
+    total_rows: int
+    validated_rows: int
+    errors: int
+    warnings: int
+    row_results: list[RowValidationResult]
 
 
 def validate_definition_file(
@@ -359,8 +425,8 @@ def validate_definition_file(
     id_column: str = "ID",
     label_column: str = "LABEL",
     definition_column: str = "A definition",
-    source_column: str = "A definition source"
-) -> dict:
+    source_column: str = "A definition source",
+) -> ValidationFileResult:
     """Validate all definitions in a ROBOT template TSV file.
 
     Args:
@@ -375,28 +441,28 @@ def validate_definition_file(
     """
     import csv
 
-    results = {
-        'total_rows': 0,
-        'validated_rows': 0,
-        'errors': 0,
-        'warnings': 0,
-        'row_results': []
+    results: ValidationFileResult = {
+        "total_rows": 0,
+        "validated_rows": 0,
+        "errors": 0,
+        "warnings": 0,
+        "row_results": [],
     }
 
-    with open(tsv_path, 'r', encoding='utf-8') as f:
-        reader = csv.DictReader(f, delimiter='\t')
+    with open(tsv_path, encoding="utf-8") as f:
+        reader = csv.DictReader(f, delimiter="\t")
 
         for i, row in enumerate(reader, 1):
             # Skip ROBOT header rows
-            if row.get(id_column, '').startswith('>'):
+            if row.get(id_column, "").startswith(">"):
                 continue
 
-            results['total_rows'] += 1
+            results["total_rows"] += 1
 
-            class_id = row.get(id_column, '')
-            class_label = row.get(label_column, '')
-            definition = row.get(definition_column, '')
-            sources = row.get(source_column, '').split('|') if row.get(source_column) else []
+            class_id = row.get(id_column, "")
+            class_label = row.get(label_column, "")
+            definition = row.get(definition_column, "")
+            sources = row.get(source_column, "").split("|") if row.get(source_column) else []
 
             validator = DefinitionValidator()
             validation_results = validator.validate_all(definition, class_id, class_label, sources)
@@ -405,21 +471,27 @@ def validate_definition_file(
             validation_results.extend(label_validator.validate_label_case(class_label))
 
             # Count errors and warnings
-            row_errors = sum(1 for r in validation_results if not r.passed and r.severity == "error")
-            row_warnings = sum(1 for r in validation_results if not r.passed and r.severity == "warning")
+            row_errors = sum(
+                1 for r in validation_results if not r.passed and r.severity == "error"
+            )
+            row_warnings = sum(
+                1 for r in validation_results if not r.passed and r.severity == "warning"
+            )
 
-            results['errors'] += row_errors
-            results['warnings'] += row_warnings
-            results['validated_rows'] += 1
+            results["errors"] += row_errors
+            results["warnings"] += row_warnings
+            results["validated_rows"] += 1
 
-            results['row_results'].append({
-                'row': i,
-                'class_id': class_id,
-                'class_label': class_label,
-                'results': validation_results,
-                'errors': row_errors,
-                'warnings': row_warnings
-            })
+            results["row_results"].append(
+                {
+                    "row": i,
+                    "class_id": class_id,
+                    "class_label": class_label,
+                    "results": validation_results,
+                    "errors": row_errors,
+                    "warnings": row_warnings,
+                }
+            )
 
     return results
 
@@ -431,7 +503,7 @@ if __name__ == "__main__":
         definition="A cellular respiration process that occurs without oxygen.",
         class_id="METPO:0000123",
         class_label="anaerobic respiration",
-        sources=["PMID:12345678", "DOI:10.1234/example"]
+        sources=["PMID:12345678", "DOI:10.1234/example"],
     )
 
     for result in results:

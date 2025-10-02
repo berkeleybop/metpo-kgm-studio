@@ -1,0 +1,15 @@
+# Changes here will be overwritten by Copier
+_commit: 097d5d6
+_src_path: gh:berkeleybop/metpo-kgm-copier
+copyright_year: '2025'
+email: your-email@lbl.gov
+full_name: Your Name
+github_org: berkeleybop
+google_sheet_gid: '355012485'
+google_sheet_id: 1_Lr-9_5QHi8QLvRyTZFSciUhzGKD4DbUObyTpJ16_RU
+license: BSD-3-Clause
+num_curators: 3
+overlap_percentage: 10
+project_description: METPO ontology curation and KG-Microbe development workspace
+project_name: metpo-kgm-studio
+project_slug: metpo_kgm_studio

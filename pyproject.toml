@@ -1,0 +1,138 @@
+[build-system]
+requires = ["hatchling", "uv-dynamic-versioning"]
+build-backend = "hatchling.build"
+
+[project]
+name = "metpo_kgm_studio"
+description = "Collaborative workspace for curating METPO terms and experimenting with KG-Microbe ingest with METPO normalization of source data"
+authors = [
+  {name = "Mark Andrew Miller", email = "MAM@lbl.gov"},
+]
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
+readme = "README.md"
+requires-python = ">=3.10,<4.0"
+dynamic = ["version"]
+
+dependencies = [
+    "requests>=2.31.0",
+    "typer>=0.9.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=7.4.0",
+    "mypy>=1.7.0",
+    "ruff>=0.1.6",
+    "pre-commit>=3.5.0",
+    "types-requests>=2.31.0",
+]
+
+[project.scripts]
+metpo_kgm_studio = "metpo_kgm_studio.cli:main"
+
+[tool.hatch.version]
+source = "uv-dynamic-versioning"
+
+[tool.uv-dynamic-versioning]
+vcs = "git"
+style = "pep440"
+fallback-version = "0.1.0"
+
+# ============ Testing Configuration ============
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = [
+    "-v",
+    "--strict-markers",
+    "--tb=short",
+]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "integration: marks tests as integration tests",
+]
+
+# ============ Type Checking Configuration ============
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_any_generics = false
+disallow_subclassing_any = true
+disallow_untyped_calls = false
+disallow_untyped_decorators = false
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+check_untyped_defs = true
+strict_equality = true
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+disallow_untyped_defs = false
+
+# ============ Linting Configuration ============
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+    "ARG", # flake8-unused-arguments
+    "SIM", # flake8-simplify
+]
+ignore = [
+    "E501",  # line too long (handled by formatter)
+    "B008",  # do not perform function calls in argument defaults
+    "B905",  # zip without explicit strict parameter
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*" = ["ARG", "S101"]  # Allow assert statements in tests
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+# ============ Spell Checking Configuration ============
+
+[tool.codespell]
+skip = [
+    "LICENSE",
+    "pyproject.toml",
+    "uv.lock",
+    "*.tsv",
+    "*.json",
+]
+ignore-words-list = []
+quiet-level = 3
+
+[tool.typos.default.extend-words]
+# Add custom dictionary words here if needed
+
+[tool.typos.files]
+extend-exclude = [
+    "LICENSE",
+    "uv.lock",
+    "pyproject.toml",
+    "*.tsv",
+    "*.json",
+    "outputs/",
+]

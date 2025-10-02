@@ -1,0 +1,90 @@
+name: Validate Definitions
+
+on:
+  pull_request:
+    paths:
+      - 'assignments/**/*.tsv'
+      - 'outputs/reviewed/**/*.tsv'
+  push:
+    branches:
+      - main
+    paths:
+      - 'assignments/**/*.tsv'
+      - 'outputs/reviewed/**/*.tsv'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          version: "latest"
+
+      - name: Set up Python
+        run: uv python install 3.11
+
+      - name: Install dependencies
+        run: uv sync --group dev
+
+      - name: Validate assignment files
+        run: |
+          echo "Validating assignment files..."
+          for file in assignments/*.tsv; do
+            if [ -f "$file" ]; then
+              echo "Validating $file..."
+              uv run python -c "
+from {{project_slug}}.validators import validate_definition_file
+import sys
+results = validate_definition_file('$file')
+print(f'File: $file')
+print(f'  Total rows: {results[\"total_rows\"]}')
+print(f'  Errors: {results[\"errors\"]}')
+print(f'  Warnings: {results[\"warnings\"]}')
+if results['errors'] > 0:
+    print('  ❌ FAILED')
+    for row_result in results['row_results']:
+        if row_result['errors'] > 0:
+            print(f'  Row {row_result[\"row\"]} ({row_result[\"class_id\"]}):')
+            for r in row_result['results']:
+                if not r.passed and r.severity == 'error':
+                    print(f'    - {r.message}')
+    sys.exit(1)
+else:
+    print('  ✓ PASSED')
+              "
+            fi
+          done
+
+      - name: Validate reviewed outputs
+        run: |
+          echo "Validating reviewed outputs..."
+          for file in outputs/reviewed/*/*.tsv; do
+            if [ -f "$file" ]; then
+              echo "Validating $file..."
+              uv run python -c "
+from {{project_slug}}.validators import validate_definition_file
+import sys
+results = validate_definition_file('$file')
+print(f'File: $file')
+print(f'  Errors: {results[\"errors\"]}')
+print(f'  Warnings: {results[\"warnings\"]}')
+if results['errors'] > 0:
+    print('  ❌ FAILED')
+    sys.exit(1)
+else:
+    print('  ✓ PASSED')
+              "
+            fi
+          done
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "## Validation Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Validated all TSV files for OBO Foundry compliance." >> $GITHUB_STEP_SUMMARY

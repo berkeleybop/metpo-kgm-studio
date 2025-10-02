@@ -38,7 +38,7 @@ jobs:
             if [ -f "$file" ]; then
               echo "Validating $file..."
               uv run python -c "
-from {{project_slug}}.validators import validate_definition_file
+from metpo_kgm_studio.validators import validate_definition_file
 import sys
 results = validate_definition_file('$file')
 print(f'File: $file')
@@ -67,7 +67,7 @@ else:
             if [ -f "$file" ]; then
               echo "Validating $file..."
               uv run python -c "
-from {{project_slug}}.validators import validate_definition_file
+from metpo_kgm_studio.validators import validate_definition_file
 import sys
 results = validate_definition_file('$file')
 print(f'File: $file')

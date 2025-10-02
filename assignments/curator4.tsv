@@ -1,0 +1,35 @@
+ID	label	TYPE	parent class	description	definition source	comment	biolink equivalent	confirmed exact synonym	literature mining synonyms	madin synonym or field	synonym source	bacdive keyword synonym	bactotraits synonym
+ID	LABEL	TYPE	SC %	A IAO:0000115	>A IAO:0000119	A rdfs:comment	AI skos:closeMatch	A oboInOwl:hasExactSynonym SPLIT=|	A oboInOwl:hasRelatedSynonym SPLIT=|	A oboInOwl:hasRelatedSynonym SPLIT=|	>AI IAO:0000119	A oboInOwl:hasRelatedSynonym SPLIT=|	A oboInOwl:hasRelatedSynonym SPLIT=|
+METPO:1000059	phenotype	owl:Class	quality	A (combination of) quality(ies) of an organism determined by the interaction of its genetic make-up and environment that differentiates specific instances of a species from other instances of the same species.	OGMS:0000023		https://biolink.github.io/biolink-model/PhenotypicQuality						
+METPO:1000623	moderately halophilic	owl:Class	halophily preference							moderate-halophilic		moderately halophilic	
+METPO:1000639	chemolithotrophic	owl:Class	trophic type									chemolithotroph	
+METPO:1000803	Oxidative phosphorylation	owl:Class	metabolism										
+METPO:1002002	Mn(IV)-dependent methane oxidation	owl:Class	Metal and metalloid respiration										
+METPO:1000667	bacillus shaped	owl:Class	cell shape							bacillus			
+METPO:1000656	photoautotrophic	owl:Class	trophic type							photoautotrophy|anoxygenic_photoautotrophy_hydrogen_oxidation|anoxygenic_photoautotrophy_sulfur_oxidation|anoxygenic_photoautotrophy|anoxygenic_photoautotrophy_iron_oxidation		photoautotroph	
+METPO:1000678	oval shaped	owl:Class	cell shape									oval-shaped	
+METPO:1001102	biosafety level 1	owl:Class	biosafety level										
+METPO:1000060	metabolism	owl:Class	biological process										
+METPO:1000670	curved shaped	owl:Class	cell shape								https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	curved-shaped	s_curved_spiral
+METPO:1000800	respiration	owl:Class	metabolism	An organism's observable and characteristic method of performing cellular respiration, distinguished primarily by the specific terminal electron acceptor its metabolic pathways utilize for the purpose of producing cellular energy.						pathways			
+METPO:1000664	organoheterotrophic	owl:Class	trophic type									organoheterotroph	
+METPO:1000334	NaCl range	owl:Class	phenotype	The span of sodium chloride concentrations within which a microorganism can maintain osmotic balance and cellular functions.									
+METPO:1000660	phototrophic	owl:Class	trophic type							aerobic_anoxygenic_phototrophy		phototroph	
+METPO:1003013	radiophilic	owl:Class	trophic type	high radiation									
+METPO:1002008	Nitrogen fixation	owl:Class	Nitrogen compound respiration							nitrogen_fixation		diazotroph	
+METPO:1003001	neutrophilic	owl:Class	pH growth preference					neutrophile|neutralophile|neutralophilic					
+METPO:1000692	spindle shaped	owl:Class	cell shape							spindle			
+METPO:1002036	Nitrite oxidation	owl:Class	Nitrogen compound respiration										
+METPO:1000638	chemolithoheterotrophic	owl:Class	trophic type									chemolithoheterotroph	
+METPO:1000682	spore shaped	owl:Class	cell shape									spore-shaped	
+METPO:1000186	material entity	owl:Class		An object or portion of a substance or mixture of substances that consists of matter									
+METPO:1000720	facultative psychrophilic	owl:Class	temperature preference						facultative psychrophile	facultative psychrophilic			
+METPO:1000683	sphere shaped	owl:Class	cell shape								https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	sphere-shaped	s_sphere
+METPO:1000845	Acetogenesis	owl:Class	metabolism						Acetate fermentation	acetogenesis			
+METPO:1003008	acidotolerant	owl:Class	pH growth preference					aciduric					
+METPO:1000679	pleomorphic shaped	owl:Class	cell shape							pleomorphic	https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	pleomorphic-shaped	s_star_dumbbell_pleomorphic
+METPO:1000676	helical shaped	owl:Class	cell shape									helical-shaped	
+METPO:1000654	oligotrophic	owl:Class	nutrient adaptation									oligotroph	
+METPO:1003007	facultatively acidophilic	owl:Class	pH growth preference					facultative acidophile|facultatively acidophilic					
+METPO:1000304	temperature optimum (growth range)	owl:Class	phenotype	The specific temperature at which an organism exhibits maximum growth rate									
+METPO:1003006	obligately acidophilic	owl:Class	pH growth preference					obligate acidophile|obligately acidophilic					

@@ -246,11 +246,13 @@ if __name__ == "__main__":
     import sys
 
     if len(sys.argv) < 3:
-        print("Usage: python splitter.py <sheet_id> <gid> [output_dir]")
+        print("Usage: python splitter.py <sheet_id> <gid> [output_dir] [num_curators] [overlap_pct]")
         sys.exit(1)
 
     sheet_id = sys.argv[1]
     gid = sys.argv[2]
     output_dir = Path(sys.argv[3]) if len(sys.argv) > 3 else Path("assignments")
+    num_curators = int(sys.argv[4]) if len(sys.argv) > 4 else 3
+    overlap_pct = int(sys.argv[5]) if len(sys.argv) > 5 else 10
 
-    split_assignments(sheet_id, gid, output_dir)
+    split_assignments(sheet_id, gid, output_dir, num_curators, overlap_pct)

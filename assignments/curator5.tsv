@@ -1,0 +1,35 @@
+ID	label	TYPE	parent class	description	definition source	comment	biolink equivalent	confirmed exact synonym	literature mining synonyms	madin synonym or field	synonym source	bacdive keyword synonym	bactotraits synonym
+ID	LABEL	TYPE	SC %	A IAO:0000115	>A IAO:0000119	A rdfs:comment	AI skos:closeMatch	A oboInOwl:hasExactSynonym SPLIT=|	A oboInOwl:hasRelatedSynonym SPLIT=|	A oboInOwl:hasRelatedSynonym SPLIT=|	>AI IAO:0000119	A oboInOwl:hasRelatedSynonym SPLIT=|	A oboInOwl:hasRelatedSynonym SPLIT=|
+METPO:1000059	phenotype	owl:Class	quality	A (combination of) quality(ies) of an organism determined by the interaction of its genetic make-up and environment that differentiates specific instances of a species from other instances of the same species.	OGMS:0000023		https://biolink.github.io/biolink-model/PhenotypicQuality						
+METPO:1000845	Acetogenesis	owl:Class	metabolism						Acetate fermentation	acetogenesis			
+METPO:1003008	acidotolerant	owl:Class	pH growth preference					aciduric					
+METPO:1000679	pleomorphic shaped	owl:Class	cell shape							pleomorphic	https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	pleomorphic-shaped	s_star_dumbbell_pleomorphic
+METPO:1000676	helical shaped	owl:Class	cell shape									helical-shaped	
+METPO:1000654	oligotrophic	owl:Class	nutrient adaptation									oligotroph	
+METPO:1003007	facultatively acidophilic	owl:Class	pH growth preference					facultative acidophile|facultatively acidophilic					
+METPO:1000304	temperature optimum (growth range)	owl:Class	phenotype	The specific temperature at which an organism exhibits maximum growth rate									
+METPO:1003006	obligately acidophilic	owl:Class	pH growth preference					obligate acidophile|obligately acidophilic					
+METPO:1000663	chemoorganotrophic	owl:Class	trophic type									chemoorganotroph	
+METPO:1000668	coccus shaped	owl:Class	cell shape							coccus		coccus-shaped	
+METPO:1000693	spirochete shaped	owl:Class	cell shape							spirochete			
+METPO:1000806	Disproportionation	owl:Class	metabolism										
+METPO:1000329	temperature optimum (metabolic activity)	owl:Class	biological process	The specific temperature at which a microorganism exhibits maximum metabolic activity and growth rate within its viable range.									
+METPO:1000701	motility	owl:Class	phenotype							motility		Morphology.cell morphology.motility|General.keywords	
+METPO:1000632	autotrophic	owl:Class	trophic type							autotrophy		autotroph	
+METPO:1002006	Syntrophy	owl:Class	metabolism										
+METPO:1000805	Electron transfer	owl:Class	metabolism										
+METPO:1000642	copiotrophic	owl:Class	nutrient adaptation									copiotroph	
+METPO:1001104	biosafety level 3	owl:Class	biosafety level										
+METPO:1002001	Fe(III)-dependent methane oxidation	owl:Class	Metal and metalloid respiration										
+METPO:1000686	vibrio shaped	owl:Class	cell shape							vibrio		vibrio-shaped	
+METPO:1000648	lithoheterotrophic	owl:Class	trophic type									lithoheterotroph	
+METPO:1000801	Aerobic respiration	owl:Class	respiration						Oxygen respiration|Oxic respiration				
+METPO:1000628	extremely halophilic	owl:Class	halophily preference							extreme-halophilic		extremely halophilic	
+METPO:1000626	stenohaline	owl:Class	halophily preference							stenohaline			
+METPO:1000646	hydrogenotrophic	owl:Class	trophic type										
+METPO:1000658	photolithotrophic	owl:Class	trophic type									photolithotroph	
+METPO:1000697	gram stain	owl:Class	phenotype							gram_stain		Morphology.cell morphology.gram stain|General.keywords	
+METPO:1000333	NaCl optimum	owl:Class	phenotype	The specific concentration of sodium chloride at which a microorganism exhibits maximum growth rate and metabolic efficiency.									
+METPO:1000666	cell shape	owl:Class	phenotype							cell_shape		Morphology.cell morphology.cell shape|General.keywords	
+METPO:1000844	Methanogenesis	owl:Class	metabolism						Carbonate respiration|Biomethanation|Biological methanation	methanogenesis			
+METPO:1000673	ellipsoidal	owl:Class	cell shape									ellipsoidal	

@@ -287,7 +287,7 @@ class DefinitionValidator:
         valid_sources = 0
         for source in sources:
             source_valid = False
-            for source_type, pattern in SOURCE_PATTERNS.items():
+            for _source_type, pattern in SOURCE_PATTERNS.items():
                 if pattern.match(source):
                     source_valid = True
                     valid_sources += 1

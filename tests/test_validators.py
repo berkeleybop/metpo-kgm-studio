@@ -1,7 +1,7 @@
 """Tests for definition validators."""
 
 import pytest
-from {{project_slug}}.validators import (
+from metpo_kgm_studio.validators import (
     DefinitionValidator,
     LabelValidator,
     ValidationResult,

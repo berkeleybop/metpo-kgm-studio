@@ -1,7 +1,6 @@
 """Tests for definition validators."""
 
-import pytest
-from {{project_slug}}.validators import (
+from metpo_kgm_studio.validators import (
     DefinitionValidator,
     LabelValidator,
     ValidationResult,
@@ -42,8 +41,7 @@ class TestDefinitionValidator:
         """Test detection of definitions starting with article + class name."""
         validator = DefinitionValidator()
         validator.check_starts_with_article(
-            "A methanogenesis process that produces methane",
-            "methanogenesis"
+            "A methanogenesis process that produces methane", "methanogenesis"
         )
 
         assert len(validator.results) == 1
@@ -99,7 +97,7 @@ class TestDefinitionValidator:
             definition="An anaerobic respiration process that produces methane.",
             class_id="METPO:0000123",
             class_label="methanogenesis",
-            sources=["PMID:12345678", "DOI:10.1234/example"]
+            sources=["PMID:12345678", "DOI:10.1234/example"],
         )
 
         assert len(results) > 0
@@ -133,22 +131,14 @@ class TestValidationResult:
 
     def test_validation_result_str_passed(self) -> None:
         """Test string representation of passed result."""
-        result = ValidationResult(
-            passed=True,
-            message="Test passed",
-            severity="info"
-        )
+        result = ValidationResult(passed=True, message="Test passed", severity="info")
 
         assert "✓" in str(result)
         assert "Test passed" in str(result)
 
     def test_validation_result_str_failed(self) -> None:
         """Test string representation of failed result."""
-        result = ValidationResult(
-            passed=False,
-            message="Test failed",
-            severity="error"
-        )
+        result = ValidationResult(passed=False, message="Test failed", severity="error")
 
         assert "✗" in str(result)
         assert "Test failed" in str(result)

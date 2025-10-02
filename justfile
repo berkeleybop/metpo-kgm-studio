@@ -13,8 +13,8 @@ shebang := if os() == 'windows' {
 # Google Sheets configuration
 SHEET_ID := "1_Lr-9_5QHi8QLvRyTZFSciUhzGKD4DbUObyTpJ16_RU"
 SHEET_GID := "355012485"
-NUM_CURATORS := "3"
-OVERLAP_PCT := "30"
+NUM_CURATORS := "6"
+OVERLAP_PCT := "20"
 
 # Directories
 ASSIGNMENTS_DIR := "assignments"
@@ -64,7 +64,8 @@ fetch-assignments:
     @echo "Fetching ROBOT template from Google Sheets..."
     @echo "Sheet ID: {{SHEET_ID}}"
     @echo "GID: {{SHEET_GID}}"
-    uv run python -m metpo_kgm_studio.splitter {{SHEET_ID}} {{SHEET_GID}} {{ASSIGNMENTS_DIR}}
+    @echo "Curators: {{NUM_CURATORS}}, Overlap: {{OVERLAP_PCT}}%"
+    uv run python -m metpo_kgm_studio.splitter {{SHEET_ID}} {{SHEET_GID}} {{ASSIGNMENTS_DIR}} {{NUM_CURATORS}} {{OVERLAP_PCT}}
     @echo ""
     @echo "✓ Assignments created in {{ASSIGNMENTS_DIR}}/"
     @echo "  Each curator has overlapping terms for inter-curator agreement"

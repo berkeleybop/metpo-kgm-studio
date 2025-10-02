@@ -32,7 +32,7 @@ These steps only need to be done once.
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # Install just (command runner)
-uv tool install rust-just
+uv tool install just
 
 # Verify installations
 uv --version

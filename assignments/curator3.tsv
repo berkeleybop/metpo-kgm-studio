@@ -1,56 +1,56 @@
 ID	label	TYPE	parent class	description	definition source	comment	biolink equivalent	confirmed exact synonym	literature mining synonyms	madin synonym or field	synonym source	bacdive keyword synonym	bactotraits synonym
 ID	LABEL	TYPE	SC %	A IAO:0000115	>A IAO:0000119	A rdfs:comment	AI skos:closeMatch	A oboInOwl:hasExactSynonym SPLIT=|	A oboInOwl:hasRelatedSynonym SPLIT=|	A oboInOwl:hasRelatedSynonym SPLIT=|	>AI IAO:0000119	A oboInOwl:hasRelatedSynonym SPLIT=|	A oboInOwl:hasRelatedSynonym SPLIT=|
 METPO:1000059	phenotype	owl:Class	quality	A (combination of) quality(ies) of an organism determined by the interaction of its genetic make-up and environment that differentiates specific instances of a species from other instances of the same species.	OGMS:0000023		https://biolink.github.io/biolink-model/PhenotypicQuality						
-METPO:1000627	euryhaline	owl:Class	halophily preference							euryhaline			
-METPO:1002007	Sulfur disproportionation	owl:Class	Sulfur and sulfoxide compound respiration										
-METPO:1000701	motility	owl:Class	phenotype							motility		Morphology.cell morphology.motility|General.keywords	
-METPO:1000872	non-spore forming	owl:Class	sporulation							no		no	
-METPO:1000802	Anaerobic respiration	owl:Class	respiration						Anoxic respiration|Dissimilatory respiration (non-Oâ)				
-METPO:1001103	biosafety level 2	owl:Class	biosafety level										
-METPO:1000679	pleomorphic shaped	owl:Class	cell shape							pleomorphic	https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	pleomorphic-shaped	s_star_dumbbell_pleomorphic
-METPO:1000650	methanotrophic	owl:Class	trophic type									methanotroph	
-METPO:1000697	gram stain	owl:Class	phenotype							gram_stain		Morphology.cell morphology.gram stain|General.keywords	
-METPO:1000639	chemolithotrophic	owl:Class	trophic type									chemolithotroph	
-METPO:1000127	GC content	owl:Class	quality	The percentage of guanine and cytosine nucleotides in DNA									
-METPO:1000801	Aerobic respiration	owl:Class	respiration						Oxygen respiration|Oxic respiration				
-METPO:1000668	coccus shaped	owl:Class	cell shape							coccus		coccus-shaped	
-METPO:1000651	methylotrophic	owl:Class	trophic type							methylotrophy		methylotroph	
-METPO:1003009	alkalotolerant	owl:Class	pH growth preference					alkalitolerant					
-METPO:1000304	temperature optimum (growth range)	owl:Class	phenotype	The specific temperature at which an organism exhibits maximum growth rate									
-METPO:1003013	radiophilic	owl:Class	trophic type	high radiation									
-METPO:1000705	axially filamented	owl:Class	motile							axial filament			
-METPO:1000330	temperature range (metabolic viability)	owl:Class	biological process	The span of temperatures within which a microorganism can maintain metabolic functions and population viability.									
-METPO:1000803	Oxidative phosphorylation	owl:Class	metabolism										
-METPO:1002035	Ammonia oxidation	owl:Class	Nitrogen compound respiration										
-METPO:1000674	filament shaped	owl:Class	cell shape							filament	https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	filament-shaped	s_filament
-METPO:1000698	gram positive	owl:Class	gram stain							positive	https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	positive	G_positive
-METPO:1000637	chemolithoautotrophic	owl:Class	trophic type									chemolithoautotroph	
-METPO:1000672	dumbbell shaped	owl:Class	cell shape								https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	dumbbell-shaped	s_star_dumbbell_pleomorphic
-METPO:1000623	moderately halophilic	owl:Class	halophily preference							moderate-halophilic		moderately halophilic	
-METPO:1003012	saccharophilic	owl:Class	trophic type	high sugar									
+METPO:1000646	hydrogenotrophic	owl:Class	trophic type										
+METPO:1000642	copiotrophic	owl:Class	nutrient adaptation									copiotroph	
+METPO:1000704	flagellated	owl:Class	motile							flagella			
+METPO:1000805	Electron transfer	owl:Class	metabolism										
 METPO:1000688	coccobacillus shaped	owl:Class	cell shape							coccobacillus			
-METPO:1001005	culture temperature observation	owl:Class	observation	An observation specializing temperature observation for culture temperature data (e.g., reported culture conditions).									
-METPO:1003002	alkaphilic	owl:Class	pH growth preference					alkaliphilic|alkaliphile|alkalophilic|alkalophile					
-METPO:1000634	chemoautolithotrophic	owl:Class	trophic type									chemoautolithotroph	
-METPO:1001001	optimum temperature observation	owl:Class	observation	An observation specializing temperature observation for optimum temperature data.									
-METPO:1002038	Methane oxidation	owl:Class	metabolism										
-METPO:1000663	chemoorganotrophic	owl:Class	trophic type									chemoorganotroph	
-METPO:1000871	spore forming	owl:Class	sporulation							yes		yes	
-METPO:1000601	oxygen preference	owl:Class	phenotype							metabolism		Physiology and metabolism.oxygen tolerance.oxygen tolerance|General.keywords	
-METPO:1000680	ring shaped	owl:Class	cell shape							ring		ring-shaped	
-METPO:1000685	star shaped	owl:Class	cell shape							star	https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	star-shaped	s_star_dumbbell_pleomorphic
-METPO:1000806	Disproportionation	owl:Class	metabolism										
-METPO:1000665	photolithoautotrophic	owl:Class	trophic type									photolithoautotroph	
-METPO:1000632	autotrophic	owl:Class	trophic type							autotrophy		autotroph	
-METPO:1000687	branched shaped	owl:Class	cell shape							branced			
-METPO:1000233	pH optimum (growth range)	owl:Class	phenotype	The specific pH at which an organism exhibits maximum growth rate									
-METPO:1002003	Cable bacteria metabolism	owl:Class	metabolism										
-METPO:1000660	phototrophic	owl:Class	trophic type							aerobic_anoxygenic_phototrophy		phototroph	
-METPO:1001002	growth temperature observation	owl:Class	observation	An observation specializing temperature observation for general growth temperature data.									
-METPO:1000648	lithoheterotrophic	owl:Class	trophic type									lithoheterotroph	
-METPO:1000703	non motile	owl:Class	motility							no	https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	no	non- motile
-METPO:1000624	non halophilic	owl:Class	halophily preference							non-halophilic		non-halophilic	
-METPO:1000720	facultative psychrophilic	owl:Class	temperature preference						facultative psychrophile	facultative psychrophilic			
-METPO:1003004	obligately alkaphilic	owl:Class	pH growth preference					obligate alkaliphile|obligately alkaliphilic|obligate alkaphilic					
-METPO:1000677	ovoid shaped	owl:Class	cell shape								https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	ovoid-shaped	s_ovoid
+METPO:1000689	disc shaped	owl:Class	cell shape							disc			
+METPO:1000699	gram negative	owl:Class	gram stain							negative	https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	negative	G_negative
+METPO:1001103	biosafety level 2	owl:Class	biosafety level										
+METPO:1000676	helical shaped	owl:Class	cell shape									helical-shaped	
+METPO:1003005	facultatively alkaphilic	owl:Class	pH growth preference					facultative alkaliphile|facultatively alkaliphilic|facultative alkaphilic					
+METPO:1000683	sphere shaped	owl:Class	cell shape								https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	sphere-shaped	s_sphere
 METPO:1000631	trophic type	owl:Class	phenotype	The quality of how an organism obtains its carbon and energy.					nutritional type	pathways		Physiology and metabolism.nutrition type.type|General.keywords	
+METPO:1000691	irregular shaped	owl:Class	cell shape							irregular			
+METPO:1000665	photolithoautotrophic	owl:Class	trophic type									photolithoautotroph	
+METPO:1000668	coccus shaped	owl:Class	cell shape							coccus		coccus-shaped	
+METPO:1003007	facultatively acidophilic	owl:Class	pH growth preference					facultative acidophile|facultatively acidophilic					
+METPO:1000306	temperature range (growth tolerance)	owl:Class	phenotype	The span of temperatures within which an organism can grow									
+METPO:1000680	ring shaped	owl:Class	cell shape							ring		ring-shaped	
+METPO:1000731	nutrient adaptation		trophic type										
+METPO:1000698	gram positive	owl:Class	gram stain							positive	https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	positive	G_positive
+METPO:1000806	Disproportionation	owl:Class	metabolism										
+METPO:1000844	Methanogenesis	owl:Class	metabolism						Carbonate respiration|Biomethanation|Biological methanation	methanogenesis			
+METPO:1000626	stenohaline	owl:Class	halophily preference							stenohaline			
+METPO:1000870	sporulation	owl:Class	phenotype							sporulation		Physiology and metabolism.spore formation.spore formation|General.keywords	
+METPO:1000695	tailed shaped	owl:Class	cell shape							tailed			
+METPO:1002005	Fermentation	owl:Class	respiration										
+METPO:1000702	motile	owl:Class	motility							yes	https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	yes	motile
+METPO:1000677	ovoid shaped	owl:Class	cell shape								https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	ovoid-shaped	s_ovoid
+METPO:1003008	acidotolerant	owl:Class	pH growth preference					aciduric					
+METPO:1000703	non motile	owl:Class	motility							no	https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	no	non- motile
+METPO:1000663	chemoorganotrophic	owl:Class	trophic type									chemoorganotroph	
+METPO:1000331	pH optimum (metabolic efficiency)	owl:Class	phenotype	The specific hydrogen ion concentration at which a microorganism achieves its maximum growth rate and metabolic efficiency.									
+METPO:1000801	Aerobic respiration	owl:Class	respiration						Oxygen respiration|Oxic respiration				
+METPO:1000632	autotrophic	owl:Class	trophic type							autotrophy		autotroph	
+METPO:1001001	optimum temperature observation	owl:Class	observation	An observation specializing temperature observation for optimum temperature data.									
+METPO:1000334	NaCl range	owl:Class	phenotype	The span of sodium chloride concentrations within which a microorganism can maintain osmotic balance and cellular functions.									
+METPO:1000685	star shaped	owl:Class	cell shape							star	https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	star-shaped	s_star_dumbbell_pleomorphic
+METPO:1000686	vibrio shaped	owl:Class	cell shape							vibrio		vibrio-shaped	
+METPO:1000675	flask shaped	owl:Class	cell shape							flask		flask-shaped	
+METPO:1000633	carboxydotrophic	owl:Class	trophic type										
+METPO:1001104	biosafety level 3	owl:Class	biosafety level										
+METPO:1003010	xerophilic	owl:Class	trophic type	low H2O availability									
+METPO:1002003	Cable bacteria metabolism	owl:Class	metabolism										
+METPO:1000681	rod shaped	owl:Class	cell shape								https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	rod-shaped	s_rod
+METPO:1000654	oligotrophic	owl:Class	nutrient adaptation									oligotroph	
+METPO:1000629	halophily preference	owl:Class	phenotype							range_salinity		Physiology and metabolism.halophily.halophily level|General.keywords	
+METPO:1003006	obligately acidophilic	owl:Class	pH growth preference					obligate acidophile|obligately acidophilic					
+METPO:1000625	slightly halophilic	owl:Class	halophily preference									slightly halophilic	
+METPO:1002038	Methane oxidation	owl:Class	metabolism										
+METPO:1000672	dumbbell shaped	owl:Class	cell shape								https://ordar.otelo.univ-lorraine.fr/files/ORDAR-53/BactoTraits_databaseV2_Jun2022.csv	dumbbell-shaped	s_star_dumbbell_pleomorphic
+METPO:1001003	temperature range observation	owl:Class	observation	An observation specializing temperature observation for growth temperature range data.									
+METPO:1000694	square shaped	owl:Class	cell shape							square			
+METPO:1000647	lithoautotrophic	owl:Class	trophic type									lithoautotroph	

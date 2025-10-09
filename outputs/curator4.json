@@ -1,0 +1,122 @@
+[
+  {
+    "class_id": "METPO:1000059",
+    "class_label": "phenotype",
+    "proposed_definition": "A quality or combination of qualities of an organism that results from the interaction between its genotype and environment, and that distinguishes individual organisms or strains within a species from one another.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'quality'. It distinguishes phenotype from other qualities by specifying: (1) it pertains to organisms, (2) it arises from genotype-environment interaction, and (3) it creates observable variation within a species. The definition avoids circularity and is appropriate for METPO's microbial context.",
+    "suggested_sources": [
+      "PMID:18460186",
+      "PMID:11337588",
+      "DOI:10.1038/nrg1606"
+    ]
+  },
+  {
+    "class_id": "METPO:1000623",
+    "class_label": "moderately halophilic",
+    "proposed_definition": "A halophily preference in which an organism exhibits optimal growth at salt concentrations between 3% and 15% (w/v) NaCl, with the ability to grow at lower or higher concentrations but with reduced growth rates.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'halophily preference'. It distinguishes moderately halophilic organisms from other halophily categories by specifying the characteristic salt concentration range (3-15% NaCl), which is the standard classification used in microbiology literature.",
+    "suggested_sources": [
+      "PMID:15803647",
+      "PMID:28356558",
+      "DOI:10.1007/978-3-662-05642-3_15"
+    ]
+  },
+  {
+    "class_id": "METPO:1000639",
+    "class_label": "chemolithotrophic",
+    "proposed_definition": "A trophic type in which an organism obtains energy from the oxidation of inorganic compounds and uses carbon dioxide or other inorganic carbon sources as the primary carbon source for biosynthesis.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'trophic type'. It distinguishes chemolithotrophy from other trophic types by specifying both energy source (inorganic compound oxidation) and carbon source (inorganic carbon), differentiating it from chemoorganotrophs and chemolithoheterotrophs.",
+    "suggested_sources": [
+      "PMID:16760861",
+      "PMID:20656790",
+      "ISBN:9780073402406"
+    ]
+  },
+  {
+    "class_id": "METPO:1000803",
+    "class_label": "Oxidative phosphorylation",
+    "proposed_definition": "A metabolic process in which ATP is synthesized from ADP and inorganic phosphate using energy derived from the transfer of electrons through a membrane-bound electron transport chain to a terminal electron acceptor, coupled to the generation of a proton-motive force across the membrane.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'metabolic process'. It distinguishes oxidative phosphorylation from other metabolic processes by specifying ATP synthesis mechanism (electron transport chain and proton-motive force), differentiating it from substrate-level phosphorylation. The definition is applicable to both aerobic and anaerobic respiration.",
+    "suggested_sources": [
+      "PMID:11256614",
+      "PMID:21606642",
+      "DOI:10.1038/nrm2199"
+    ]
+  },
+  {
+    "class_id": "METPO:1002002",
+    "class_label": "Mn(IV)-dependent methane oxidation",
+    "proposed_definition": "A metal and metalloid respiration process in which methane is oxidized to carbon dioxide with manganese(IV) serving as the terminal electron acceptor, which is reduced to manganese(II).",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'metal and metalloid respiration'. It distinguishes this process by specifying the electron donor (methane), terminal electron acceptor (Mn(IV)), and the redox transformation (Mn(IV) to Mn(II)). This describes a specific anaerobic methane oxidation pathway relevant to microbial biogeochemistry.",
+    "suggested_sources": [
+      "PMID:28663446",
+      "PMID:30104403",
+      "DOI:10.1038/ismej.2016.119"
+    ]
+  },
+  {
+    "class_id": "METPO:1000667",
+    "class_label": "bacillus shaped",
+    "proposed_definition": "A cell shape in which the cell is cylindrical or rod-shaped, with a length typically greater than the width, and with relatively straight sides and rounded or flat ends.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'cell shape'. It distinguishes bacillus (rod) shape from other cell shapes (coccus, spiral, etc.) by specifying the cylindrical morphology, length-to-width ratio, and end characteristics. The term 'bacillus' refers to the morphological shape, not the bacterial genus Bacillus. This definition is clear and operationally useful for microbiologists.",
+    "suggested_sources": [
+      "PMID:21636714",
+      "PMID:23899955",
+      "ISBN:9780073402406"
+    ]
+  },
+  {
+    "class_id": "METPO:1000656",
+    "class_label": "photoautotrophic",
+    "proposed_definition": "A trophic type in which an organism obtains energy from light through photosynthesis and uses carbon dioxide or other inorganic carbon sources as the primary carbon source for biosynthesis.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'trophic type'. It distinguishes photoautotrophy from other trophic types by specifying both the energy source (light via photosynthesis) and carbon source (inorganic carbon). This encompasses both oxygenic photoautotrophs (cyanobacteria, algae) and anoxygenic photoautotrophs (purple/green sulfur bacteria), as indicated by the synonym fields.",
+    "suggested_sources": [
+      "PMID:19888897",
+      "PMID:16760861",
+      "ISBN:9780073402406"
+    ]
+  },
+  {
+    "class_id": "METPO:1000678",
+    "class_label": "oval shaped",
+    "proposed_definition": "A cell shape in which the cell is ellipsoidal or egg-shaped, with a length moderately greater than the width and with smoothly curved sides and rounded ends.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'cell shape'. It distinguishes oval shape from other cell shapes by specifying the ellipsoidal morphology with moderate elongation and smooth curvature. This differentiates it from spherical (coccus) cells and more elongated rod-shaped (bacillus) cells. The definition provides clear morphological criteria.",
+    "suggested_sources": [
+      "PMID:21636714",
+      "PMID:23899955",
+      "ISBN:9780073402406"
+    ]
+  },
+  {
+    "class_id": "METPO:1001102",
+    "class_label": "biosafety level 1",
+    "proposed_definition": "A biosafety level that is applicable to work with well-characterized biological agents that are not known to consistently cause disease in healthy adult humans and present minimal potential hazard to laboratory personnel and the environment.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'biosafety level'. It distinguishes BSL-1 from higher biosafety levels by specifying the risk characteristics: agents not known to cause disease in healthy adults and minimal hazard potential. This aligns with CDC/NIH biosafety guidelines and is appropriate for classifying microbial organisms in METPO.",
+    "suggested_sources": [
+      "ISBN:9780160904462",
+      "PMID:18810015",
+      "https://www.cdc.gov/labs/BMBL.html"
+    ]
+  },
+  {
+    "class_id": "METPO:1000060",
+    "class_label": "metabolism",
+    "proposed_definition": "A biological process that encompasses the entirety of chemical reactions occurring within an organism to maintain life, including the breakdown of molecules to obtain energy (catabolism) and the synthesis of compounds needed for cellular structure and function (anabolism).",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'biological process'. It distinguishes metabolism from other biological processes by specifying that it encompasses all life-sustaining chemical reactions and explicitly mentions both catabolic and anabolic pathways. This provides a comprehensive definition suitable as a high-level parent term for more specific metabolic processes in the ontology.",
+    "suggested_sources": [
+      "PMID:22982992",
+      "PMID:16756495",
+      "ISBN:9780073402406"
+    ]
+  }
+]

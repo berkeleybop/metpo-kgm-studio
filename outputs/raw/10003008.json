@@ -1,0 +1,12 @@
+{
+    "class_id": "METPO:1003008",
+    "class_label": "acidotolerant",
+    "proposed_definition": "A pH growth preference in which an organism exhibits optimal growth at neutral or near-neutral pH but can tolerate and grow at acidic pH values, typically below pH 5.5.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'pH growth preference'. It distinguishes acidotolerant organisms from acidophiles (optimal growth at low pH) and neutrophiles (intolerant of low pH) by specifying optimal growth at neutral pH with the ability to tolerate acidic conditions. The synonym 'aciduric' confirms this meaning—organisms that can endure but do not prefer acidic conditions.",
+    "suggested_sources": [
+      "PMID:18248358",
+      "PMID:16294299",
+      "PMID:11029078"
+    ]
+  }

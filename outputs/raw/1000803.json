@@ -1,0 +1,13 @@
+{
+  "class_id": "METPO:1000803",
+  "class_label": "Oxidative phosphorylation",
+  "proposed_definition": "A metabolic process in which ATP is synthesized from ADP and inorganic phosphate using energy derived from the transfer of electrons through a membrane-bound electron transport chain to a terminal electron acceptor, coupled to the generation of a proton-motive force across the membrane.",
+  "confidence": "high",
+  "reasoning": "This definition follows the genus-differentia form starting with the parent class 'metabolic process' (or 'metabolism'). It distinguishes oxidative phosphorylation from other metabolic processes by specifying: (1) the product (ATP synthesis), (2) the energy source (electron transport chain), (3) the mechanism (proton-motive force generation), and (4) the subcellular location (membrane-bound). This differentiates it from substrate-level phosphorylation, which synthesizes ATP directly from phosphorylated intermediates without an electron transport chain. The definition is applicable to both prokaryotes and eukaryotes, making it suitable for METPO's microbial context.",
+  "suggested_sources": [
+    "PMID:11256614",
+    "PMID:21606642",
+    "DOI:10.1038/nrm2199"
+  ],
+  "notes": "Oxidative phosphorylation encompasses both aerobic respiration (using oxygen as terminal electron acceptor) and anaerobic respiration (using alternative electron acceptors). The definition intentionally uses 'terminal electron acceptor' rather than specifying oxygen to maintain generality for microbial metabolic diversity."
+}

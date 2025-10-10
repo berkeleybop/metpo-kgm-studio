@@ -1,0 +1,13 @@
+{
+  "class_id": "METPO:1000059",
+  "class_label": "phenotype",
+  "proposed_definition": "A quality or combination of qualities of an organism that results from the interaction between its genotype and environment, and that distinguishes individual organisms or strains within a species from one another.",
+  "confidence": "high",
+  "reasoning": "This definition follows the genus-differentia form starting with the parent class 'quality'. It distinguishes phenotype from other qualities by specifying: (1) it pertains to organisms, (2) it arises from genotype-environment interaction, and (3) it creates observable variation within a species. The definition avoids circularity by not using 'phenotype' or 'phenotypic' in the definition itself. It is appropriate for METPO's microbial context while remaining general enough for broader biological applications.",
+  "suggested_sources": [
+    "PMID:18460186",
+    "PMID:11337588",
+    "DOI:10.1038/nrg1606"
+  ],
+  "notes": "The existing description from OGMS:0000023 is well-structured but could be streamlined. The proposed definition maintains the key concepts (quality, genotype-environment interaction, intraspecific variation) while using clearer language. 'Genetic make-up' is replaced with 'genotype' for precision, and 'differentiates specific instances' is simplified to 'distinguishes individual organisms or strains' for better clarity in microbial contexts."
+}

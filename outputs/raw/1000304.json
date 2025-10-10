@@ -1,0 +1,12 @@
+{
+    "class_id": "METPO:1000304",
+    "class_label": "temperature optimum (growth range)",
+    "proposed_definition": "A phenotype that specifies the temperature at which an organism achieves its maximum growth rate, representing the optimal point within its permissive temperature range.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'phenotype'. It maintains the essence of the existing description while clarifying that this represents a specific optimal point within the broader growth range. The definition distinguishes temperature optimum from minimum/maximum temperature limits by specifying it as the point of maximum growth rate. This is a quantifiable and operationally useful phenotypic characteristic.",
+    "suggested_sources": [
+      "PMID:16294299",
+      "PMID:11029078",
+      "ISBN:9780073402406"
+    ]
+  }

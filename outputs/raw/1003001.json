@@ -1,0 +1,12 @@
+{
+    "class_id": "METPO:1003001",
+    "class_label": "neutrophilic",
+    "proposed_definition": "A pH growth preference in which an organism exhibits optimal growth at pH values between approximately 6.5 and 7.5, near neutral pH.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'pH growth preference'. It distinguishes neutrophiles from acidophiles and alkaliphiles by specifying the characteristic pH range for optimal growth (6.5-7.5). This range represents the standard classification used in microbiology for organisms adapted to neutral pH environments. The synonyms 'neutralophile' and 'neutralophilic' confirm this classification.",
+    "suggested_sources": [
+      "PMID:18248358",
+      "PMID:16294299",
+      "ISBN:9780073402406"
+    ]
+  }

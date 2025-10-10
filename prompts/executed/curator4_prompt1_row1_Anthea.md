@@ -20,7 +20,6 @@ For each term, you will receive:
 * Existing Definition (if any): Current definition that may need improvement
 Output Format
 Provide your response as JSON:
-
 ```
 {
   "class_id": "METPO:1234567",
@@ -64,9 +63,6 @@ ID	LABEL	TYPE	SC %	A IAO:0000115	>A IAO:0000119	A rdfs:comment	AI skos:closeMatc
 METPO:1000059	phenotype	owl:Class	quality	A (combination of) quality(ies) of an organism determined by the interaction of its genetic make-up and environment that differentiates specific instances of a species from other instances of the same species.	OGMS:0000023		https://biolink.github.io/biolink-model/PhenotypicQuality						
 
 <data>
-
-
-
 --------------------------------------------------------------------------------------------------------------------------------------------
 Claude responded:
 I'm ready to help curate definitions for METPO following OBO Foundry principles. I understand the requirements:

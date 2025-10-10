@@ -1,0 +1,12 @@
+{
+    "class_id": "METPO:1000638",
+    "class_label": "chemolithoheterotrophic",
+    "proposed_definition": "A trophic type in which an organism obtains energy from the oxidation of inorganic compounds and uses organic compounds as the primary carbon source for biosynthesis.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'trophic type'. It distinguishes chemolithoheterotrophy from other trophic types by specifying: (1) energy source from inorganic compound oxidation (like chemolithotrophs), and (2) carbon source from organic compounds (like heterotrophs). This combination differentiates it from chemolithoautotrophs (inorganic carbon) and chemoorganoheterotrophs (organic energy source).",
+    "suggested_sources": [
+      "PMID:16760861",
+      "PMID:20656790",
+      "PMID:7704258"
+    ]
+  }

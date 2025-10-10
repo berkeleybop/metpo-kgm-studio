@@ -60,7 +60,7 @@ Expected Output:
 
 ID	label	TYPE	parent class	description	definition source	comment	biolink equivalent	confirmed exact synonym	literature mining synonyms	madin synonym or field	synonym source	bacdive keyword synonym	bactotraits synonym
 ID	LABEL	TYPE	SC %	A IAO:0000115	>A IAO:0000119	A rdfs:comment	AI skos:closeMatch	A oboInOwl:hasExactSynonym SPLIT=|	A oboInOwl:hasRelatedSynonym SPLIT=|	A oboInOwl:hasRelatedSynonym SPLIT=|	>AI IAO:0000119	A oboInOwl:hasRelatedSynonym SPLIT=|	A oboInOwl:hasRelatedSynonym SPLIT=|
-METPO:1000059	phenotype	owl:Class	quality	A (combination of) quality(ies) of an organism determined by the interaction of its genetic make-up and environment that differentiates specific instances of a species from other instances of the same species.	OGMS:0000023		https://biolink.github.io/biolink-model/PhenotypicQuality						
+METPO:1000059	phenotype	owl:Class	quality	A (combination of) quality(ies) of an organism determined by the interaction of its genetic make-up and environment that differentiates specific instances of a species from other instances of the same species.	OGMS:0000023		https://biolink.github.io/biolink-model/PhenotypicQuality
 
 <data>
 --------------------------------------------------------------------------------------------------------------------------------------------
@@ -89,7 +89,7 @@ I'm ready to begin! What term would you like me to work on first?
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Followup:
 I need you to generate a textual definition for an ontology class following the requirements above.
-ID: METPO:1000059 label: phenotype TYPE: owl:Class parent class: quality description: A (combination of) quality(ies) of an organism determined by the interaction of its genetic make-up and environment that differentiates specific instances of a species from other instances of the same species. definition source: OGMS:0000023 comment:  biolink equivalent: https://biolink.github.io/biolink-model/PhenotypicQuality confirmed exact synonym:  literature mining synonyms:  madin synonym or field:  synonym source:  bacdive keyword synonym:  bactotraits synonym: 
+ID: METPO:1000059 label: phenotype TYPE: owl:Class parent class: quality description: A (combination of) quality(ies) of an organism determined by the interaction of its genetic make-up and environment that differentiates specific instances of a species from other instances of the same species. definition source: OGMS:0000023 comment:  biolink equivalent: https://biolink.github.io/biolink-model/PhenotypicQuality confirmed exact synonym:  literature mining synonyms:  madin synonym or field:  synonym source:  bacdive keyword synonym:  bactotraits synonym:
 
 Note that some columns are empty. Here are all of the columns: ID label TYPE parent class description definition source comment biolink equivalent confirmed exact synonym literature mining synonyms madin synonym or field synonym source bacdive keyword synonym bactotraits synonym
 

@@ -1,0 +1,12 @@
+{
+    "class_id": "METPO:1000800",
+    "class_label": "respiration",
+    "proposed_definition": "A metabolic process in which energy is extracted from organic or inorganic compounds through oxidation-reduction reactions that transfer electrons to a terminal electron acceptor via an electron transport chain, generating ATP primarily through chemiosmotic coupling.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'metabolic process' (metabolism). It distinguishes respiration from other metabolic processes by specifying: (1) energy extraction through redox reactions, (2) use of an electron transport chain, and (3) chemiosmotic ATP generation. This differentiates respiration from fermentation (which lacks an electron transport chain). The existing description mentions terminal electron acceptors, which is incorporated here as a distinguishing feature.",
+    "suggested_sources": [
+      "PMID:11256614",
+      "PMID:16756495",
+      "ISBN:9780073402406"
+    ]
+  }

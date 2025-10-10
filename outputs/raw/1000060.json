@@ -1,0 +1,12 @@
+{
+    "class_id": "METPO:1000060",
+    "class_label": "metabolism",
+    "proposed_definition": "A biological process that encompasses the entirety of chemical reactions occurring within an organism to maintain life, including the breakdown of molecules to obtain energy (catabolism) and the synthesis of compounds needed for cellular structure and function (anabolism).",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'biological process'. It distinguishes metabolism from other biological processes by specifying that it encompasses all life-sustaining chemical reactions and explicitly mentions both catabolic and anabolic pathways. This provides a comprehensive definition suitable as a high-level parent term for more specific metabolic processes in the ontology.",
+    "suggested_sources": [
+      "PMID:22982992",
+      "PMID:16756495",
+      "ISBN:9780073402406"
+    ]
+  }

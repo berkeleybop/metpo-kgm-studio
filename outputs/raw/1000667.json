@@ -1,0 +1,12 @@
+{
+    "class_id": "METPO:1000667",
+    "class_label": "bacillus shaped",
+    "proposed_definition": "A cell shape in which the cell is cylindrical or rod-shaped, with a length typically greater than the width, and with relatively straight sides and rounded or flat ends.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'cell shape'. It distinguishes bacillus (rod) shape from other cell shapes (coccus, spiral, etc.) by specifying the cylindrical morphology, length-to-width ratio, and end characteristics. The term 'bacillus' refers to the morphological shape, not the bacterial genus Bacillus. This definition is clear and operationally useful for microbiologists.",
+    "suggested_sources": [
+      "PMID:21636714",
+      "PMID:23899955",
+      "ISBN:9780073402406"
+    ]
+  }

@@ -1,0 +1,12 @@
+{
+    "class_id": "METPO:1000670",
+    "class_label": "curved shaped",
+    "proposed_definition": "A cell shape in which the cell has a curved or bent cylindrical morphology that deviates from a straight axis, including comma-shaped (vibrioid), S-shaped, and spiral forms.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'cell shape'. It distinguishes curved cells from straight rod-shaped cells by specifying the curved or bent axis. The inclusion of various curved forms (vibrioid, S-shaped, spiral) covers the range indicated by the bactotraits synonym 's_curved_spiral' while maintaining clarity.",
+    "suggested_sources": [
+      "PMID:21636714",
+      "PMID:23899955",
+      "ISBN:9780073402406"
+    ]
+  }

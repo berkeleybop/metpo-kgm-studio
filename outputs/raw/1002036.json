@@ -1,0 +1,12 @@
+{
+    "class_id": "METPO:1002036",
+    "class_label": "Nitrite oxidation",
+    "proposed_definition": "A nitrogen compound respiration process in which nitrite (NO₂⁻) is oxidized to nitrate (NO₃⁻), typically coupled to oxygen reduction for energy conservation, as performed by nitrite-oxidizing bacteria and archaea.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'nitrogen compound respiration'. It distinguishes nitrite oxidation from other nitrogen metabolism processes by specifying: (1) the substrate (NO₂⁻), (2) the product (NO₃⁻), (3) the coupling to oxygen reduction for energy, and (4) the organism types (nitrite-oxidizing bacteria/archaea). This is the second step of nitrification and is distinct from ammonia oxidation and denitrification.",
+    "suggested_sources": [
+      "PMID:26542114",
+      "PMID:23645609",
+      "PMID:30890755"
+    ]
+  }

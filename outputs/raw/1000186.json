@@ -1,0 +1,12 @@
+{
+    "class_id": "METPO:1000186",
+    "class_label": "material entity",
+    "proposed_definition": "An entity that consists of matter and occupies space, including individual objects, portions of substances, and mixtures of substances.",
+    "confidence": "high",
+    "reasoning": "This definition maintains the essence of the existing description while following proper OBO Foundry principles. Since 'material entity' has no parent class listed, it is treated as a top-level class. The definition distinguishes material entities from other entity types (e.g., processes, qualities, information entities) by specifying material composition and spatial occupation. This is consistent with the Basic Formal Ontology (BFO) framework commonly used in OBO ontologies.",
+    "suggested_sources": [
+      "DOI:10.3233/AO-150164",
+      "PMID:26978244",
+      "https://basic-formal-ontology.org/"
+    ]
+  }

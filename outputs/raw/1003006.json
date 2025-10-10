@@ -1,0 +1,12 @@
+{
+    "class_id": "METPO:1003006",
+    "class_label": "obligately acidophilic",
+    "proposed_definition": "A pH growth preference in which an organism requires acidic pH values, typically below pH 5.5, for growth and cannot grow at neutral or alkaline pH.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'pH growth preference'. It distinguishes obligate acidophiles from facultative acidophiles (can grow at neutral pH) and acidotolerant organisms (prefer neutral pH) by specifying the strict requirement for low pH and inability to grow at neutral/alkaline pH. The synonyms 'obligate acidophile' and 'obligately acidophilic' confirm this strict dependence on acidic conditions.",
+    "suggested_sources": [
+      "PMID:18248358",
+      "PMID:16294299",
+      "PMID:21304656"
+    ]
+  }

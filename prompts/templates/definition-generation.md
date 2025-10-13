@@ -1,6 +1,6 @@
 # Definition Generation Prompt Template
 
-**Version:** 1.0
+**Version:** 2.0
 **Purpose:** Generate textual definitions for METPO ontology classes following OBO Foundry principles
 **Last Updated:** 2025-10-13
 

@@ -2,7 +2,8 @@
 
 **Version:** 1.0
 **Purpose:** Generate textual definitions for METPO ontology classes following OBO Foundry principles
-**Last Updated:** {% now 'utc', '%Y-%m-%d' %}
+**Last Updated:** 2025-10-13
+
 
 ---
 

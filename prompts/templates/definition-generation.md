@@ -96,43 +96,19 @@ Definitions must:
             "class_id": "METPO:0000123",
             "class_label": "methanogenesis",
             "proposed_definition": "An anaerobic metabolic process that produces methane as the primary end product, typically using carbon dioxide or acetate as electron acceptors.",
-            "reasoning": "Definition follows genus-differentia pattern, aligns with GO:0015948 (methanogenesis) and ENVO:00002029. Clarifies distinguishing metabolic characteristics.",
+            "reasoning": "Definition follows genus-differentia pattern, aligns with GO:0015948 (methanogenesis) and ENVO:00002029 (methanogenic environment). Clarifies distinguishing metabolic characteristics.",
             "sources": [
-                "GO:0015948",
-                "ENVO:00002029",
-                "MEO:0000111"
+                "GO:0015948 (methanogenesis)",
+                "ENVO:00002029 (methanogenic environment)",
+                "MEO:0000111 (methanogenic bacterium)"
             ],
             "confidence": "high"
         }
     ]
 }
 ```
-
-### Example
-
-**Input:**
-- Class ID: METPO:0000123
-- Class Label: methanogenesis
-- Parent Class: anaerobic respiration (METPO:0000120)
-- Existing Definition: None
-
-**Expected Output:**
-```json
-{
-  "class_id": "METPO:0000123",
-  "class_label": "methanogenesis",
-  "proposed_definition": "An anaerobic respiration process in which methane is produced as the primary metabolic end product, typically using carbon dioxide or acetic acid as terminal electron acceptors.",
-  "confidence": "high",
-  "reasoning": "Definition follows genus-differentia form, clearly distinguishes methanogenesis from other anaerobic respiration types by specifying methane production and typical electron acceptors.",
-  "suggested_sources": [
-    "PMID:15073711",
-    "PMID:23645609"
-  ]
-}
-```
-
 ---
-
+```
 {
     "metadata": {
         "total_definitions": 2,
@@ -146,12 +122,12 @@ Definitions must:
             "class_id": "METPO:1000845",
             "class_label": "Acetogenesis",
             "proposed_definition": "A metabolic process that produces acetate as the primary end product through the reduction of carbon dioxide or other carbon compounds, typically performed by acetogenic bacteria under anaerobic conditions.",
-            "reasoning": "Uses genus-differentia form. Aligns with GO:0015946 and ENVO:00002002 for acetogenic metabolism.",
+            "reasoning": "Uses genus-differentia form. Aligns with GO:0015946 (acetate biosynthetic process) and ENVO:00002002 (acetogenic environment) for acetogenic metabolism.",
             "sources": [
-                "GO:0015946",
-                "ENVO:00002002",
-                "MEO:0000134"
-           ],
+                "GO:0015946 (acetate biosynthetic process)",
+                "ENVO:00002002 (acetogenic environment)",
+                "MEO:0000134 (acetogenic bacterium)"
+            ],
             "confidence": "high"
         },
         {
@@ -160,15 +136,15 @@ Definitions must:
             "proposed_definition": "An organism trait that enables tolerance to acidic environments (typically pH below 5.5) while maintaining optimal growth near neutral pH.",
             "reasoning": "Distinguishes acidotolerant from acidophilic by emphasizing tolerance vs preference. Matches PATO pH tolerance traits.",
             "sources": [
-                "PATO:0001796",
-                "ENVO:01000240",
-                "BTO:0000148"
+                "PATO:0001796 (pH tolerance)",
+                "ENVO:01000240 (acidic environment)",
+                "BTO:0000148 (acid-tolerant bacterium)"
             ],
             "confidence": "high"
         }
     ]
 }
-
+```
 ## Usage Notes for Curators
 
 1. **Save Prompts**: When you execute this prompt, copy it to `prompts/executed/` with a timestamp
@@ -177,75 +153,6 @@ Definitions must:
 4. **Check Sources**: Verify that suggested sources actually support the definition
 5. **Iterate**: If the output is poor, revise this template and try again
 
-
-## Ontology Cross-Reference Retrieval Guide
-### 1. BioPortal API
-
-Endpoint:
-
-https://data.bioontology.org/search?q={CLASS_LABEL}&ontologies=ENVO,PATO,GO,CHEBI,MEO,BTO
-
-
-Example:
-```
-curl "https://data.bioontology.org/search?q=acetogenesis&ontologies=GO,ENVO" \
-  -H "Authorization: apikey {YOUR_API_KEY}"
-```
-
-Fields of interest:
-- prefLabel
-- definition
-- ontologyId
-- @id
-
-### 2. Ontology Lookup Service (OLS)
-
-Endpoint:
-https://www.ebi.ac.uk/ols4/api/search?q={CLASS_LABEL}
-
-
-Example:
-https://www.ebi.ac.uk/ols4/api/search?q=acetogenesis
-
-
-Key fields:
-- _embedded.terms[].obo_id
-- description
-- ontology_name
-
-### 3. SPARQL Query Template
-```
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT ?term ?label ?definition
-WHERE {
-  ?term rdfs:label ?label .
-  ?term rdfs:comment ?definition .
-  FILTER(CONTAINS(LCASE(?label), LCASE("acetogenesis")))
-}
-LIMIT 10
-```
-
-Common Endpoints:
-- https://sparql.ebi.ac.uk/
-- https://data.bioontology.org/sparql
-- https://sparql.uniprot.org/sparql
-
-### 4. Manual Curation References
-
-- OBO Foundry Registry
-- NCBI Taxonomy Browser
-- BacDive Database
-- GOLD Environment Ontology Browser
-
-### 5. Recommended Search Term Patterns
-
-Use combinations of:
-
-- {class_label}
-- {class_label} ontology
-- {class_label} site:obofoundry.org
-- Synonyms (e.g., “anaerobic methane production” for methanogenesis)
-
 ## 📄 Note
 
 When the TSV/CSV file is uploaded, the LLM should:
@@ -253,25 +160,3 @@ When the TSV/CSV file is uploaded, the LLM should:
 - Parse all rows (class_id, class_label, definition)
 - Generate ontology-aligned definitions using genus–differentia structure
 - Retrieve ontology cross-references and compile the output into the JSON structure above
-
-## Template Variables
-
-Replace these before sending to LLM:
-
-- `{CLASS_ID}`: The ontology class ID
-- `{CLASS_LABEL}`: The human-readable label
-- `{PARENT_CLASSES}`: Comma-separated list of parent classes
-- `{EXISTING_DEFINITION}`: Current definition if available
-
----
-
-## Actual Prompt (Copy below this line)
-
-I need you to generate a textual definition for an ontology class following the requirements above.
-
-**Class ID:** {CLASS_ID}
-**Class Label:** {CLASS_LABEL}
-**Parent Class(es):** {PARENT_CLASSES}
-**Existing Definition:** {EXISTING_DEFINITION}
-
-Please provide a definition following the OBO Foundry principles outlined above, formatted as JSON.

@@ -1,0 +1,41 @@
+{
+  "class_id": "METPO:1000626",
+  "class_label": "stenohaline",
+  "definition": "A halophily preference in which an organism can tolerate only a narrow range of salinity concentrations in its environment.",
+  "sources": [
+    {
+      "identifier": "PMID:26085667",
+      "type": "pubmed",
+      "title": "Physiological mechanisms used by fish to cope with salinity stress",
+      "authors": "Kültz D",
+      "year": "2015",
+      "relevance": "Comprehensive review article that defines stenohaline organisms as those having narrow salinity tolerance ranges and inhabiting environments of stable salinity. Directly supports the definition by contrasting stenohaline with euryhaline organisms and discussing their physiological characteristics.",
+      "confidence": "high"
+    },
+    {
+      "identifier": "DOI:10.1186/1746-1448-4-2",
+      "type": "doi",
+      "title": "Microbial life at high salt concentrations: phylogenetic and metabolic diversity",
+      "authors": "Oren A",
+      "year": "2008",
+      "relevance": "Authoritative review discussing halophilic and salt-tolerant microorganisms, providing context for microbial salinity preferences and tolerance ranges. While focused on halophiles, it provides important context for understanding the spectrum of salinity tolerance in microorganisms.",
+      "confidence": "high"
+    },
+    {
+      "identifier": "DOI:10.1128/mmbr.62.2.504-544.1998",
+      "type": "doi",
+      "title": "Biology of Moderately Halophilic Aerobic Bacteria",
+      "authors": "Ventosa A, Nieto JJ, Oren A",
+      "year": "1998",
+      "relevance": "Classic review article in Microbiology and Molecular Biology Reviews discussing the range of salinity tolerance in bacteria, including the distinction between organisms with narrow versus wide salinity tolerance ranges. Provides microbiology-specific context for halophily preferences.",
+      "confidence": "high"
+    }
+  ],
+  "search_terms_used": [
+    "stenohaline organisms salinity tolerance narrow range",
+    "stenohaline euryhaline microbiology textbook",
+    "microbial halophily salinity tolerance textbook review",
+    "stenohaline definition microbiology PMID review"
+  ],
+  "notes": "The definition follows OBO Foundry principles by using genus-differentia form. The primary source (PMID:26085667) is a highly cited 2015 review in Journal of Experimental Biology by Dietmar Kültz, a recognized expert in osmoregulation and salinity stress. While this review focuses on fish, the fundamental definition of stenohaline applies across all organisms. The second source provides context for microbial halophily, and the third is a classic review on bacterial salinity tolerance. All three sources support the core concept that stenohaline organisms can tolerate only a narrow range of salinity concentrations."
+}

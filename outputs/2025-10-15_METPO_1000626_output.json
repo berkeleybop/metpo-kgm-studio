@@ -1,0 +1,11 @@
+{
+  "class_id": "METPO:1000626",
+  "class_label": "stenohaline",
+  "proposed_definition": "A halophily preference in which an organism can tolerate only a narrow range of salinity concentrations in its environment.",
+  "confidence": "high",
+  "reasoning": "Definition follows genus-differentia form by referencing the parent class 'halophily preference' and distinguishing stenohaline organisms by their narrow salinity tolerance range. This contrasts with euryhaline organisms (likely a sibling class) that tolerate broad salinity ranges. The definition is clear, follows OBO Foundry principles, and is intelligible to microbiologists.",
+  "suggested_sources": [
+    "PMID:16233609",
+    "ISBN:9780878933174"
+  ]
+}

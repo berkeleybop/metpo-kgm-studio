@@ -1,0 +1,40 @@
+{
+  "class_id": "METPO:1000646",
+  "class_label": "hydrogenotrophic",
+  "definition": "A trophic type in which molecular hydrogen (H₂) serves as the primary electron donor for energy generation in chemotrophic metabolism.",
+  "sources": [
+    {
+      "identifier": "PMID:31635215",
+      "type": "pubmed",
+      "title": "Influence of Hydrogen Electron Donor, Alkaline pH, and High Nitrate Concentrations on Microbial Denitrification: A Review",
+      "authors": "Albina P, Durban N, Bertron A, Albrecht A, Robinet JC, Erable B",
+      "year": "2019",
+      "relevance": "Comprehensive review defining hydrogenotrophic metabolism as using hydrogen as electron donor for microbial respiration, specifically describing how hydrogen becomes an alternative source of electrons for bacteria when organic matter is restricted. The review explicitly discusses hydrogenotrophic denitrification and hydrogen's role as an electron donor in chemotrophic metabolism across various bacterial groups.",
+      "confidence": "high"
+    },
+    {
+      "identifier": "PMID:32760585",
+      "type": "pubmed",
+      "title": "Several ways one goal—methanogenesis from unconventional substrates",
+      "authors": "Kurth JM, Op den Camp HJM, Welte CU",
+      "year": "2020",
+      "relevance": "Authoritative review of hydrogenotrophic methanogens describing how they utilize hydrogen as an electron donor for the reduction of carbon dioxide to methane. Provides detailed biochemical mechanisms and states 'They utilize hydrogen as an electron donor for the reduction of carbon dioxide to methane' which directly supports the definition of hydrogenotrophy as a trophic type.",
+      "confidence": "high"
+    },
+    {
+      "identifier": "ISBN:9780134261928",
+      "type": "textbook",
+      "title": "Brock Biology of Microorganisms, 15th Edition",
+      "authors": "Madigan MT, Bender KS, Buckley DH, Sattley WM, Stahl DA",
+      "year": "2018",
+      "relevance": "Leading microbiology textbook covering chemolithotrophy and hydrogen oxidation. Describes hydrogen-oxidizing bacteria that use hydrogen gas (H2) as an electron donor in chemotrophic metabolism. Provides foundational understanding of hydrogenotrophy as a metabolic/trophic classification within the broader context of chemolithotrophy.",
+      "confidence": "high"
+    }
+  ],
+  "search_terms_used": [
+    "hydrogenotrophic hydrogen electron donor microbiology review",
+    "hydrogenotrophy hydrogen oxidation chemotroph lithoautotrophy",
+    "Madigan Brock microbiology textbook hydrogenotrophy"
+  ],
+  "notes": "All three sources provide strong support for the definition. The Albina et al. (2019) review is particularly valuable as it focuses specifically on hydrogenotrophic processes and explicitly defines hydrogen as an electron donor in chemotrophic metabolism. The Kurth et al. (2020) review provides detailed mechanistic understanding of hydrogenotrophy in methanogenic archaea. The Brock textbook (Madigan et al. 2018) is the gold standard reference for microbial metabolism and provides authoritative coverage of hydrogen oxidation and chemolithotrophy. Together, these sources cover both bacterial and archaeal hydrogenotrophy across diverse metabolic contexts (denitrification, methanogenesis, aerobic respiration)."
+}

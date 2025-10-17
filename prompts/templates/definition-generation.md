@@ -154,9 +154,10 @@ Definitions must:
 4. **Check Sources**: Verify that suggested sources actually support the definition
 5. **Iterate**: If the output is poor, revise this template and try again
 
-## 📄 Note
+## Actual Prompt
 
-When the TSV/CSV file is uploaded, the LLM should:
+There are [ENTER NUMBER OF DEFINITIONS] below.
+When the text copied from the CSV/TSV is uploaded, the LLM should:
 
 - Parse all rows (class_id, class_label, definition)
 - Generate ontology-aligned definitions using genus–differentia structure

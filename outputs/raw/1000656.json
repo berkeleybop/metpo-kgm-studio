@@ -1,0 +1,12 @@
+{
+    "class_id": "METPO:1000656",
+    "class_label": "photoautotrophic",
+    "proposed_definition": "A trophic type in which an organism obtains energy from light through photosynthesis and uses carbon dioxide or other inorganic carbon sources as the primary carbon source for biosynthesis.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'trophic type'. It distinguishes photoautotrophy from other trophic types by specifying both the energy source (light via photosynthesis) and carbon source (inorganic carbon). This encompasses both oxygenic photoautotrophs (cyanobacteria, algae) and anoxygenic photoautotrophs (purple/green sulfur bacteria), as indicated by the synonym fields.",
+    "suggested_sources": [
+      "PMID:19888897",
+      "PMID:16760861",
+      "ISBN:9780073402406"
+    ]
+  }

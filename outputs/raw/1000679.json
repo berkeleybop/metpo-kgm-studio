@@ -1,0 +1,12 @@
+{
+    "class_id": "METPO:1000679",
+    "class_label": "pleomorphic shaped",
+    "proposed_definition": "A cell shape in which an organism exhibits variable or irregular cell morphology, lacking a consistent shape and displaying multiple different forms within a single culture or under different growth conditions.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'cell shape'. It distinguishes pleomorphic cells from organisms with consistent shapes by specifying the variable and irregular morphology. The bactotraits synonym 's_star_dumbbell_pleomorphic' indicates this includes various irregular shapes. Pleomorphism is seen in some bacteria (e.g., Corynebacterium) and many archaea, and is a recognized microbiological characteristic.",
+    "suggested_sources": [
+      "PMID:21636714",
+      "PMID:23899955",
+      "PMID:19542008"
+    ]
+  }

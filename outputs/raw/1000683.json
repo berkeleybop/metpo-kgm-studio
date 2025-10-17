@@ -1,0 +1,12 @@
+{
+    "class_id": "METPO:1000683",
+    "class_label": "sphere shaped",
+    "proposed_definition": "A cell shape in which the cell is spherical or nearly spherical, with approximately equal dimensions in all directions, also known as coccoid or coccus morphology.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'cell shape'. It distinguishes spherical cells from other cell shapes by specifying the three-dimensional spherical geometry with equal dimensions. The bactotraits synonym 's_sphere' and the term 'coccus' (standard microbiological terminology) are incorporated to make the definition recognizable to microbiologists.",
+    "suggested_sources": [
+      "PMID:21636714",
+      "PMID:23899955",
+      "ISBN:9780073402406"
+    ]
+  }

@@ -1,0 +1,12 @@
+{
+    "class_id": "METPO:1000664",
+    "class_label": "organoheterotrophic",
+    "proposed_definition": "A trophic type in which an organism obtains both energy and carbon from organic compounds produced by other organisms.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'trophic type'. It distinguishes organoheterotrophy from other trophic types by specifying that both energy and carbon sources are organic compounds from external sources. This is also known as chemoorganoheterotrophy and differentiates from chemolithotrophs (inorganic energy sources) and photoorganotrophs (light energy sources).",
+    "suggested_sources": [
+      "PMID:16760861",
+      "PMID:20656790",
+      "ISBN:9780073402406"
+    ]
+  }

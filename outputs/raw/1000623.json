@@ -1,0 +1,13 @@
+{
+  "class_id": "METPO:1000623",
+  "class_label": "moderately halophilic",
+  "proposed_definition": "A halophily preference in which an organism exhibits optimal growth at salt concentrations between 3% and 15% (w/v) NaCl, with the ability to grow at lower or higher concentrations but with reduced growth rates.",
+  "confidence": "high",
+  "reasoning": "This definition follows the genus-differentia form starting with the parent class 'halophily preference'. It distinguishes moderately halophilic organisms from other halophily categories (slightly halophilic, extremely halophilic, non-halophilic) by specifying the characteristic salt concentration range. The 3-15% NaCl range is the standard classification used in microbiology literature for moderate halophiles. The definition is clear, avoids circularity, and provides quantitative criteria that make it operationally useful for microbiologists.",
+  "suggested_sources": [
+    "PMID:15803647",
+    "PMID:28356558",
+    "DOI:10.1007/978-3-662-05642-3_15"
+  ],
+  "notes": "Moderate halophiles are typically distinguished from slight halophiles (0.3-3% NaCl optimal) and extreme halophiles (15-30% NaCl optimal). The definition provides specific concentration ranges that are well-established in the microbiology literature and would be familiar to microbiologists working with halophilic organisms."
+}

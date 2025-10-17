@@ -1,0 +1,13 @@
+{
+  "class_id": "METPO:1002002",
+  "class_label": "Mn(IV)-dependent methane oxidation",
+  "proposed_definition": "A metal and metalloid respiration process in which methane is oxidized to carbon dioxide with manganese(IV) serving as the terminal electron acceptor, which is reduced to manganese(II).",
+  "confidence": "high",
+  "reasoning": "This definition follows the genus-differentia form starting with the parent class 'metal and metalloid respiration'. It distinguishes this process from other metal respiration types by specifying: (1) the electron donor (methane), (2) the terminal electron acceptor (Mn(IV)), (3) the oxidation product (carbon dioxide), and (4) the reduction product (Mn(II)). This process represents anaerobic methane oxidation coupled to manganese reduction, which has been demonstrated in environmental studies and enrichment cultures. The definition is clear, avoids circularity, and describes a specific biogeochemical process relevant to microbial ecology.",
+  "suggested_sources": [
+    "PMID:28663446",
+    "PMID:30104403",
+    "DOI:10.1038/ismej.2016.119"
+  ],
+  "notes": "Mn(IV)-dependent methane oxidation is an important anaerobic methane oxidation pathway in marine and freshwater sediments. This process links the carbon and manganese cycles and has been observed in enrichment cultures, though the organisms responsible have not yet been isolated in pure culture. The definition captures the essential redox chemistry of this metabolic process."
+}

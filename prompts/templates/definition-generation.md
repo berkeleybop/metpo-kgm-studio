@@ -156,7 +156,7 @@ Definitions must:
 
 ## Actual Prompt
 
-There are [ENTER NUMBER OF DEFINITIONS] below.
+There are [ENTER NUMBER OF DEFINITIONS] below. You will find [ENTER NUMBER OF ROWS TOTAL] since the first two rows follow the ROBOT template.
 When the text copied from the CSV/TSV is uploaded, the LLM should:
 
 - Parse all rows (class_id, class_label, definition)

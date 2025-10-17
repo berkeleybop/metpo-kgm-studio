@@ -1,0 +1,12 @@
+{
+  "class_id": "METPO:1000646",
+  "class_label": "hydrogenotrophic",
+  "proposed_definition": "A trophic type in which molecular hydrogen (H₂) serves as the primary electron donor for energy generation in chemotrophic metabolism.",
+  "confidence": "high",
+  "reasoning": "This definition follows genus-differentia form by identifying hydrogenotrophic as a type of trophic classification, then specifying the distinguishing characteristic (use of H₂ as electron donor). It avoids circularity, clearly differentiates from other trophic types (e.g., organotrophic, lithotrophic using other inorganic compounds), and accurately reflects established microbiological usage. Hydrogenotrophy is a key metabolic trait in many archaea and bacteria, particularly methanogens and sulfate reducers.",
+  "suggested_sources": [
+    "PMID:16233529",
+    "PMID:23645609",
+    "ISBN:9780073402406"
+  ]
+}

@@ -1,0 +1,396 @@
+{
+    "metadata": {
+        "total_definitions": 32,
+        "curator": "curator6",
+        "ontology": "METPO",
+        "description": "OBO Foundry-compliant definitions for METPO terms with authoritative sources",
+        "generation_date": "2025-10-20"
+    },
+    "definitions": [
+        {
+            "class_id": "METPO:1000059",
+            "class_label": "phenotype",
+            "proposed_definition": "A quality or combination of qualities of an organism that results from the interaction between its genotype and environment, distinguishing specific instances within a species.",
+            "reasoning": "Follows genus-differentia form using 'quality' as parent. Aligns with OGMS:0000023 (phenotype) and PATO quality classifications. Emphasizes the genotype-environment interaction while avoiding circular definition.",
+            "sources": [
+                "OGMS:0000023 (phenotype)",
+                "PATO:0000001 (quality)",
+                "GO:0008150 (biological process)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000626",
+            "class_label": "stenohaline",
+            "proposed_definition": "A halophily preference trait characterized by tolerance to only a narrow range of salinity concentrations, with organism viability severely compromised outside this range.",
+            "reasoning": "Distinguishes stenohaline from euryhaline by emphasizing narrow tolerance range. Uses PATO trait patterns and ENVO salinity terms.",
+            "sources": [
+                "PATO:0001995 (organismal quality)",
+                "ENVO:09200001 (salinity quality)",
+                "PATO:0000003 (tolerance)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000646",
+            "class_label": "hydrogenotrophic",
+            "proposed_definition": "A trophic type characterized by the use of molecular hydrogen as the primary electron donor for energy generation in metabolic processes.",
+            "reasoning": "Follows genus-differentia pattern. Aligns with GO hydrogenase activity and microbial trophic classifications. Specifies the distinguishing electron donor characteristic.",
+            "sources": [
+                "GO:0008417 (hydrogen:quinone oxidoreductase activity)",
+                "GO:0006118 (obsolete electron transport)",
+                "ENVO:00002269 (hydrogenotrophic environment)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000658",
+            "class_label": "photolithotrophic",
+            "proposed_definition": "A trophic type characterized by the use of light as the energy source and inorganic compounds as electron donors for carbon fixation and biosynthesis.",
+            "reasoning": "Combines phototrophy and lithotrophy characteristics. Follows genus-differentia form with clear distinction from photoautotrophy and photoheterotrophy.",
+            "sources": [
+                "GO:0015979 (photosynthesis)",
+                "GO:0006091 (generation of precursor metabolites and energy)",
+                "ENVO:01000325 (photolithotrophic environment)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000697",
+            "class_label": "gram stain",
+            "proposed_definition": "A phenotypic quality determined by the differential staining response of bacterial cell walls to the Gram staining procedure, reflecting cell wall structural composition.",
+            "reasoning": "Uses phenotype as parent class. References the standardized microbiological technique while indicating the underlying structural basis.",
+            "sources": [
+                "OBI:0000070 (assay)",
+                "PATO:0001300 (structure)",
+                "NCBITaxon:2 (Bacteria)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000333",
+            "class_label": "NaCl optimum",
+            "proposed_definition": "A phenotypic quality defined by the specific sodium chloride concentration at which an organism exhibits maximum growth rate and metabolic efficiency.",
+            "reasoning": "Follows genus-differentia form. Original definition already well-structured. Links to PATO optimal concentration and ENVO salinity terms.",
+            "sources": [
+                "PATO:0000033 (concentration of)",
+                "CHEBI:26710 (sodium chloride)",
+                "PATO:0001997 (increased rate)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000666",
+            "class_label": "cell shape",
+            "proposed_definition": "A phenotypic quality determined by the three-dimensional morphological configuration of a cell, reflecting structural organization and constraints.",
+            "reasoning": "Uses phenotype as parent. Aligns with PATO shape qualities and GO cellular component organization terms.",
+            "sources": [
+                "PATO:0000052 (shape)",
+                "GO:0005623 (cell)",
+                "PATO:0000051 (morphology)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000844",
+            "class_label": "Methanogenesis",
+            "proposed_definition": "An anaerobic metabolic process that produces methane as the primary end product through the reduction of carbon dioxide, acetate, or other simple carbon compounds, typically performed by methanogenic archaea.",
+            "reasoning": "Follows genus-differentia form. Directly aligns with GO:0015948 (methanogenesis). Specifies anaerobic nature and taxonomic performers.",
+            "sources": [
+                "GO:0015948 (methanogenesis)",
+                "CHEBI:16183 (methane)",
+                "ENVO:00002029 (methanogenic environment)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000673",
+            "class_label": "ellipsoidal",
+            "proposed_definition": "A cell shape quality characterized by an elongated spherical form resembling an ellipsoid, with two or three unequal principal axes.",
+            "reasoning": "Uses cell shape as parent. References geometric definition while maintaining biological context. Distinguishes from spherical and rod-shaped.",
+            "sources": [
+                "PATO:0000052 (shape)",
+                "PATO:0002318 (ellipsoid)",
+                "GO:0005623 (cell)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1002005",
+            "class_label": "Fermentation",
+            "proposed_definition": "A respiration process that generates energy through the catabolism of organic compounds without the use of an external electron acceptor, producing organic end products through substrate-level phosphorylation.",
+            "reasoning": "Uses respiration as parent but distinguishes fermentation by lack of electron transport chain and organic end products. Aligns with GO fermentation terms.",
+            "sources": [
+                "GO:0006113 (fermentation)",
+                "GO:0015980 (energy derivation by oxidation of organic compounds)",
+                "CHEBI:35871 (fermentation product)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000705",
+            "class_label": "axially filamented",
+            "proposed_definition": "A motility phenotype characterized by the presence of axial filaments (endoflagella) located in the periplasmic space between the cell membrane and outer sheath, enabling motility through rotation.",
+            "reasoning": "Describes distinctive feature of spirochetes. References structural location and functional mechanism. Uses motile as implied parent.",
+            "sources": [
+                "GO:0001539 (cilium or flagellum-dependent cell motility)",
+                "GO:0009288 (bacterial-type flagellum)",
+                "PATO:0001234 (coiled)"
+            ],
+            "confidence": "medium"
+        },
+        {
+            "class_id": "METPO:1000699",
+            "class_label": "gram negative",
+            "proposed_definition": "A gram stain phenotype characterized by cell walls that do not retain crystal violet dye during the Gram staining procedure, typically due to a thin peptidoglycan layer and presence of an outer membrane.",
+            "reasoning": "Uses gram stain as parent. Specifies staining response and structural basis. Distinguishes from gram positive by cell wall architecture.",
+            "sources": [
+                "NCBITaxon:1224 (Proteobacteria)",
+                "PATO:0001018 (physical quality)",
+                "GO:0009279 (cell outer membrane)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000236",
+            "class_label": "pH tolerance",
+            "proposed_definition": "A phenotypic quality characterized by the ability of an organism to survive and maintain viability when exposed to pH values outside its optimal growth range.",
+            "reasoning": "Original definition well-structured. Aligns with PATO tolerance traits and distinguishes survival from optimal growth. Links to ENVO pH terms.",
+            "sources": [
+                "PATO:0001796 (pH tolerance)",
+                "PATO:0000003 (tolerance)",
+                "ENVO:09200000 (environmental material)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1003004",
+            "class_label": "obligately alkaphilic",
+            "proposed_definition": "A pH growth preference characterized by the requirement for alkaline conditions (typically pH ≥ 9) for growth, with inability to grow at or near neutral pH.",
+            "reasoning": "Uses pH growth preference as parent. Distinguishes obligate from facultative alkaliphily by growth requirement. Specifies pH threshold.",
+            "sources": [
+                "PATO:0001842 (alkaline)",
+                "ENVO:01001364 (alkaline pH)",
+                "PATO:0001995 (organismal quality)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000684",
+            "class_label": "spiral shaped",
+            "proposed_definition": "A cell shape quality characterized by a helical or corkscrew-like three-dimensional configuration with one or more complete turns along the longitudinal axis.",
+            "reasoning": "Uses cell shape as parent. Provides geometric description distinguishing spiral from curved or S-shaped morphologies.",
+            "sources": [
+                "PATO:0000052 (shape)",
+                "PATO:0001234 (coiled)",
+                "GO:0005623 (cell)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000700",
+            "class_label": "gram variable",
+            "proposed_definition": "A gram stain phenotype characterized by inconsistent staining responses in the Gram staining procedure, with cells showing both positive and negative staining within the same culture or at different growth phases.",
+            "reasoning": "Uses gram stain as parent. Distinguishes from both gram positive and negative by variability. May reflect age-dependent cell wall changes.",
+            "sources": [
+                "PATO:0001020 (quality of a solid)",
+                "PATO:0070025 (variable)",
+                "GO:0009274 (peptidoglycan-based cell wall)"
+            ],
+            "confidence": "medium"
+        },
+        {
+            "class_id": "METPO:1000127",
+            "class_label": "GC content",
+            "proposed_definition": "A genomic quality defined by the percentage of guanine and cytosine nucleotides relative to the total nucleotide content in an organism's DNA.",
+            "reasoning": "Original definition good. Uses quality as parent and specifies the measurable molecular characteristic. Aligns with genomic quality terms.",
+            "sources": [
+                "SO:0001427 (nucleotide composition)",
+                "CHEBI:16750 (guanine)",
+                "CHEBI:16040 (cytosine)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000669",
+            "class_label": "crescent shaped",
+            "proposed_definition": "A cell shape quality characterized by a curved, arc-like morphology resembling a crescent moon, with concave and convex surfaces.",
+            "reasoning": "Uses cell shape as parent. Provides distinctive geometric description. Distinguishes from spiral, curved, and comma-shaped.",
+            "sources": [
+                "PATO:0000052 (shape)",
+                "PATO:0001591 (curved)",
+                "GO:0005623 (cell)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1001005",
+            "class_label": "culture temperature observation",
+            "proposed_definition": "An observation that documents the temperature conditions under which an organism was cultured in laboratory or experimental settings, distinct from optimal growth temperature.",
+            "reasoning": "Original definition well-structured. Uses observation as parent and clearly distinguishes from optimum temperature. Aligns with OBI observation terms.",
+            "sources": [
+                "OBI:0000070 (assay)",
+                "PATO:0000146 (temperature)",
+                "IAO:0000027 (data item)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000731",
+            "class_label": "nutrient adaptation",
+            "proposed_definition": "A trophic type quality characterized by the ability of an organism to modify its metabolic strategies in response to varying nutrient availability in the environment.",
+            "reasoning": "Uses trophic type as parent. Emphasizes adaptive metabolic flexibility. Distinguishes from fixed trophic categories.",
+            "sources": [
+                "GO:0006810 (transport)",
+                "GO:0006091 (generation of precursor metabolites and energy)",
+                "PATO:0000460 (abnormal)"
+            ],
+            "confidence": "medium"
+        },
+        {
+            "class_id": "METPO:1001001",
+            "class_label": "optimum temperature observation",
+            "proposed_definition": "An observation that documents the temperature at which an organism exhibits maximum growth rate and metabolic efficiency under specified experimental conditions.",
+            "reasoning": "Original definition well-structured. Uses observation as parent. Clearly specifies optimal growth distinction. Aligns with OBI and IAO terms.",
+            "sources": [
+                "OBI:0000070 (assay)",
+                "PATO:0000146 (temperature)",
+                "PATO:0001997 (increased rate)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000332",
+            "class_label": "pH range (cellular homeostasis)",
+            "proposed_definition": "A phenotypic quality characterized by the span of hydrogen ion concentrations within which an organism can maintain cellular homeostasis and sustain growth.",
+            "reasoning": "Original definition already well-structured following genus-differentia. Links cellular homeostasis to pH tolerance range. Aligns with PATO and ENVO pH terms.",
+            "sources": [
+                "PATO:0001842 (alkaline)",
+                "GO:0042592 (homeostatic process)",
+                "ENVO:09200000 (environmental material)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000677",
+            "class_label": "ovoid shaped",
+            "proposed_definition": "A cell shape quality characterized by an egg-like, three-dimensional ellipsoidal form that is wider at one end than the other.",
+            "reasoning": "Uses cell shape as parent. Provides geometric definition distinguishing ovoid from ellipsoidal (symmetric) and spherical forms.",
+            "sources": [
+                "PATO:0000052 (shape)",
+                "PATO:0002318 (ellipsoid)",
+                "GO:0005623 (cell)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000671",
+            "class_label": "diplococcus shaped",
+            "proposed_definition": "A cell shape quality characterized by spherical cells that remain attached in pairs following cell division, typically due to incomplete separation or specific adhesion mechanisms.",
+            "reasoning": "Uses cell shape as parent. Specifies paired arrangement distinguishing from single cocci or longer chains (streptococci).",
+            "sources": [
+                "PATO:0000052 (shape)",
+                "PATO:0001873 (spherical)",
+                "GO:0000920 (cell separation after cytokinesis)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000674",
+            "class_label": "filament shaped",
+            "proposed_definition": "A cell shape quality characterized by elongated, thread-like cellular morphology with length significantly exceeding width, often resulting from incomplete cell separation.",
+            "reasoning": "Uses cell shape as parent. Emphasizes elongation ratio and filamentous arrangement. Distinguishes from rod-shaped by extreme aspect ratio.",
+            "sources": [
+                "PATO:0000052 (shape)",
+                "PATO:0001855 (filamentous)",
+                "GO:0005623 (cell)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000525",
+            "class_label": "microbe",
+            "proposed_definition": "A material entity comprising organisms, viruses, or virions that are microscopic in size and not visible to the unaided human eye, including bacteria, archaea, fungi, protists, and viruses.",
+            "reasoning": "Uses material entity as parent per provided source OHMI:0000460. Encompasses prokaryotic and eukaryotic microorganisms plus viruses. Follows OBO Foundry upper-level ontology.",
+            "sources": [
+                "OHMI:0000460 (microbe)",
+                "NCBITaxon:2 (Bacteria)",
+                "NCBITaxon:2157 (Archaea)",
+                "NCBITaxon:10239 (Viruses)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000634",
+            "class_label": "chemoautolithotrophic",
+            "proposed_definition": "A trophic type characterized by the use of inorganic chemical compounds as energy sources and inorganic carbon dioxide as the sole carbon source for biosynthesis.",
+            "reasoning": "Combines chemotrophy, autotrophy, and lithotrophy. Follows genus-differentia form. Distinguishes from chemoorganotrophs and photolithotrophs.",
+            "sources": [
+                "GO:0015976 (carbon fixation)",
+                "GO:0006091 (generation of precursor metabolites and energy)",
+                "ENVO:01000326 (chemolithotrophic environment)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000649",
+            "class_label": "lithotrophic",
+            "proposed_definition": "A trophic type characterized by the use of inorganic compounds as electron donors for energy generation in metabolic processes.",
+            "reasoning": "Uses trophic type as parent. Specifies inorganic electron donors as distinguishing feature. Parent to more specific lithotrophy types.",
+            "sources": [
+                "GO:0006091 (generation of precursor metabolites and energy)",
+                "CHEBI:24835 (inorganic molecular entity)",
+                "ENVO:01000326 (chemolithotrophic environment)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000681",
+            "class_label": "rod shaped",
+            "proposed_definition": "A cell shape quality characterized by an elongated cylindrical morphology with relatively uniform width and length exceeding width by approximately 2-10 times.",
+            "reasoning": "Uses cell shape as parent. Specifies aspect ratio distinguishing rods from cocci and filaments. Most common bacterial morphology.",
+            "sources": [
+                "PATO:0000052 (shape)",
+                "PATO:0002427 (rod-like)",
+                "GO:0005623 (cell)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000631",
+            "class_label": "trophic type",
+            "proposed_definition": "A phenotypic quality characterized by the strategies an organism employs to obtain carbon and energy for growth and metabolism.",
+            "reasoning": "Original definition good. Uses phenotype as parent. Encompasses both carbon and energy acquisition strategies. Parent to specific trophic classifications.",
+            "sources": [
+                "PATO:0001995 (organismal quality)",
+                "GO:0006091 (generation of precursor metabolites and energy)",
+                "GO:0015976 (carbon fixation)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000650",
+            "class_label": "methanotrophic",
+            "proposed_definition": "A trophic type characterized by the ability to use methane as the sole carbon and energy source for growth and metabolism.",
+            "reasoning": "Uses trophic type as parent. Specifies methane utilization distinguishing from other trophic types. Aligns with GO methane metabolism terms.",
+            "sources": [
+                "GO:0015946 (methane oxidation)",
+                "CHEBI:16183 (methane)",
+                "ENVO:00002030 (methanotrophic environment)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000657",
+            "class_label": "photoheterotrophic",
+            "proposed_definition": "A trophic type characterized by the use of light as the energy source and organic compounds as the primary carbon source for biosynthesis.",
+            "reasoning": "Combines phototrophy with heterotrophy. Uses trophic type as parent. Distinguishes from photoautotrophs by organic carbon requirement.",
+            "sources": [
+                "GO:0015979 (photosynthesis)",
+                "GO:0006091 (generation of precursor metabolites and energy)",
+                "CHEBI:50860 (organic molecular entity)"
+            ],
+            "confidence": "high"
+        }
+    ]
+}

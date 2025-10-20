@@ -5,6 +5,7 @@
         "ontology": "METPO",
         "description": "OBO Foundry-compliant definitions for METPO terms with authoritative sources",
         "generation_date": "2025-10-20"
+        "generation_model": "Claude Sonnet 4.5"
     },
     "definitions": [
         {

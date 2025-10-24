@@ -1,109 +1,155 @@
-# Definition Generation Prompt Template
+Link to prompt edits:  
+https://docs.google.com/spreadsheets/d/1Whe8xVm8Hz48Nt9ghFxRM-5HrUoeyLFafNUzKR2yBGo/edit?gid=0\#gid=0
 
-**Version:** 1.0
-**Purpose:** Generate textual definitions for METPO ontology classes following OBO Foundry principles
-**Last Updated:** {% now 'utc', '%Y-%m-%d' %}
+I'll first look at the table of instructions you've provided to understand what edits need to be applied to the prompt.Based on the editing instructions in the TSV file, here is the revised prompt with all edits applied:
 
 ---
+
+# Definition Generation Prompt Template
+
+**Version: 2.1**  
+**Purpose:** Generate textual definitions for METPO ontology classes following OBO Foundry principles  
+**Last Updated:** 2025-10-24
 
 ## Instructions for LLM
 
-You are helping curate definitions for the METPO (Microbial Environment and Traits Ontology) and KG-Microbe knowledge graph. Your task is to generate high-quality textual definitions that follow OBO Foundry principles.
+You are assisting in identifying authoritative ontology or curated reference sources that support or verify textual definitions for METPO ontology classes which will later be used to curate the knowledge graph.
 
-### Requirements (OBO Foundry FP-006)
+**IMPORTANT:** Process only 5–10 class records per batch to ensure accuracy and prevent hallucinations. A TSV or CSV file containing these limited records will be provided as input.
 
-1. **Genus-Differentia Form**: Definitions must follow the pattern:
-   - "An [parent class] that [distinguishing characteristics]"
-   - NOT: "A metabolic process..." (avoid starting with article + class name)
+## Requirements (OBO Foundry FP-006)
 
-2. **Definition Quality**:
-   - Must be clear, concise, and unambiguous
-   - Must be intelligible to a biologist or microbiologist
-   - Should reference parent classes from the ontology hierarchy
-   - Should specify what makes this class distinct from siblings
+### 1\. Genus-Differentia Form
 
-3. **Avoid Circularity**: Do not use the term being defined in its own definition
+Definitions must follow the pattern:
 
-4. **Scientific Accuracy**: Base definitions on established scientific knowledge
+* "An \[parent class\] that \[distinguishing characteristics\]"  
+* NOT: "A metabolic process..." (avoid starting with article \+ class name)
 
-### Input Format
+### 2\. Definition Quality
 
-For each term, you will receive:
-- **Class ID**: e.g., METPO:1234567
-- **Class Label**: e.g., "anaerobic respiration"
-- **Parent Class(es)**: e.g., "cellular respiration" (METPO:1234560)
-- **Existing Definition** (if any): Current definition that may need improvement
+* Must be clear, concise, and unambiguous  
+* Must be intelligible to a biologist or microbiologist  
+* Should reference parent classes from the ontology hierarchy  
+* Should specify what makes this class distinct from siblings
 
-### Output Format
+### 3\. Avoid Circularity
 
-Provide your response as JSON:
+Do not use the term being defined in its own definition
+
+### 4\. Scientific Accuracy
+
+Base definitions on established scientific knowledge
+
+### 5\. Data Integrity Rules
+
+* **To prevent hallucinations if information cannot be verified, respond with null and explain why in the comments field**  
+* Never fabricate or guess information that cannot be confirmed through authoritative sources  
+* Include quantitative values or ranges ONLY if they are grounded in real, published measurements with a citation source  
+* When including quantitative data, provide reasoning in the comments field
+
+## Input Format
+
+Each row in the TSV/CSV input (limited to 5–10 rows per batch) will include:
+
+* Class ID — e.g., `METPO:1234567`  
+* Class Label — e.g., `methanogenesis`  
+* Definition — The textual definition requiring authoritative ontology or literature support
+
+Your task is to process each row and return ontology-aligned definitions and sources following the specifications below.
+
+## Source Requirements and Prioritization
+
+### Source Prioritization Hierarchy
+
+1. **Primary Sources (Ontology-based) \- STRONGLY PREFERRED**  
+     
+   * OBO Foundry ontologies (e.g., OBMS, ENVO, PATO, GO, CHEBI, MEO, BTO, PO, NCIT, ECO)  
+   * Curated microbiology vocabularies: GOLD, BacDive, MIxS  
+   * Must include full ontology URLs when available (e.g., `http://purl.obolibrary.org/obo/GO_0015948`)
+
+   
+
+2. **Secondary Sources (fallback if no ontology match)**  
+     
+   * PubMed IDs (PMID) with URLs (e.g., `https://pubmed.ncbi.nlm.nih.gov/12345678/`)  
+   * DOIs with URLs — peer-reviewed scientific literature  
+   * ISBNs — authoritative textbooks  
+   * Stable URLs — from recognized research organizations (include access date)
+
+### Source Quality Rules
+
+* Prefer OBO Foundry or peer-reviewed resources  
+* Sources must describe the same conceptual scope as the METPO definition  
+* Prefer recent ontology versions or reviews (last 5 years unless classic)  
+* **Always retrieve and include the actual URL for each source for manual verification**
+
+## Output Format (JSON)
 
 ```json
 {
-  "class_id": "METPO:1234567",
-  "class_label": "anaerobic respiration",
-  "proposed_definition": "A cellular respiration process that occurs in the absence of oxygen, using alternative electron acceptors such as nitrate, sulfate, or carbon dioxide.",
-  "confidence": "high|medium|low",
-  "reasoning": "Brief explanation of why this definition is appropriate",
-  "suggested_sources": [
-    "PMID:12345678",
-    "DOI:10.1234/example",
-    "ISBN:1234567890"
-  ]
+    "metadata": {
+        "total_definitions": 1,
+        "batch_size_limit": "5-10 terms per batch",
+        "curator": "curator_name_here",
+        "ontology": "METPO",
+        "description": "OBO Foundry-compliant definitions for METPO terms",
+        "generation_date": "2025-10-24"
+    },
+    "definitions": [
+        {
+            "class_id": "METPO:0000123",
+            "class_label": "methanogenesis",
+            "parent_class": "anaerobic metabolic process",
+            "parent_class_id": "GO:0009061",
+            "proposed_definition": "An anaerobic metabolic process that produces methane as the primary end product, typically using carbon dioxide or acetate as electron acceptors.",
+            "quantitative_values": {
+                "temperature_range": "15-110°C",
+                "optimal_pH_range": "6.8-7.2",
+                "measurement_source": "PMID:28792873"
+            },
+            "reasoning": "Definition follows genus-differentia pattern, aligns with GO:0015948 (methanogenesis) and ENVO:00002029 (methanogenic environment). Clarifies distinguishing metabolic characteristics. Temperature range based on published measurements from thermophilic and mesophilic methanogens.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0015948",
+                    "label": "methanogenesis",
+                    "url": "http://purl.obolibrary.org/obo/GO_0015948"
+                },
+                {
+                    "type": "ontology",
+                    "id": "ENVO:00002029",
+                    "label": "methanogenic environment",
+                    "url": "http://purl.obolibrary.org/obo/ENVO_00002029"
+                },
+                {
+                    "type": "ontology",
+                    "id": "MEO:0000111",
+                    "label": "methanogenic bacterium",
+                    "url": "http://purl.obolibrary.org/obo/MEO_0000111"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Parent class retrieved from GO hierarchy. Quantitative temperature values based on published ranges for known methanogenic archaea. If unable to verify specific values, would mark as null."
+        }
+    ]
 }
 ```
 
-### Example
+## Critical Instructions for Verification
 
-**Input:**
-- Class ID: METPO:0000123
-- Class Label: methanogenesis
-- Parent Class: anaerobic respiration (METPO:0000120)
-- Existing Definition: None
+1. **Batch Size**: Process ONLY 5–10 terms per batch to maintain accuracy  
+2. **Verification**: If you cannot verify information through authoritative sources, use `null` values and explain in the `comments` field  
+3. **URLs Required**: Always include full URLs for all sources to enable manual verification  
+4. **Parent Classes**: Always include both the human-readable parent class label AND its ID  
+5. **Quantitative Data**: Include measurement min/max ranges only when supported by published data; cite the source  
+6. **Source Preference**: Always prioritize ontology terms over publications when both are available
 
-**Expected Output:**
+**Example of handling unverifiable information:**
+
 ```json
 {
-  "class_id": "METPO:0000123",
-  "class_label": "methanogenesis",
-  "proposed_definition": "An anaerobic respiration process in which methane is produced as the primary metabolic end product, typically using carbon dioxide or acetic acid as terminal electron acceptors.",
-  "confidence": "high",
-  "reasoning": "Definition follows genus-differentia form, clearly distinguishes methanogenesis from other anaerobic respiration types by specifying methane production and typical electron acceptors.",
-  "suggested_sources": [
-    "PMID:15073711",
-    "PMID:23645609"
-  ]
+    "quantitative_values": null,
+    "comments": "Unable to verify specific temperature ranges from authoritative sources. Recommend manual curation from primary literature."
 }
 ```
-
----
-
-## Usage Notes for Curators
-
-1. **Save Prompts**: When you execute this prompt, copy it to `prompts/executed/` with a timestamp
-2. **Record Output**: Save the LLM output to `outputs/raw/[your-name]/` as JSON
-3. **Review Carefully**: The LLM can make mistakes - always verify scientific accuracy
-4. **Check Sources**: Verify that suggested sources actually support the definition
-5. **Iterate**: If the output is poor, revise this template and try again
-
-## Template Variables
-
-Replace these before sending to LLM:
-
-- `{CLASS_ID}`: The ontology class ID
-- `{CLASS_LABEL}`: The human-readable label
-- `{PARENT_CLASSES}`: Comma-separated list of parent classes
-- `{EXISTING_DEFINITION}`: Current definition if available
-
----
-
-## Actual Prompt (Copy below this line)
-
-I need you to generate a textual definition for an ontology class following the requirements above.
-
-**Class ID:** {CLASS_ID}
-**Class Label:** {CLASS_LABEL}
-**Parent Class(es):** {PARENT_CLASSES}
-**Existing Definition:** {EXISTING_DEFINITION}
-
-Please provide a definition following the OBO Foundry principles outlined above, formatted as JSON.

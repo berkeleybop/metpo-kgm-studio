@@ -1,4 +1,4 @@
-Link to prompt edits:  
+Link to prompt edits:
 https://docs.google.com/spreadsheets/d/1Whe8xVm8Hz48Nt9ghFxRM-5HrUoeyLFafNUzKR2yBGo/edit?gid=0\#gid=0
 
 I'll first look at the table of instructions you've provided to understand what edits need to be applied to the prompt.Based on the editing instructions in the TSV file, here is the revised prompt with all edits applied:
@@ -7,8 +7,8 @@ I'll first look at the table of instructions you've provided to understand what 
 
 # Definition Generation Prompt Template
 
-**Version: 2.1**  
-**Purpose:** Generate textual definitions for METPO ontology classes following OBO Foundry principles  
+**Version: 2.1**
+**Purpose:** Generate textual definitions for METPO ontology classes following OBO Foundry principles
 **Last Updated:** 2025-10-24
 
 ## Instructions for LLM
@@ -23,14 +23,14 @@ You are assisting in identifying authoritative ontology or curated reference sou
 
 Definitions must follow the pattern:
 
-* "An \[parent class\] that \[distinguishing characteristics\]"  
+* "An \[parent class\] that \[distinguishing characteristics\]"
 * NOT: "A metabolic process..." (avoid starting with article \+ class name)
 
 ### 2\. Definition Quality
 
-* Must be clear, concise, and unambiguous  
-* Must be intelligible to a biologist or microbiologist  
-* Should reference parent classes from the ontology hierarchy  
+* Must be clear, concise, and unambiguous
+* Must be intelligible to a biologist or microbiologist
+* Should reference parent classes from the ontology hierarchy
 * Should specify what makes this class distinct from siblings
 
 ### 3\. Avoid Circularity
@@ -43,17 +43,17 @@ Base definitions on established scientific knowledge
 
 ### 5\. Data Integrity Rules
 
-* **To prevent hallucinations if information cannot be verified, respond with null and explain why in the comments field**  
-* Never fabricate or guess information that cannot be confirmed through authoritative sources  
-* Include quantitative values or ranges ONLY if they are grounded in real, published measurements with a citation source  
+* **To prevent hallucinations if information cannot be verified, respond with null and explain why in the comments field**
+* Never fabricate or guess information that cannot be confirmed through authoritative sources
+* Include quantitative values or ranges ONLY if they are grounded in real, published measurements with a citation source
 * When including quantitative data, provide reasoning in the comments field
 
 ## Input Format
 
 Each row in the TSV/CSV input (limited to 5–10 rows per batch) will include:
 
-* Class ID — e.g., `METPO:1234567`  
-* Class Label — e.g., `methanogenesis`  
+* Class ID — e.g., `METPO:1234567`
+* Class Label — e.g., `methanogenesis`
 * Definition — The textual definition requiring authoritative ontology or literature support
 
 Your task is to process each row and return ontology-aligned definitions and sources following the specifications below.
@@ -62,26 +62,26 @@ Your task is to process each row and return ontology-aligned definitions and sou
 
 ### Source Prioritization Hierarchy
 
-1. **Primary Sources (Ontology-based) \- STRONGLY PREFERRED**  
-     
-   * OBO Foundry ontologies (e.g., OBMS, ENVO, PATO, GO, CHEBI, MEO, BTO, PO, NCIT, ECO)  
-   * Curated microbiology vocabularies: GOLD, BacDive, MIxS  
+1. **Primary Sources (Ontology-based) \- STRONGLY PREFERRED**
+
+   * OBO Foundry ontologies (e.g., OBMS, ENVO, PATO, GO, CHEBI, MEO, BTO, PO, NCIT, ECO)
+   * Curated microbiology vocabularies: GOLD, BacDive, MIxS
    * Must include full ontology URLs when available (e.g., `http://purl.obolibrary.org/obo/GO_0015948`)
 
-   
 
-2. **Secondary Sources (fallback if no ontology match)**  
-     
-   * PubMed IDs (PMID) with URLs (e.g., `https://pubmed.ncbi.nlm.nih.gov/12345678/`)  
-   * DOIs with URLs — peer-reviewed scientific literature  
-   * ISBNs — authoritative textbooks  
+
+2. **Secondary Sources (fallback if no ontology match)**
+
+   * PubMed IDs (PMID) with URLs (e.g., `https://pubmed.ncbi.nlm.nih.gov/12345678/`)
+   * DOIs with URLs — peer-reviewed scientific literature
+   * ISBNs — authoritative textbooks
    * Stable URLs — from recognized research organizations (include access date)
 
 ### Source Quality Rules
 
-* Prefer OBO Foundry or peer-reviewed resources  
-* Sources must describe the same conceptual scope as the METPO definition  
-* Prefer recent ontology versions or reviews (last 5 years unless classic)  
+* Prefer OBO Foundry or peer-reviewed resources
+* Sources must describe the same conceptual scope as the METPO definition
+* Prefer recent ontology versions or reviews (last 5 years unless classic)
 * **Always retrieve and include the actual URL for each source for manual verification**
 
 ## Output Format (JSON)
@@ -138,11 +138,11 @@ Your task is to process each row and return ontology-aligned definitions and sou
 
 ## Critical Instructions for Verification
 
-1. **Batch Size**: Process ONLY 5–10 terms per batch to maintain accuracy  
-2. **Verification**: If you cannot verify information through authoritative sources, use `null` values and explain in the `comments` field  
-3. **URLs Required**: Always include full URLs for all sources to enable manual verification  
-4. **Parent Classes**: Always include both the human-readable parent class label AND its ID  
-5. **Quantitative Data**: Include measurement min/max ranges only when supported by published data; cite the source  
+1. **Batch Size**: Process ONLY 5–10 terms per batch to maintain accuracy
+2. **Verification**: If you cannot verify information through authoritative sources, use `null` values and explain in the `comments` field
+3. **URLs Required**: Always include full URLs for all sources to enable manual verification
+4. **Parent Classes**: Always include both the human-readable parent class label AND its ID
+5. **Quantitative Data**: Include measurement min/max ranges only when supported by published data; cite the source
 6. **Source Preference**: Always prioritize ontology terms over publications when both are available
 
 **Example of handling unverifiable information:**

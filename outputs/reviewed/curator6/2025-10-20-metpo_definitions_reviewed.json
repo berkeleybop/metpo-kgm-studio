@@ -38,7 +38,7 @@
             "proposed_definition": "A trophic type characterized by the use of molecular hydrogen as the primary electron donor for energy generation in metabolic processes.",
             "reasoning": "Follows genus-differentia pattern. Aligns with GO hydrogenase activity and microbial trophic classifications. Specifies the distinguishing electron donor characteristic.",
             "sources": [
-                "GO:0008417 (hydrogen:quinone oxidoreductase activity)",
+                "GO:0047067 (hydrogen:quinone oxidoreductase activity)",
                 "GO:0006118 (obsolete electron transport)",
                 "ENVO:00002269 (hydrogenotrophic environment)"
             ],

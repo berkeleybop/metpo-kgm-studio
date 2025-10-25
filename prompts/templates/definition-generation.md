@@ -1,10 +1,3 @@
-Link to prompt edits:
-https://docs.google.com/spreadsheets/d/1Whe8xVm8Hz48Nt9ghFxRM-5HrUoeyLFafNUzKR2yBGo/edit?gid=0\#gid=0
-
-I'll first look at the table of instructions you've provided to understand what edits need to be applied to the prompt.Based on the editing instructions in the TSV file, here is the revised prompt with all edits applied:
-
----
-
 # Definition Generation Prompt Template
 
 **Version: 2.1**

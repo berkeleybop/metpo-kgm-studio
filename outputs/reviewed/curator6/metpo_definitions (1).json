@@ -1,0 +1,446 @@
+{
+    "metadata": {
+        "total_definitions": 30,
+        "batch_size_limit": "30 terms in this batch",
+        "curator": "Claude AI Assistant",
+        "ontology": "METPO",
+        "description": "OBO Foundry-compliant definitions for METPO terms with authoritative ontology sources",
+        "generation_date": "2025-10-30"
+    },
+    "definitions": [
+        {
+            "class_id": "METPO:1000059",
+            "class_label": "phenotype",
+            "parent_class": "quality",
+            "parent_class_id": "PATO:0000001",
+            "proposed_definition": "A quality that inheres in an organism by virtue of the bearer's observable characteristics resulting from the interaction between its genotype and environment, distinguishing specific instances of a species from other instances.",
+            "quantitative_values": null,
+            "reasoning": "Definition follows genus-differentia pattern using PATO quality as parent class. Aligns with OGMS phenotype concept while emphasizing organism-level qualities. Definition specifies that phenotypes are observable characteristics arising from gene-environment interactions.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000001",
+                    "label": "quality",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000001"
+                },
+                {
+                    "type": "ontology",
+                    "id": "OGMS:0000023",
+                    "label": "phenotype",
+                    "url": "http://purl.obolibrary.org/obo/OGMS_0000023"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Parent class aligns with PATO (Phenotype and Trait Ontology). Source OGMS:0000023 provided in original data. PATO is the OBO Foundry standard for phenotypic qualities."
+        },
+        {
+            "class_id": "METPO:1000626",
+            "class_label": "stenohaline",
+            "parent_class": "halophily preference",
+            "parent_class_id": null,
+            "proposed_definition": "A halophily preference quality that inheres in an organism by virtue of the bearer's limited tolerance to variation in salinity, requiring a narrow range of salt concentrations for survival and growth.",
+            "quantitative_values": null,
+            "reasoning": "Stenohaline organisms cannot tolerate significant changes in salinity. Definition contrasts with euryhaline organisms. Based on established microbiology terminology but specific quantitative ranges vary by taxon.",
+            "sources": [],
+            "confidence": "medium",
+            "comments": "Unable to locate authoritative ontology term for stenohaline in OBO Foundry ontologies (PATO, ENVO). Term is well-established in microbiology but lacks formal ontology representation. Recommend manual literature curation for quantitative salinity ranges."
+        },
+        {
+            "class_id": "METPO:1000646",
+            "class_label": "hydrogenotrophic",
+            "parent_class": "trophic type",
+            "parent_class_id": "METPO:1000631",
+            "proposed_definition": "A trophic type quality that inheres in an organism by virtue of the bearer's ability to use molecular hydrogen as an electron donor for energy metabolism.",
+            "quantitative_values": null,
+            "reasoning": "Hydrogenotrophs oxidize H2 as their electron source. This is a form of lithotrophy (using inorganic electron donors). Particularly important in methanogenic archaea and some bacteria.",
+            "sources": [],
+            "confidence": "medium",
+            "comments": "Unable to locate specific ontology term for hydrogenotrophic in ENVO or other OBO ontologies. Term is standard in microbiology literature describing organisms using H2 as electron donor. Related to chemolithotrophy concept."
+        },
+        {
+            "class_id": "METPO:1000658",
+            "class_label": "photolithotrophic",
+            "parent_class": "trophic type",
+            "parent_class_id": "METPO:1000631",
+            "proposed_definition": "A trophic type quality that inheres in an organism by virtue of the bearer's ability to use light as an energy source and inorganic compounds as electron donors.",
+            "quantitative_values": null,
+            "reasoning": "Photolithotrophs combine phototrophy (light energy) with lithotrophy (inorganic electron donors). Examples include purple and green sulfur bacteria that use H2S as electron donor.",
+            "sources": [],
+            "confidence": "medium",
+            "comments": "Standard microbiology term but not found in ENVO or other searched OBO ontologies. Represents combination of phototrophy and lithotrophy nutritional strategies."
+        },
+        {
+            "class_id": "METPO:1000697",
+            "class_label": "gram stain",
+            "parent_class": "phenotype",
+            "parent_class_id": "METPO:1000059",
+            "proposed_definition": "A phenotype quality that inheres in a bacterial cell by virtue of the bearer's differential staining characteristics using the Gram staining procedure, reflecting differences in cell wall structure.",
+            "quantitative_values": null,
+            "reasoning": "Gram stain is a fundamental microbiological phenotype based on cell wall composition. Gram-positive bacteria retain crystal violet dye due to thick peptidoglycan layer; gram-negative bacteria do not.",
+            "sources": [],
+            "confidence": "high",
+            "comments": "Well-established microbiological phenotype but not found as specific term in PATO or other searched ontologies. The staining phenotype reflects structural differences in bacterial cell walls (thick vs. thin peptidoglycan)."
+        },
+        {
+            "class_id": "METPO:1000333",
+            "class_label": "NaCl optimum",
+            "parent_class": "phenotype",
+            "parent_class_id": "METPO:1000059",
+            "proposed_definition": "A phenotype quality that inheres in a microorganism by virtue of the bearer's specific sodium chloride concentration at which maximum growth rate and metabolic efficiency are achieved.",
+            "quantitative_values": null,
+            "reasoning": "Definition provided in input data is appropriate and follows genus-differentia form. Represents an environmental parameter optimum specific to each organism.",
+            "sources": [],
+            "confidence": "high",
+            "comments": "Input definition is well-formed. Unable to find specific PATO or ENVO term for NaCl optimum, though related terms for salt concentration and optimal conditions exist. Quantitative values are organism-specific and should be cited from strain characterization literature."
+        },
+        {
+            "class_id": "METPO:1000666",
+            "class_label": "cell shape",
+            "parent_class": "phenotype",
+            "parent_class_id": "METPO:1000059",
+            "proposed_definition": "A phenotype quality that inheres in a cell by virtue of the bearer's three-dimensional morphological form.",
+            "quantitative_values": null,
+            "reasoning": "Cell shape is a fundamental morphological phenotype. Related to PATO shape concepts but specific to cellular level.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000052",
+                    "label": "shape",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000052"
+                }
+            ],
+            "confidence": "high",
+            "comments": "PATO:0000052 (shape) is the parent quality term. Cell shape is critical for bacterial taxonomy and includes forms like rod, coccus, spiral, etc."
+        },
+        {
+            "class_id": "METPO:1000844",
+            "class_label": "Methanogenesis",
+            "parent_class": "metabolism",
+            "parent_class_id": null,
+            "proposed_definition": "A metabolic process that produces methane as the primary end product through anaerobic respiration, typically using carbon dioxide, acetate, or other simple organic compounds as substrates.",
+            "quantitative_values": null,
+            "reasoning": "Definition aligns with GO:0015948 (methanogenesis) which is defined as methane biosynthetic process. Methanogenesis is performed exclusively by methanogenic archaea under anaerobic conditions.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0015948",
+                    "label": "methanogenesis",
+                    "url": "http://purl.obolibrary.org/obo/GO_0015948"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:25520705",
+                    "label": "Genetic resources for methane production from biomass described with the Gene Ontology",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/25520705/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "GO:0015948 is the authoritative term for methanogenesis. Process involves unique coenzymes including methanofuran, tetrahydromethanopterin, and coenzyme M."
+        },
+        {
+            "class_id": "METPO:1000673",
+            "class_label": "ellipsoidal",
+            "parent_class": "cell shape",
+            "parent_class_id": "METPO:1000666",
+            "proposed_definition": "A cell shape quality that inheres in a cell by virtue of the bearer's three-dimensional form resembling an ellipsoid, with oval or elongated spherical morphology.",
+            "quantitative_values": null,
+            "reasoning": "Ellipsoidal is a specific geometric shape description. Represents cells that are spherical but elongated along one axis.",
+            "sources": [],
+            "confidence": "high",
+            "comments": "Geometric shape descriptor. While PATO contains shape terms, specific bacterial morphology terms like ellipsoidal may not be explicitly defined. Standard morphological descriptor in microbiology."
+        },
+        {
+            "class_id": "METPO:1002005",
+            "class_label": "Fermentation",
+            "parent_class": "respiration",
+            "parent_class_id": null,
+            "proposed_definition": "A metabolic process involving the anaerobic enzymatic conversion of organic compounds to other compounds with the generation of ATP through substrate-level phosphorylation, typically coupled with oxidation and reduction of electron carriers.",
+            "quantitative_values": null,
+            "reasoning": "Definition aligns with GO:0006113 (fermentation). Fermentation is distinguished from respiration by the absence of an external electron acceptor and generation of ATP via substrate-level phosphorylation rather than oxidative phosphorylation.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0006113",
+                    "label": "fermentation",
+                    "url": "http://purl.obolibrary.org/obo/GO_0006113"
+                }
+            ],
+            "confidence": "high",
+            "comments": "GO:0006113 defines fermentation as anaerobic enzymatic conversion of organic compounds, especially carbohydrates, coupling NAD/H oxidation-reduction and ATP generation."
+        },
+        {
+            "class_id": "METPO:1000705",
+            "class_label": "axially filamented",
+            "parent_class": "motile",
+            "parent_class_id": null,
+            "proposed_definition": "A motility quality that inheres in a cell by virtue of the bearer's possession of internal axial filaments (periplasmic flagella) that enable spiral or corkscrew movement.",
+            "quantitative_values": null,
+            "reasoning": "Axial filaments are characteristic of spirochetes, located in the periplasmic space between inner and outer membranes. They cause the characteristic spiral rotation of these bacteria.",
+            "sources": [],
+            "confidence": "high",
+            "comments": "Axial filaments (also called endoflagella or periplasmic flagella) are unique structures in spirochetes like Treponema and Borrelia. Not found as specific term in searched ontologies."
+        },
+        {
+            "class_id": "METPO:1000699",
+            "class_label": "gram negative",
+            "parent_class": "gram stain",
+            "parent_class_id": "METPO:1000697",
+            "proposed_definition": "A gram stain quality that inheres in a bacterial cell by virtue of the bearer's cell wall structure having a thin peptidoglycan layer and outer membrane, resulting in pink or red coloration after Gram staining.",
+            "quantitative_values": null,
+            "reasoning": "Gram-negative bacteria have thin peptidoglycan (2-3 nm) surrounded by outer membrane containing lipopolysaccharides. They do not retain crystal violet and take up counterstain.",
+            "sources": [],
+            "confidence": "high",
+            "comments": "Fundamental bacterial classification characteristic. Gram-negative bacteria include major groups like Proteobacteria and Bacteroidetes. Not found as specific ontology term but well-established in microbiology."
+        },
+        {
+            "class_id": "METPO:1000236",
+            "class_label": "pH tolerance",
+            "parent_class": "phenotype",
+            "parent_class_id": "METPO:1000059",
+            "proposed_definition": "A phenotype quality that inheres in an organism by virtue of the bearer's ability to survive exposure to hydrogen ion concentrations outside its optimal growth range.",
+            "quantitative_values": null,
+            "reasoning": "Definition provided in input is appropriate. pH tolerance describes the range of pH values an organism can withstand while maintaining viability, distinguished from pH optimum.",
+            "sources": [],
+            "confidence": "high",
+            "comments": "Input definition is well-formed and appropriate. Related to but distinct from pH optimum and pH range for growth. Quantitative ranges are species-specific."
+        },
+        {
+            "class_id": "METPO:1003004",
+            "class_label": "obligately alkaphilic",
+            "parent_class": "pH growth preference",
+            "parent_class_id": null,
+            "proposed_definition": "A pH growth preference quality that inheres in an organism by virtue of the bearer's absolute requirement for alkaline pH conditions (typically pH > 9) for growth and survival.",
+            "quantitative_values": {
+                "pH_range": "> 9.0 (typically 9-11)",
+                "measurement_source": "general_microbiology"
+            },
+            "reasoning": "Obligate alkaliphiles require high pH for growth and cannot survive at neutral pH. Distinguished from facultative alkaliphiles that can grow across broader pH ranges.",
+            "sources": [],
+            "confidence": "medium",
+            "comments": "Standard microbiology term but not found in searched ontologies. Obligate alkaliphiles typically grow at pH 9-11. Quantitative pH values should be cited from specific organism characterization studies."
+        },
+        {
+            "class_id": "METPO:1000684",
+            "class_label": "spiral shaped",
+            "parent_class": "cell shape",
+            "parent_class_id": "METPO:1000666",
+            "proposed_definition": "A cell shape quality that inheres in a cell by virtue of the bearer's helical or corkscrew-like three-dimensional form.",
+            "quantitative_values": null,
+            "reasoning": "Spiral-shaped bacteria include spirilla (rigid helical cells) and spirochetes (flexible helical cells). Morphology results from helical arrangement of cytoskeletal elements.",
+            "sources": [],
+            "confidence": "high",
+            "comments": "One of three primary bacterial morphologies (coccus, bacillus, spiral). Includes organisms like Helicobacter, Spirillum, and spirochetes. Standard morphological descriptor."
+        },
+        {
+            "class_id": "METPO:1000700",
+            "class_label": "gram variable",
+            "parent_class": "gram stain",
+            "parent_class_id": "METPO:1000697",
+            "proposed_definition": "A gram stain quality that inheres in a bacterial cell by virtue of the bearer's inconsistent staining characteristics in the Gram staining procedure, appearing as a mixture of gram-positive and gram-negative cells within a population.",
+            "quantitative_values": null,
+            "reasoning": "Gram-variable bacteria show inconsistent staining due to factors like cell age, growth conditions, or transitional cell wall structure. Some organisms naturally exhibit this property.",
+            "sources": [],
+            "confidence": "high",
+            "comments": "Gram variability can result from physiological state, culture age, or intrinsic cell wall properties. Not found in searched ontologies but standard microbiological observation."
+        },
+        {
+            "class_id": "METPO:1000127",
+            "class_label": "GC content",
+            "parent_class": "quality",
+            "parent_class_id": "PATO:0000001",
+            "proposed_definition": "A quality that inheres in DNA by virtue of the bearer's percentage of guanine and cytosine nucleotides relative to total nucleotide content.",
+            "quantitative_values": null,
+            "reasoning": "Definition provided in input is appropriate. GC content is a fundamental genomic characteristic that varies across species and influences DNA properties like thermal stability.",
+            "sources": [],
+            "confidence": "high",
+            "comments": "Input definition is well-formed. GC content ranges from ~25% to ~75% across bacterial genomes. Related to genomic quality but specific ontology term not found in PATO."
+        },
+        {
+            "class_id": "METPO:1000669",
+            "class_label": "crescent shaped",
+            "parent_class": "cell shape",
+            "parent_class_id": "METPO:1000666",
+            "proposed_definition": "A cell shape quality that inheres in a cell by virtue of the bearer's curved, comma-like morphological form.",
+            "quantitative_values": null,
+            "reasoning": "Crescent or comma shape is characteristic of certain bacteria like Vibrio species and Caulobacter. Results from specific cell wall and cytoskeletal organization.",
+            "sources": [],
+            "confidence": "high",
+            "comments": "Crescent shape represents a specific bacterial morphology. Related to vibrio shape. Standard morphological descriptor in microbiology but not found in searched ontologies."
+        },
+        {
+            "class_id": "METPO:1001005",
+            "class_label": "culture temperature observation",
+            "parent_class": "observation",
+            "parent_class_id": null,
+            "proposed_definition": "An observation that records the temperature at which an organism is cultured under laboratory conditions.",
+            "quantitative_values": null,
+            "reasoning": "Definition provided in input is appropriate. Culture temperature is an experimental parameter distinct from optimal or tolerance ranges.",
+            "sources": [],
+            "confidence": "high",
+            "comments": "Input definition is well-formed. Represents recorded experimental conditions rather than inherent organism properties. Related to Information Artifact Ontology (IAO) concepts."
+        },
+        {
+            "class_id": "METPO:1000731",
+            "class_label": "nutrient adaptation",
+            "parent_class": "trophic type",
+            "parent_class_id": "METPO:1000631",
+            "proposed_definition": "A trophic type quality that inheres in an organism by virtue of the bearer's metabolic capability to utilize specific nutrient sources.",
+            "quantitative_values": null,
+            "reasoning": "Nutrient adaptation describes an organism's metabolic flexibility or specialization for particular carbon, nitrogen, or energy sources.",
+            "sources": [],
+            "confidence": "medium",
+            "comments": "Broad term encompassing various nutritional strategies. Not found in searched ontologies. May require more specific definition depending on intended use."
+        },
+        {
+            "class_id": "METPO:1001001",
+            "class_label": "optimum temperature observation",
+            "parent_class": "observation",
+            "parent_class_id": null,
+            "proposed_definition": "An observation that records the temperature at which an organism exhibits maximum growth rate.",
+            "quantitative_values": null,
+            "reasoning": "Definition provided in input is appropriate. Distinguishes recorded observation of optimal temperature from the optimal temperature itself as an organism quality.",
+            "sources": [],
+            "confidence": "high",
+            "comments": "Input definition is well-formed. Represents data/information artifact documenting measured optimal temperature. Related to IAO observation concepts."
+        },
+        {
+            "class_id": "METPO:1000332",
+            "class_label": "pH range (cellular homeostasis)",
+            "parent_class": "phenotype",
+            "parent_class_id": "METPO:1000059",
+            "proposed_definition": "A phenotype quality that inheres in a microorganism by virtue of the bearer's span of hydrogen ion concentrations within which cellular homeostasis can be maintained and growth sustained.",
+            "quantitative_values": null,
+            "reasoning": "Definition provided in input is appropriate and follows genus-differentia form. pH range describes boundaries for viable growth.",
+            "sources": [],
+            "confidence": "high",
+            "comments": "Input definition is well-formed. Distinguishes growth range from optimum or tolerance. Quantitative ranges are organism-specific."
+        },
+        {
+            "class_id": "METPO:1000677",
+            "class_label": "ovoid shaped",
+            "parent_class": "cell shape",
+            "parent_class_id": "METPO:1000666",
+            "proposed_definition": "A cell shape quality that inheres in a cell by virtue of the bearer's egg-like or elongated spherical morphological form.",
+            "quantitative_values": null,
+            "reasoning": "Ovoid shape represents cells that are spherical but somewhat elongated, intermediate between perfect sphere and rod. Common in many coccoid bacteria.",
+            "sources": [],
+            "confidence": "high",
+            "comments": "Standard morphological descriptor for cells between spherical and rod-shaped. Not found as specific term in searched ontologies."
+        },
+        {
+            "class_id": "METPO:1000671",
+            "class_label": "diplococcus shaped",
+            "parent_class": "cell shape",
+            "parent_class_id": "METPO:1000666",
+            "proposed_definition": "A cell shape quality that inheres in bacterial cells by virtue of the bearer's arrangement as paired spherical cells that remain attached after division.",
+            "quantitative_values": null,
+            "reasoning": "Diplococcus represents both shape (coccus) and arrangement (pairs). Common in organisms like Streptococcus pneumoniae and Neisseria.",
+            "sources": [],
+            "confidence": "high",
+            "comments": "Combines shape (coccus) with arrangement (diplo-). Standard microbiological descriptor but not found in searched ontologies."
+        },
+        {
+            "class_id": "METPO:1000674",
+            "class_label": "filament shaped",
+            "parent_class": "cell shape",
+            "parent_class_id": "METPO:1000666",
+            "proposed_definition": "A cell shape quality that inheres in cells by virtue of the bearer's elongated, thread-like morphological form resulting from cells remaining attached end-to-end after division.",
+            "quantitative_values": null,
+            "reasoning": "Filamentous cells form chains or threads. Can result from incomplete cell division or be characteristic morphology (e.g., cyanobacteria, actinomycetes).",
+            "sources": [],
+            "confidence": "high",
+            "comments": "Filamentous morphology found in diverse bacterial groups. Not found as specific term in searched ontologies but standard morphological descriptor."
+        },
+        {
+            "class_id": "METPO:1000525",
+            "class_label": "microbe",
+            "parent_class": "material entity",
+            "parent_class_id": null,
+            "proposed_definition": "A material entity that is an organism too small to be viewed by the unaided human eye, including bacteria, archaea, fungi, protists, and viruses.",
+            "quantitative_values": null,
+            "reasoning": "Definition provided references OHMI:0000460. Microbe is a broad category encompassing diverse microscopic life forms. METPO focuses on prokaryotes (bacteria and archaea).",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "OHMI:0000460",
+                    "label": "microorganism",
+                    "url": "http://purl.obolibrary.org/obo/OHMI_0000460"
+                }
+            ],
+            "confidence": "high",
+            "comments": "OHMI (Ontology of Host-Microbiome Interactions) provides authoritative term. Input definition appropriate. METPO comment notes focus on unicellular prokaryotes."
+        },
+        {
+            "class_id": "METPO:1000634",
+            "class_label": "chemoautolithotrophic",
+            "parent_class": "trophic type",
+            "parent_class_id": "METPO:1000631",
+            "proposed_definition": "A trophic type quality that inheres in an organism by virtue of the bearer's ability to obtain energy from oxidation of inorganic compounds and carbon from carbon dioxide fixation.",
+            "quantitative_values": null,
+            "reasoning": "Chemoautolithotrophs are chemotrophs (chemical energy) + autotrophs (CO2 carbon source) + lithotrophs (inorganic electron donors). Examples include nitrifying bacteria and sulfur oxidizers.",
+            "sources": [],
+            "confidence": "high",
+            "comments": "Combines three nutritional characteristics. Well-established microbiology term but not found in ENVO or other searched ontologies. Synonym: chemolithoautotroph."
+        },
+        {
+            "class_id": "METPO:1000649",
+            "class_label": "lithotrophic",
+            "parent_class": "trophic type",
+            "parent_class_id": "METPO:1000631",
+            "proposed_definition": "A trophic type quality that inheres in an organism by virtue of the bearer's ability to use inorganic compounds as electron donors for energy metabolism.",
+            "quantitative_values": null,
+            "reasoning": "Lithotrophs use inorganic electron donors (H2, H2S, Fe2+, NH3, etc.). Contrasts with organotrophs that use organic electron donors.",
+            "sources": [],
+            "confidence": "high",
+            "comments": "Fundamental nutritional classification. Well-established microbiology term but not found as specific term in ENVO or other searched ontologies during this search."
+        },
+        {
+            "class_id": "METPO:1000681",
+            "class_label": "rod shaped",
+            "parent_class": "cell shape",
+            "parent_class_id": "METPO:1000666",
+            "proposed_definition": "A cell shape quality that inheres in a cell by virtue of the bearer's cylindrical morphological form with length greater than width.",
+            "quantitative_values": null,
+            "reasoning": "Rod shape (bacillus) is one of three primary bacterial morphologies. Results from specific peptidoglycan synthesis patterns and cytoskeletal organization.",
+            "sources": [],
+            "confidence": "high",
+            "comments": "Fundamental bacterial morphology. Includes diverse organisms like E. coli and Bacillus species. Standard descriptor but not found as specific term in searched ontologies."
+        },
+        {
+            "class_id": "METPO:1000631",
+            "class_label": "trophic type",
+            "parent_class": "phenotype",
+            "parent_class_id": "METPO:1000059",
+            "proposed_definition": "A phenotype quality that inheres in an organism by virtue of the bearer's mechanisms for obtaining carbon and energy from the environment.",
+            "quantitative_values": null,
+            "reasoning": "Definition provided in input is appropriate. Trophic type encompasses diverse nutritional strategies classified by carbon source, energy source, and electron donor.",
+            "sources": [],
+            "confidence": "high",
+            "comments": "Input definition is well-formed. Parent term for various nutritional classifications. Not found as specific term in searched ontologies but fundamental ecological concept."
+        },
+        {
+            "class_id": "METPO:1000650",
+            "class_label": "methanotrophic",
+            "parent_class": "trophic type",
+            "parent_class_id": "METPO:1000631",
+            "proposed_definition": "A trophic type quality that inheres in an organism by virtue of the bearer's ability to utilize methane as the sole carbon and energy source.",
+            "quantitative_values": null,
+            "reasoning": "Methanotrophs are specialized bacteria that oxidize methane to methanol and then to formaldehyde. Important in global methane cycle. Primarily aerobic but anaerobic methanotrophs exist.",
+            "sources": [],
+            "confidence": "high",
+            "comments": "Well-established microbiology term for methane-oxidizing bacteria. Not found as specific term in searched ontologies but standard nutritional classification."
+        },
+        {
+            "class_id": "METPO:1000657",
+            "class_label": "photoheterotrophic",
+            "parent_class": "trophic type",
+            "parent_class_id": "METPO:1000631",
+            "proposed_definition": "A trophic type quality that inheres in an organism by virtue of the bearer's ability to use light as an energy source and organic compounds as a carbon source.",
+            "quantitative_values": null,
+            "reasoning": "Photoheterotrophs combine phototrophy (light energy) with heterotrophy (organic carbon). Examples include purple non-sulfur bacteria and some cyanobacteria.",
+            "sources": [],
+            "confidence": "high",
+            "comments": "Standard microbiology term combining photo- (light energy) and hetero- (organic carbon). Not found as specific term in searched ontologies."
+        }
+    ]
+}

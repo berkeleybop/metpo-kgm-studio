@@ -13,21 +13,16 @@ You are assisting in identifying **authoritative ontology or curated reference s
 An entire TSV or CSV file containing multiple class records will be provided as input.
 
 
-### Requirements (OBO Foundry FP-006)
+A TSV file or pasted table containing records to process will be provided as input. Process the records so as to ensure accuracy and prevent hallucinations. 
 
-1. **Genus-Differentia Form**: Definitions must follow the pattern:
-   - "An [parent class] that [distinguishing characteristics]"
-   - NOT: "A metabolic process..." (avoid starting with article + class name)
+## Requirements (OBO Foundry FP-006)
 
-2. **Definition Quality**:
-   - Must be clear, concise, and unambiguous
-   - Must be intelligible to a biologist or microbiologist
-   - Should reference parent classes from the ontology hierarchy
-   - Should specify what makes this class distinct from siblings
+### 1\. Genus-Differentia Form
 
-3. **Avoid Circularity**: Do not use the term being defined in its own definition
+Definitions must follow the pattern:
 
-4. **Scientific Accuracy**: Base definitions on established scientific knowledge
+* "An \[parent class\] that \[distinguishing characteristics\]"
+* NOT: "A metabolic process..." (avoid starting with article \+ class name)
 
 
 ## Input Format
@@ -148,11 +143,7 @@ Definitions must:
 ```
 ## Usage Notes for Curators
 
-1. **Save Prompts**: When you execute this prompt, copy it to `prompts/executed/` with a timestamp
-2. **Record Output**: Save the LLM output to `outputs/raw/[your-name]/` as JSON
-3. **Review Carefully**: The LLM can make mistakes - always verify scientific accuracy
-4. **Check Sources**: Verify that suggested sources actually support the definition
-5. **Iterate**: If the output is poor, revise this template and try again
+1. **Primary Sources (Ontology-based) \- STRONGLY PREFERRED**
 
 ## Actual Prompt
 

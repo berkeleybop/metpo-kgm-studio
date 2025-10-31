@@ -1,21 +1,9 @@
 #!/usr/bin/env python3
 """
 Convert JSON output from LLM definition generation to ROBOT template TSV format.
+Supports v2.1 format (structured sources, parent_class_id, quantitative_values) and legacy formats.
 
-This script transforms the JSON output containing ontology term definitions
-into a TSV file compatible with ROBOT template format for ontology editing.
-
-Supports both v2.1 format (with structured sources and parent_class_id) and 
-legacy formats (with simple source lists).
-
-Usage:
-    python json_to_robot_tsv.py input.json output.tsv
-    
-    Or import as module:
-    from json_to_robot_tsv import convert_json_to_robot_tsv
-    convert_json_to_robot_tsv('input.json', 'output.tsv')
-
-Version: 2.1 (2025-10-30)
+Usage: python json_to_robot_tsv.py input.json output.tsv
 """
 
 import json

@@ -65,7 +65,7 @@
             "proposed_definition": "A trophic type quality that inheres in an organism by virtue of the bearer's ability to use light as an energy source and inorganic compounds as electron donors.",
             "quantitative_values": null,
             "reasoning": "Photolithotrophs combine phototrophy (light energy) with lithotrophy (inorganic electron donors). Examples include purple and green sulfur bacteria that use H2S as electron donor.",
-            "sources": [],
+            "sources": [MICRO:0001482 (photolithotrophic)],
             "confidence": "medium",
             "comments": "Standard microbiology term but not found in ENVO or other searched OBO ontologies. Represents combination of phototrophy and lithotrophy nutritional strategies."
         },

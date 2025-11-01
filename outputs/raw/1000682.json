@@ -1,0 +1,12 @@
+{
+    "class_id": "METPO:1000682",
+    "class_label": "spore shaped",
+    "proposed_definition": "A cell shape in which the cell exhibits the characteristic morphology of a dormant spore, typically being smaller, more spherical or oval, and more refractile than vegetative cells of the same organism.",
+    "confidence": "medium",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'cell shape'. It distinguishes spore shape from vegetative cell shapes by specifying characteristics of dormant spores (reduced size, spherical/oval morphology, refractility). However, confidence is medium because 'spore shaped' is somewhat unusual as a cell shape category—spores are a cell type/state rather than purely a shape. The definition attempts to capture the morphological features that distinguish spores.",
+    "suggested_sources": [
+      "PMID:23899955",
+      "PMID:19165319",
+      "ISBN:9780073402406"
+    ]
+  }

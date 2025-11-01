@@ -1,0 +1,12 @@
+{
+    "class_id": "METPO:1000660",
+    "class_label": "phototrophic",
+    "proposed_definition": "A trophic type in which an organism obtains energy from light through photosynthetic or photochemical processes.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'trophic type'. It distinguishes phototrophy from other trophic types by specifying light as the energy source. This is intentionally broader than photoautotrophic, as phototrophs include both photoautotrophs (using inorganic carbon) and photoheterotrophs (using organic carbon). The synonym 'aerobic_anoxygenic_phototrophy' confirms this broader scope.",
+    "suggested_sources": [
+      "PMID:19888897",
+      "PMID:16760861",
+      "ISBN:9780073402406"
+    ]
+  }

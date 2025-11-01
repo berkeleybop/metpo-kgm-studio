@@ -1,0 +1,13 @@
+{
+  "class_id": "METPO:1000639",
+  "class_label": "chemolithotrophic",
+  "proposed_definition": "A trophic type in which an organism obtains energy from the oxidation of inorganic compounds and uses carbon dioxide or other inorganic carbon sources as the primary carbon source for biosynthesis.",
+  "confidence": "high",
+  "reasoning": "This definition follows the genus-differentia form starting with the parent class 'trophic type'. It distinguishes chemolithotrophy from other trophic types by specifying two key characteristics: (1) energy source - oxidation of inorganic compounds (differentiating from chemoorganotrophs that use organic compounds), and (2) carbon source - inorganic carbon like CO2 (differentiating from chemolithoheterotrophs). The definition avoids circularity and is consistent with standard microbiological terminology. Chemolithotrophs are also known as chemoautotrophs and include organisms that oxidize compounds such as hydrogen, reduced sulfur compounds, ferrous iron, ammonia, or nitrite.",
+  "suggested_sources": [
+    "PMID:16760861",
+    "PMID:20656790",
+    "ISBN:9780073402406"
+  ],
+  "notes": "The term 'chemolithotrophic' combines 'chemo-' (chemical energy), 'litho-' (rock/inorganic), and '-trophic' (nutrition). This definition captures both the energy metabolism (chemolithotrophic) and carbon source (autotrophic) aspects that together define this important microbial trophic strategy."
+}

@@ -1,0 +1,12 @@
+{
+    "class_id": "METPO:1003007",
+    "class_label": "facultatively acidophilic",
+    "proposed_definition": "A pH growth preference in which an organism can grow at both acidic pH values (typically below pH 5.5) and at neutral or near-neutral pH, without having a strict requirement for low pH.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'pH growth preference'. It distinguishes facultative acidophiles from obligate acidophiles (require low pH) and neutrophiles (cannot grow at low pH) by specifying the ability to grow across a broad pH range including acidic conditions. The synonyms 'facultative acidophile' and 'facultatively acidophilic' confirm this interpretation.",
+    "suggested_sources": [
+      "PMID:18248358",
+      "PMID:16294299",
+      "PMID:11029078"
+    ]
+  }

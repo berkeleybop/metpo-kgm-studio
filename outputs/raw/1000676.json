@@ -1,0 +1,12 @@
+{
+    "class_id": "METPO:1000676",
+    "class_label": "helical shaped",
+    "proposed_definition": "A cell shape in which the cell forms a spiral or corkscrew-like structure with regular helical coiling along its length, typically with multiple complete turns.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'cell shape'. It distinguishes helical cells from other curved shapes (vibrioid, S-shaped) by specifying the regular spiral/helical coiling pattern with multiple turns. This morphology is characteristic of organisms like Spirillum and spirochetes, representing a distinct and recognizable cell shape in microbiology.",
+    "suggested_sources": [
+      "PMID:21636714",
+      "PMID:23899955",
+      "ISBN:9780073402406"
+    ]
+  }

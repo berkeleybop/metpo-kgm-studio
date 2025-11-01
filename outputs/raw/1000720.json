@@ -1,0 +1,12 @@
+{
+    "class_id": "METPO:1000720",
+    "class_label": "facultative psychrophilic",
+    "proposed_definition": "A temperature preference in which an organism can grow at low temperatures typically below 15°C but exhibits optimal growth at moderate temperatures between 20°C and 25°C.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'temperature preference'. It distinguishes facultative psychrophiles from obligate psychrophiles (optimal growth at low temperatures) and mesophiles (cannot grow at low temperatures) by specifying the ability to grow at cold temperatures while having optimal growth at moderate temperatures. This represents organisms that are cold-tolerant but not cold-requiring.",
+    "suggested_sources": [
+      "PMID:16294299",
+      "PMID:11029078",
+      "ISBN:9780073402406"
+    ]
+  }

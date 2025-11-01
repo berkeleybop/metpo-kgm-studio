@@ -1,0 +1,12 @@
+{
+    "class_id": "METPO:1000678",
+    "class_label": "oval shaped",
+    "proposed_definition": "A cell shape in which the cell is ellipsoidal or egg-shaped, with a length moderately greater than the width and with smoothly curved sides and rounded ends.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'cell shape'. It distinguishes oval shape from other cell shapes by specifying the ellipsoidal morphology with moderate elongation and smooth curvature. This differentiates it from spherical (coccus) cells and more elongated rod-shaped (bacillus) cells. The definition provides clear morphological criteria.",
+    "suggested_sources": [
+      "PMID:21636714",
+      "PMID:23899955",
+      "ISBN:9780073402406"
+    ]
+  }

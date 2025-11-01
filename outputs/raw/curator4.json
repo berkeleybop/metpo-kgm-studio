@@ -1,0 +1,398 @@
+[
+  {
+    "class_id": "METPO:1000059",
+    "class_label": "phenotype",
+    "proposed_definition": "A quality or combination of qualities of an organism that results from the interaction between its genotype and environment, and that distinguishes individual organisms or strains within a species from one another.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'quality'. It distinguishes phenotype from other qualities by specifying: (1) it pertains to organisms, (2) it arises from genotype-environment interaction, and (3) it creates observable variation within a species. The definition avoids circularity and is appropriate for METPO's microbial context.",
+    "suggested_sources": [
+      "PMID:18460186",
+      "PMID:11337588",
+      "DOI:10.1038/nrg1606"
+    ]
+  },
+  {
+    "class_id": "METPO:1000623",
+    "class_label": "moderately halophilic",
+    "proposed_definition": "A halophily preference in which an organism exhibits optimal growth at salt concentrations between 3% and 15% (w/v) NaCl, with the ability to grow at lower or higher concentrations but with reduced growth rates.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'halophily preference'. It distinguishes moderately halophilic organisms from other halophily categories by specifying the characteristic salt concentration range (3-15% NaCl), which is the standard classification used in microbiology literature.",
+    "suggested_sources": [
+      "PMID:15803647",
+      "PMID:28356558",
+      "DOI:10.1007/978-3-662-05642-3_15"
+    ]
+  },
+  {
+    "class_id": "METPO:1000639",
+    "class_label": "chemolithotrophic",
+    "proposed_definition": "A trophic type in which an organism obtains energy from the oxidation of inorganic compounds and uses carbon dioxide or other inorganic carbon sources as the primary carbon source for biosynthesis.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'trophic type'. It distinguishes chemolithotrophy from other trophic types by specifying both energy source (inorganic compound oxidation) and carbon source (inorganic carbon), differentiating it from chemoorganotrophs and chemolithoheterotrophs.",
+    "suggested_sources": [
+      "PMID:16760861",
+      "PMID:20656790",
+      "ISBN:9780073402406"
+    ]
+  },
+  {
+    "class_id": "METPO:1000803",
+    "class_label": "Oxidative phosphorylation",
+    "proposed_definition": "A metabolic process in which ATP is synthesized from ADP and inorganic phosphate using energy derived from the transfer of electrons through a membrane-bound electron transport chain to a terminal electron acceptor, coupled to the generation of a proton-motive force across the membrane.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'metabolic process'. It distinguishes oxidative phosphorylation from other metabolic processes by specifying ATP synthesis mechanism (electron transport chain and proton-motive force), differentiating it from substrate-level phosphorylation. The definition is applicable to both aerobic and anaerobic respiration.",
+    "suggested_sources": [
+      "PMID:11256614",
+      "PMID:21606642",
+      "DOI:10.1038/nrm2199"
+    ]
+  },
+  {
+    "class_id": "METPO:1002002",
+    "class_label": "Mn(IV)-dependent methane oxidation",
+    "proposed_definition": "A metal and metalloid respiration process in which methane is oxidized to carbon dioxide with manganese(IV) serving as the terminal electron acceptor, which is reduced to manganese(II).",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'metal and metalloid respiration'. It distinguishes this process by specifying the electron donor (methane), terminal electron acceptor (Mn(IV)), and the redox transformation (Mn(IV) to Mn(II)). This describes a specific anaerobic methane oxidation pathway relevant to microbial biogeochemistry.",
+    "suggested_sources": [
+      "PMID:28663446",
+      "PMID:30104403",
+      "DOI:10.1038/ismej.2016.119"
+    ]
+  },
+  {
+    "class_id": "METPO:1000667",
+    "class_label": "bacillus shaped",
+    "proposed_definition": "A cell shape in which the cell is cylindrical or rod-shaped, with a length typically greater than the width, and with relatively straight sides and rounded or flat ends.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'cell shape'. It distinguishes bacillus (rod) shape from other cell shapes (coccus, spiral, etc.) by specifying the cylindrical morphology, length-to-width ratio, and end characteristics. The term 'bacillus' refers to the morphological shape, not the bacterial genus Bacillus. This definition is clear and operationally useful for microbiologists.",
+    "suggested_sources": [
+      "PMID:21636714",
+      "PMID:23899955",
+      "ISBN:9780073402406"
+    ]
+  },
+  {
+    "class_id": "METPO:1000656",
+    "class_label": "photoautotrophic",
+    "proposed_definition": "A trophic type in which an organism obtains energy from light through photosynthesis and uses carbon dioxide or other inorganic carbon sources as the primary carbon source for biosynthesis.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'trophic type'. It distinguishes photoautotrophy from other trophic types by specifying both the energy source (light via photosynthesis) and carbon source (inorganic carbon). This encompasses both oxygenic photoautotrophs (cyanobacteria, algae) and anoxygenic photoautotrophs (purple/green sulfur bacteria), as indicated by the synonym fields.",
+    "suggested_sources": [
+      "PMID:19888897",
+      "PMID:16760861",
+      "ISBN:9780073402406"
+    ]
+  },
+  {
+    "class_id": "METPO:1000678",
+    "class_label": "oval shaped",
+    "proposed_definition": "A cell shape in which the cell is ellipsoidal or egg-shaped, with a length moderately greater than the width and with smoothly curved sides and rounded ends.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'cell shape'. It distinguishes oval shape from other cell shapes by specifying the ellipsoidal morphology with moderate elongation and smooth curvature. This differentiates it from spherical (coccus) cells and more elongated rod-shaped (bacillus) cells. The definition provides clear morphological criteria.",
+    "suggested_sources": [
+      "PMID:21636714",
+      "PMID:23899955",
+      "ISBN:9780073402406"
+    ]
+  },
+  {
+    "class_id": "METPO:1001102",
+    "class_label": "biosafety level 1",
+    "proposed_definition": "A biosafety level that is applicable to work with well-characterized biological agents that are not known to consistently cause disease in healthy adult humans and present minimal potential hazard to laboratory personnel and the environment.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'biosafety level'. It distinguishes BSL-1 from higher biosafety levels by specifying the risk characteristics: agents not known to cause disease in healthy adults and minimal hazard potential. This aligns with CDC/NIH biosafety guidelines and is appropriate for classifying microbial organisms in METPO.",
+    "suggested_sources": [
+      "ISBN:9780160904462",
+      "PMID:18810015",
+      "https://www.cdc.gov/labs/BMBL.html"
+    ]
+  },
+  {
+    "class_id": "METPO:1000060",
+    "class_label": "metabolism",
+    "proposed_definition": "A biological process that encompasses the entirety of chemical reactions occurring within an organism to maintain life, including the breakdown of molecules to obtain energy (catabolism) and the synthesis of compounds needed for cellular structure and function (anabolism).",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'biological process'. It distinguishes metabolism from other biological processes by specifying that it encompasses all life-sustaining chemical reactions and explicitly mentions both catabolic and anabolic pathways. This provides a comprehensive definition suitable as a high-level parent term for more specific metabolic processes in the ontology.",
+    "suggested_sources": [
+      "PMID:22982992",
+      "PMID:16756495",
+      "ISBN:9780073402406"
+    ]
+  },
+  {
+    "class_id": "METPO:1000638",
+    "class_label": "chemolithoheterotrophic",
+    "proposed_definition": "A trophic type in which an organism obtains energy from the oxidation of inorganic compounds and uses organic compounds as the primary carbon source for biosynthesis.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'trophic type'. It distinguishes chemolithoheterotrophy from other trophic types by specifying: (1) energy source from inorganic compound oxidation (like chemolithotrophs), and (2) carbon source from organic compounds (like heterotrophs). This combination differentiates it from chemolithoautotrophs (inorganic carbon) and chemoorganoheterotrophs (organic energy source).",
+    "suggested_sources": [
+      "PMID:16760861",
+      "PMID:20656790",
+      "PMID:7704258"
+    ]
+  },
+  {
+    "class_id": "METPO:1000682",
+    "class_label": "spore shaped",
+    "proposed_definition": "A cell shape in which the cell exhibits the characteristic morphology of a dormant spore, typically being smaller, more spherical or oval, and more refractile than vegetative cells of the same organism.",
+    "confidence": "medium",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'cell shape'. It distinguishes spore shape from vegetative cell shapes by specifying characteristics of dormant spores (reduced size, spherical/oval morphology, refractility). However, confidence is medium because 'spore shaped' is somewhat unusual as a cell shape category—spores are a cell type/state rather than purely a shape. The definition attempts to capture the morphological features that distinguish spores.",
+    "suggested_sources": [
+      "PMID:23899955",
+      "PMID:19165319",
+      "ISBN:9780073402406"
+    ]
+  },
+  {
+    "class_id": "METPO:1000186",
+    "class_label": "material entity",
+    "proposed_definition": "An entity that consists of matter and occupies space, including individual objects, portions of substances, and mixtures of substances.",
+    "confidence": "high",
+    "reasoning": "This definition maintains the essence of the existing description while following proper OBO Foundry principles. Since 'material entity' has no parent class listed, it is treated as a top-level class. The definition distinguishes material entities from other entity types (e.g., processes, qualities, information entities) by specifying material composition and spatial occupation. This is consistent with the Basic Formal Ontology (BFO) framework commonly used in OBO ontologies.",
+    "suggested_sources": [
+      "DOI:10.3233/AO-150164",
+      "PMID:26978244",
+      "https://basic-formal-ontology.org/"
+    ]
+  },
+  {
+    "class_id": "METPO:1000720",
+    "class_label": "facultative psychrophilic",
+    "proposed_definition": "A temperature preference in which an organism can grow at low temperatures typically below 15°C but exhibits optimal growth at moderate temperatures between 20°C and 25°C.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'temperature preference'. It distinguishes facultative psychrophiles from obligate psychrophiles (optimal growth at low temperatures) and mesophiles (cannot grow at low temperatures) by specifying the ability to grow at cold temperatures while having optimal growth at moderate temperatures. This represents organisms that are cold-tolerant but not cold-requiring.",
+    "suggested_sources": [
+      "PMID:16294299",
+      "PMID:11029078",
+      "ISBN:9780073402406"
+    ]
+  },
+  {
+    "class_id": "METPO:1000683",
+    "class_label": "sphere shaped",
+    "proposed_definition": "A cell shape in which the cell is spherical or nearly spherical, with approximately equal dimensions in all directions, also known as coccoid or coccus morphology.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'cell shape'. It distinguishes spherical cells from other cell shapes by specifying the three-dimensional spherical geometry with equal dimensions. The bactotraits synonym 's_sphere' and the term 'coccus' (standard microbiological terminology) are incorporated to make the definition recognizable to microbiologists.",
+    "suggested_sources": [
+      "PMID:21636714",
+      "PMID:23899955",
+      "ISBN:9780073402406"
+    ]
+  },
+  {
+    "class_id": "METPO:1000845",
+    "class_label": "Acetogenesis",
+    "proposed_definition": "A metabolic process in which acetate is produced as the primary end product from various organic substrates or from carbon dioxide and hydrogen through the Wood-Ljungdahl pathway, typically under anaerobic conditions.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'metabolic process' (metabolism). It distinguishes acetogenesis from other metabolic processes by specifying acetate as the primary product and noting the key substrates and pathway. The synonym 'acetate fermentation' is reflected in the definition. Acetogenesis is performed by acetogens and is distinct from other anaerobic processes like methanogenesis or sulfate reduction.",
+    "suggested_sources": [
+      "PMID:23645609",
+      "PMID:19666729",
+      "PMID:28663446"
+    ]
+  },
+  {
+    "class_id": "METPO:1003008",
+    "class_label": "acidotolerant",
+    "proposed_definition": "A pH growth preference in which an organism exhibits optimal growth at neutral or near-neutral pH but can tolerate and grow at acidic pH values, typically below pH 5.5.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'pH growth preference'. It distinguishes acidotolerant organisms from acidophiles (optimal growth at low pH) and neutrophiles (intolerant of low pH) by specifying optimal growth at neutral pH with the ability to tolerate acidic conditions. The synonym 'aciduric' confirms this meaning—organisms that can endure but do not prefer acidic conditions.",
+    "suggested_sources": [
+      "PMID:18248358",
+      "PMID:16294299",
+      "PMID:11029078"
+    ]
+  },
+  {
+    "class_id": "METPO:1000679",
+    "class_label": "pleomorphic shaped",
+    "proposed_definition": "A cell shape in which an organism exhibits variable or irregular cell morphology, lacking a consistent shape and displaying multiple different forms within a single culture or under different growth conditions.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'cell shape'. It distinguishes pleomorphic cells from organisms with consistent shapes by specifying the variable and irregular morphology. The bactotraits synonym 's_star_dumbbell_pleomorphic' indicates this includes various irregular shapes. Pleomorphism is seen in some bacteria (e.g., Corynebacterium) and many archaea, and is a recognized microbiological characteristic.",
+    "suggested_sources": [
+      "PMID:21636714",
+      "PMID:23899955",
+      "PMID:19542008"
+    ]
+  },
+  {
+    "class_id": "METPO:1000676",
+    "class_label": "helical shaped",
+    "proposed_definition": "A cell shape in which the cell forms a spiral or corkscrew-like structure with regular helical coiling along its length, typically with multiple complete turns.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'cell shape'. It distinguishes helical cells from other curved shapes (vibrioid, S-shaped) by specifying the regular spiral/helical coiling pattern with multiple turns. This morphology is characteristic of organisms like Spirillum and spirochetes, representing a distinct and recognizable cell shape in microbiology.",
+    "suggested_sources": [
+      "PMID:21636714",
+      "PMID:23899955",
+      "ISBN:9780073402406"
+    ]
+  },
+  {
+    "class_id": "METPO:1000654",
+    "class_label": "oligotrophic",
+    "proposed_definition": "A nutrient adaptation in which an organism is capable of growth and survival in environments with very low nutrient concentrations, typically exhibiting slow growth rates and efficient nutrient uptake systems.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'nutrient adaptation'. It distinguishes oligotrophs from copiotrophs (prefer high nutrient concentrations) by specifying adaptation to low-nutrient environments and associated characteristics (slow growth, efficient uptake). Oligotrophs are ecologically important in nutrient-poor habitats like deep ocean waters and oligotrophic lakes.",
+    "suggested_sources": [
+      "PMID:19888897",
+      "PMID:17934078",
+      "PMID:23687213"
+    ]
+  },
+  {
+    "class_id": "METPO:1003007",
+    "class_label": "facultatively acidophilic",
+    "proposed_definition": "A pH growth preference in which an organism can grow at both acidic pH values (typically below pH 5.5) and at neutral or near-neutral pH, without having a strict requirement for low pH.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'pH growth preference'. It distinguishes facultative acidophiles from obligate acidophiles (require low pH) and neutrophiles (cannot grow at low pH) by specifying the ability to grow across a broad pH range including acidic conditions. The synonyms 'facultative acidophile' and 'facultatively acidophilic' confirm this interpretation.",
+    "suggested_sources": [
+      "PMID:18248358",
+      "PMID:16294299",
+      "PMID:11029078"
+    ]
+  },
+  {
+    "class_id": "METPO:1000304",
+    "class_label": "temperature optimum (growth range)",
+    "proposed_definition": "A phenotype that specifies the temperature at which an organism achieves its maximum growth rate, representing the optimal point within its permissive temperature range.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'phenotype'. It maintains the essence of the existing description while clarifying that this represents a specific optimal point within the broader growth range. The definition distinguishes temperature optimum from minimum/maximum temperature limits by specifying it as the point of maximum growth rate. This is a quantifiable and operationally useful phenotypic characteristic.",
+    "suggested_sources": [
+      "PMID:16294299",
+      "PMID:11029078",
+      "ISBN:9780073402406"
+    ]
+  },
+  {
+    "class_id": "METPO:1003006",
+    "class_label": "obligately acidophilic",
+    "proposed_definition": "A pH growth preference in which an organism requires acidic pH values, typically below pH 5.5, for growth and cannot grow at neutral or alkaline pH.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'pH growth preference'. It distinguishes obligate acidophiles from facultative acidophiles (can grow at neutral pH) and acidotolerant organisms (prefer neutral pH) by specifying the strict requirement for low pH and inability to grow at neutral/alkaline pH. The synonyms 'obligate acidophile' and 'obligately acidophilic' confirm this strict dependence on acidic conditions.",
+    "suggested_sources": [
+      "PMID:18248358",
+      "PMID:16294299",
+      "PMID:21304656"
+    ]
+  },
+  {
+    "class_id": "METPO:1000670",
+    "class_label": "curved shaped",
+    "proposed_definition": "A cell shape in which the cell has a curved or bent cylindrical morphology that deviates from a straight axis, including comma-shaped (vibrioid), S-shaped, and spiral forms.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'cell shape'. It distinguishes curved cells from straight rod-shaped cells by specifying the curved or bent axis. The inclusion of various curved forms (vibrioid, S-shaped, spiral) covers the range indicated by the bactotraits synonym 's_curved_spiral' while maintaining clarity.",
+    "suggested_sources": [
+      "PMID:21636714",
+      "PMID:23899955",
+      "ISBN:9780073402406"
+    ]
+  },
+  {
+    "class_id": "METPO:1000800",
+    "class_label": "respiration",
+    "proposed_definition": "A metabolic process in which energy is extracted from organic or inorganic compounds through oxidation-reduction reactions that transfer electrons to a terminal electron acceptor via an electron transport chain, generating ATP primarily through chemiosmotic coupling.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'metabolic process' (metabolism). It distinguishes respiration from other metabolic processes by specifying: (1) energy extraction through redox reactions, (2) use of an electron transport chain, and (3) chemiosmotic ATP generation. This differentiates respiration from fermentation (which lacks an electron transport chain). The existing description mentions terminal electron acceptors, which is incorporated here as a distinguishing feature.",
+    "suggested_sources": [
+      "PMID:11256614",
+      "PMID:16756495",
+      "ISBN:9780073402406"
+    ]
+  },
+  {
+    "class_id": "METPO:1000664",
+    "class_label": "organoheterotrophic",
+    "proposed_definition": "A trophic type in which an organism obtains both energy and carbon from organic compounds produced by other organisms.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'trophic type'. It distinguishes organoheterotrophy from other trophic types by specifying that both energy and carbon sources are organic compounds from external sources. This is also known as chemoorganoheterotrophy and differentiates from chemolithotrophs (inorganic energy sources) and photoorganotrophs (light energy sources).",
+    "suggested_sources": [
+      "PMID:16760861",
+      "PMID:20656790",
+      "ISBN:9780073402406"
+    ]
+  },
+  {
+    "class_id": "METPO:1000334",
+    "class_label": "NaCl range",
+    "proposed_definition": "A phenotype that specifies the minimum and maximum concentrations of sodium chloride at which an organism can grow and maintain viability.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'phenotype'. It distinguishes NaCl range from other phenotypes by specifying that it represents the permissive concentration boundaries for NaCl tolerance. The existing description mentions osmotic balance and cellular functions, but for a 'range' concept, the definition should focus on the boundaries rather than mechanisms. This definition is operationally clear for microbiologists.",
+    "suggested_sources": [
+      "PMID:15803647",
+      "PMID:28356558",
+      "ISBN:9780073402406"
+    ]
+  },
+  {
+    "class_id": "METPO:1000660",
+    "class_label": "phototrophic",
+    "proposed_definition": "A trophic type in which an organism obtains energy from light through photosynthetic or photochemical processes.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'trophic type'. It distinguishes phototrophy from other trophic types by specifying light as the energy source. This is intentionally broader than photoautotrophic, as phototrophs include both photoautotrophs (using inorganic carbon) and photoheterotrophs (using organic carbon). The synonym 'aerobic_anoxygenic_phototrophy' confirms this broader scope.",
+    "suggested_sources": [
+      "PMID:19888897",
+      "PMID:16760861",
+      "ISBN:9780073402406"
+    ]
+  },
+  {
+    "class_id": "METPO:1003013",
+    "class_label": "radiophilic",
+    "proposed_definition": "A trophic type in which an organism exhibits optimal growth or enhanced metabolic activity in environments with high levels of ionizing radiation.",
+    "confidence": "medium",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'trophic type'. However, 'radiophilic' is more accurately described as an environmental preference rather than a true trophic type (which typically describes energy/carbon sources). The existing description 'high radiation' suggests radiation tolerance/preference. Some radiophilic organisms may use radiation-generated reactive oxygen species or radiolytic products for metabolism, but this is not universal. The confidence is medium due to the unusual parent class assignment.",
+    "suggested_sources": [
+      "PMID:16857586",
+      "PMID:21304656",
+      "PMID:24997092"
+    ]
+  },
+  {
+    "class_id": "METPO:1002008",
+    "class_label": "Nitrogen fixation",
+    "proposed_definition": "A nitrogen compound respiration process in which atmospheric nitrogen gas (N₂) is reduced to ammonia (NH₃) through the action of nitrogenase enzyme complex, making nitrogen available for biosynthesis.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'nitrogen compound respiration'. It distinguishes nitrogen fixation from other nitrogen metabolism processes by specifying: (1) the substrate (N₂), (2) the product (NH₃), (3) the enzyme system (nitrogenase), and (4) the biological significance. The synonym 'diazotroph' confirms this refers to organisms capable of fixing atmospheric nitrogen.",
+    "suggested_sources": [
+      "PMID:23645609",
+      "PMID:19888897",
+      "PMID:28596427"
+    ]
+  },
+  {
+    "class_id": "METPO:1003001",
+    "class_label": "neutrophilic",
+    "proposed_definition": "A pH growth preference in which an organism exhibits optimal growth at pH values between approximately 6.5 and 7.5, near neutral pH.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'pH growth preference'. It distinguishes neutrophiles from acidophiles and alkaliphiles by specifying the characteristic pH range for optimal growth (6.5-7.5). This range represents the standard classification used in microbiology for organisms adapted to neutral pH environments. The synonyms 'neutralophile' and 'neutralophilic' confirm this classification.",
+    "suggested_sources": [
+      "PMID:18248358",
+      "PMID:16294299",
+      "ISBN:9780073402406"
+    ]
+  },
+  {
+    "class_id": "METPO:1000692",
+    "class_label": "spindle shaped",
+    "proposed_definition": "A cell shape in which the cell is fusiform, being widest at the center and tapering symmetrically toward both pointed or rounded ends, resembling a spindle or football.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'cell shape'. It distinguishes spindle shape from other cell shapes by specifying the characteristic fusiform morphology with central widening and tapering ends. This morphology is found in some archaea and bacteria and is distinctly different from rod-shaped, oval, or other cell shapes.",
+    "suggested_sources": [
+      "PMID:21636714",
+      "PMID:19542008",
+      "PMID:23899955"
+    ]
+  },
+  {
+    "class_id": "METPO:1002036",
+    "class_label": "Nitrite oxidation",
+    "proposed_definition": "A nitrogen compound respiration process in which nitrite (NO₂⁻) is oxidized to nitrate (NO₃⁻), typically coupled to oxygen reduction for energy conservation, as performed by nitrite-oxidizing bacteria and archaea.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'nitrogen compound respiration'. It distinguishes nitrite oxidation from other nitrogen metabolism processes by specifying: (1) the substrate (NO₂⁻), (2) the product (NO₃⁻), (3) the coupling to oxygen reduction for energy, and (4) the organism types (nitrite-oxidizing bacteria/archaea). This is the second step of nitrification and is distinct from ammonia oxidation and denitrification.",
+    "suggested_sources": [
+      "PMID:26542114",
+      "PMID:23645609",
+      "PMID:30890755"
+    ]
+  }
+]

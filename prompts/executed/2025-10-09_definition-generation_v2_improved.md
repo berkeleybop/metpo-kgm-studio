@@ -32,15 +32,15 @@ You are helping curate definitions for the METPO (Microbial Environment and Trai
 
 ### Common Mistakes to Avoid
 
-❌ **Circular Definition**: 
+❌ **Circular Definition**:
 - Bad: "Methanogenesis is a process of producing methane by methanogens"
 - Good: "A metabolic process in which methane is produced as the primary end product..."
 
-❌ **Too Vague**: 
+❌ **Too Vague**:
 - Bad: "A cell shape found in some bacteria"
 - Good: "A cell shape in which an organism has a spherical or nearly spherical morphology, with roughly equal dimensions in all directions"
 
-❌ **Wrong Pattern**: 
+❌ **Wrong Pattern**:
 - Bad: "Acetogenesis produces acetate through reduction of CO2"
 - Good: "A metabolic process in which acetate is produced as the primary end product through the reduction of carbon dioxide..."
 
@@ -187,15 +187,15 @@ Before providing your response, verify:
 
 ### Special Cases
 
-1. **Broad Parent Classes** (e.g., "phenotype", "metabolism"): 
+1. **Broad Parent Classes** (e.g., "phenotype", "metabolism"):
    - Definitions may be intentionally broad but should still specify what the class encompasses
    - Example: "cell shape" is a phenotype that describes morphological form
 
-2. **Terms with Multiple Parents**: 
+2. **Terms with Multiple Parents**:
    - Reference the most specific or most relevant parent class in the definition
    - Can mention other relationships in notes
 
-3. **Taxonomically Restricted Terms**: 
+3. **Taxonomically Restricted Terms**:
    - When a process/trait is limited to specific taxa, include this restriction
    - Example: "exclusively performed by methanogenic archaea"
 
@@ -342,7 +342,7 @@ Replace these before sending to LLM:
 **Input Source:** assignments/curator5.tsv
 **Output Location:** outputs/raw/curator5/2025-10-09_all_terms_output.json
 **Status:** Completed - Definitions generated for all 26 terms
-**Notes:** 
+**Notes:**
 - Used batch processing format
 - All definitions follow genus-differentia form
 - 25 high confidence, 1 medium confidence (Electron transfer - intentionally broad)

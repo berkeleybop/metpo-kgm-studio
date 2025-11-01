@@ -1,9 +1,9 @@
 # Prompt Template Improvements: Version 1.0 → Version 2.0
 
-**Date:** 2025-10-09  
-**Curator:** curator5  
-**Original Template:** `prompts/templates/definition-generation.md` (v1.0)  
-**Improved Template:** `prompts/executed/2025-10-09_definition-generation_v2_improved.md` (v2.0)  
+**Date:** 2025-10-09
+**Curator:** curator5
+**Original Template:** `prompts/templates/definition-generation.md` (v1.0)
+**Improved Template:** `prompts/executed/2025-10-09_definition-generation_v2_improved.md` (v2.0)
 
 ---
 
@@ -35,7 +35,7 @@ Version 2.0 of the definition generation prompt template represents a significan
 }
 ```
 
-**Impact:** 
+**Impact:**
 - Enables processing multiple terms in one API call
 - Maintains consistency across related terms
 - Reduces processing time and cost
@@ -538,7 +538,7 @@ These enhancements reduced curator review time, improved definition quality, and
 
 ---
 
-**Document Version:** 1.0  
-**Author:** GitHub Copilot (AI Assistant)  
-**Reviewer:** [Curator name]  
+**Document Version:** 1.0
+**Author:** GitHub Copilot (AI Assistant)
+**Reviewer:** [Curator name]
 **Last Updated:** 2025-10-09

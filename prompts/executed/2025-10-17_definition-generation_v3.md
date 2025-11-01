@@ -3,7 +3,7 @@
 **Version:** 3.0
 **Purpose:** Generate textual definitions for METPO ontology classes following OBO Foundry principles
 **Date Created:** 2025-10-17
-**Changes from v2.0:** 
+**Changes from v2.0:**
 - Prioritize ontology sources (OLS4, OMP, BioPortal) over literature (PMID/DOI)
 - Remove notes field when empty in output
 - Ensure all terms are defined
@@ -34,15 +34,15 @@ You are helping curate definitions for the METPO (Microbial Environment and Trai
 
 ### Common Mistakes to Avoid
 
-❌ **Circular Definition**: 
+❌ **Circular Definition**:
 - Bad: "Methanogenesis is a process of producing methane by methanogens"
 - Good: "A metabolic process in which methane is produced as the primary end product..."
 
-❌ **Too Vague**: 
+❌ **Too Vague**:
 - Bad: "A cell shape found in some bacteria"
 - Good: "A cell shape in which an organism has a spherical or nearly spherical morphology, with roughly equal dimensions in all directions"
 
-❌ **Wrong Pattern**: 
+❌ **Wrong Pattern**:
 - Bad: "Acetogenesis produces acetate through reduction of CO2"
 - Good: "A metabolic process in which acetate is produced as the primary end product through the reduction of carbon dioxide..."
 
@@ -160,15 +160,15 @@ For each term, you will receive:
    - **OLS4 (Ontology Lookup Service)**: https://www.ebi.ac.uk/ols4/
      - Format: `OLS:[ONTOLOGY]:[ID]` (e.g., `OLS:GO:0009061`, `OLS:ENVO:00002001`, `OLS:CHEBI:15377`)
      - Search for related terms in GO (Gene Ontology), ENVO (Environment Ontology), CHEBI (Chemical Entities of Biological Interest), NCBITaxon, etc.
-   
+
    - **OMP (Ontology for Microbial Phenotypes)**: http://www.ontobee.org/ontology/OMP
      - Format: `OMP:[ID]` (e.g., `OMP:0000001`)
      - Specifically relevant for microbial traits and phenotypes
-   
+
    - **BioPortal**: https://bioportal.bioontology.org/
      - Format: `BioPortal:[ONTOLOGY]:[ID]` (e.g., `BioPortal:ENVO:01000804`)
      - Alternative source for many ontologies including ENVO, OMP, GO, etc.
-   
+
    - **Other relevant ontologies**: PATO (Phenotype And Trait Ontology), MicrO (Microbiology Ontology), etc.
 
 2. **Authoritative Textbooks and Manuals** (HIGH PRIORITY):
@@ -187,7 +187,7 @@ For each term, you will receive:
 - Unpublished materials
 - Sources without proper citations
 
-**Minimum Requirements**: 
+**Minimum Requirements**:
 - Provide at least 2-3 credible sources per definition
 - **Prioritize at least 1-2 ontology sources** (OLS4, OMP, or BioPortal) whenever possible
 - Supplement with literature sources (PMID/DOI) as needed
@@ -229,15 +229,15 @@ Before providing your response, verify:
 
 ### Special Cases
 
-1. **Broad Parent Classes** (e.g., "phenotype", "metabolism"): 
+1. **Broad Parent Classes** (e.g., "phenotype", "metabolism"):
    - Definitions may be intentionally broad but should still specify what the class encompasses
    - Example: "cell shape" is a phenotype that describes morphological form
 
-2. **Terms with Multiple Parents**: 
+2. **Terms with Multiple Parents**:
    - Reference the most specific or most relevant parent class in the definition
    - Can mention other relationships in notes (if you include the notes field)
 
-3. **Taxonomically Restricted Terms**: 
+3. **Taxonomically Restricted Terms**:
    - When a process/trait is limited to specific taxa, include this restriction
    - Example: "exclusively performed by methanogenic archaea"
    - Reference NCBITaxon from OLS4 when citing taxonomic groups
@@ -370,7 +370,7 @@ Before providing your response, verify:
 
 1. **Save Executed Prompts**: Copy this prompt to `prompts/executed/YYYY-MM-DD_[description].md` with actual values filled in
 2. **Record Raw Output**: Save the LLM output to `outputs/raw/[your-name]/YYYY-MM-DD_output.json`
-3. **Review Carefully**: 
+3. **Review Carefully**:
    - Verify scientific accuracy with domain expertise
    - Check that all OBO principles are followed
    - **Validate that ontology sources exist** by checking OLS4, OMP, or BioPortal
@@ -419,7 +419,7 @@ I have multiple terms that need definitions. Here is the data:
 
 Please provide definitions for **ALL terms** in the input data following the OBO Foundry principles outlined above, formatted as a JSON object with metadata and an array of definitions.
 
-**IMPORTANT**: 
+**IMPORTANT**:
 - Generate definitions for **EVERY term** provided in the input, including those that already have existing definitions
 - For terms with existing definitions, you may improve or refine them while maintaining their core meaning
 - Count the total number of terms in the input and ensure your output matches that count

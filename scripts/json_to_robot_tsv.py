@@ -32,12 +32,12 @@ def load_json(json_path: str) -> Dict[str, Any]:
         raise FileNotFoundError(f"JSON file not found: {json_path}")
     
     with open(json_file, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    
+        data: Dict[str, Any] = json.load(f)
+
     return data
 
 
-def convert_sources_to_pipe_separated(sources) -> str:
+def convert_sources_to_pipe_separated(sources: List[Any] | None) -> str:
     """
     Convert sources to pipe-separated string for ROBOT template.
     
@@ -67,7 +67,7 @@ def convert_sources_to_pipe_separated(sources) -> str:
     return ''
 
 
-def format_quantitative_values(quant_values) -> str:
+def format_quantitative_values(quant_values: Dict[str, Any] | None) -> str:
     """
     Format quantitative values into a human-readable string for comments field.
     
@@ -77,7 +77,7 @@ def format_quantitative_values(quant_values) -> str:
     Returns:
         Formatted string describing the measurements, or empty string if None
     """
-    if not quant_values or quant_values == "null":
+    if not quant_values:
         return ''
     
     if isinstance(quant_values, dict):
@@ -280,7 +280,7 @@ def convert_json_to_robot_tsv(json_path: str, output_path: str) -> None:
         print(f"\n📋 v2.1 features included: {', '.join(v21_features)}")
 
 
-def main():
+def main() -> None:
     """Command-line interface."""
     if len(sys.argv) != 3:
         print("Usage: python json_to_robot_tsv.py <input.json> <output.tsv>")

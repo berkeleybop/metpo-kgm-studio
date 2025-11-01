@@ -1,0 +1,12 @@
+{
+    "class_id": "METPO:1000845",
+    "class_label": "Acetogenesis",
+    "proposed_definition": "A metabolic process in which acetate is produced as the primary end product from various organic substrates or from carbon dioxide and hydrogen through the Wood-Ljungdahl pathway, typically under anaerobic conditions.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'metabolic process' (metabolism). It distinguishes acetogenesis from other metabolic processes by specifying acetate as the primary product and noting the key substrates and pathway. The synonym 'acetate fermentation' is reflected in the definition. Acetogenesis is performed by acetogens and is distinct from other anaerobic processes like methanogenesis or sulfate reduction.",
+    "suggested_sources": [
+      "PMID:23645609",
+      "PMID:19666729",
+      "PMID:28663446"
+    ]
+  }

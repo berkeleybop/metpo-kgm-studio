@@ -1,0 +1,12 @@
+{
+    "class_id": "METPO:1003013",
+    "class_label": "radiophilic",
+    "proposed_definition": "A trophic type in which an organism exhibits optimal growth or enhanced metabolic activity in environments with high levels of ionizing radiation.",
+    "confidence": "medium",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'trophic type'. However, 'radiophilic' is more accurately described as an environmental preference rather than a true trophic type (which typically describes energy/carbon sources). The existing description 'high radiation' suggests radiation tolerance/preference. Some radiophilic organisms may use radiation-generated reactive oxygen species or radiolytic products for metabolism, but this is not universal. The confidence is medium due to the unusual parent class assignment.",
+    "suggested_sources": [
+      "PMID:16857586",
+      "PMID:21304656",
+      "PMID:24997092"
+    ]
+  }

@@ -2,9 +2,6 @@ name: Validate Definitions
 
 on:
   pull_request:
-    paths:
-      - 'assignments/**/*.tsv'
-      - 'outputs/reviewed/**/*.tsv'
   push:
     branches:
       - main

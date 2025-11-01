@@ -1,0 +1,12 @@
+{
+    "class_id": "METPO:1001102",
+    "class_label": "biosafety level 1",
+    "proposed_definition": "A biosafety level that is applicable to work with well-characterized biological agents that are not known to consistently cause disease in healthy adult humans and present minimal potential hazard to laboratory personnel and the environment.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'biosafety level'. It distinguishes BSL-1 from higher biosafety levels by specifying the risk characteristics: agents not known to cause disease in healthy adults and minimal hazard potential. This aligns with CDC/NIH biosafety guidelines and is appropriate for classifying microbial organisms in METPO.",
+    "suggested_sources": [
+      "ISBN:9780160904462",
+      "PMID:18810015",
+      "https://www.cdc.gov/labs/BMBL.html"
+    ]
+  }

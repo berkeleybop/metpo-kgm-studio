@@ -1,0 +1,12 @@
+{
+    "class_id": "METPO:1000654",
+    "class_label": "oligotrophic",
+    "proposed_definition": "A nutrient adaptation in which an organism is capable of growth and survival in environments with very low nutrient concentrations, typically exhibiting slow growth rates and efficient nutrient uptake systems.",
+    "confidence": "high",
+    "reasoning": "This definition follows the genus-differentia form starting with the parent class 'nutrient adaptation'. It distinguishes oligotrophs from copiotrophs (prefer high nutrient concentrations) by specifying adaptation to low-nutrient environments and associated characteristics (slow growth, efficient uptake). Oligotrophs are ecologically important in nutrient-poor habitats like deep ocean waters and oligotrophic lakes.",
+    "suggested_sources": [
+      "PMID:19888897",
+      "PMID:17934078",
+      "PMID:23687213"
+    ]
+  }

@@ -1,0 +1,341 @@
+{
+    "metadata": {
+        "total_definitions": 9,
+        "batch_size_limit": "5-10 terms per batch",
+        "curator": "curator5",
+        "ontology": "METPO",
+        "description": "OBO Foundry-compliant definitions for METPO terms with ontology source verification (Batch 3)",
+        "generation_date": "2025-10-30",
+        "prompt_version": "2.1",
+        "batch_number": 3
+    },
+    "definitions": [
+        {
+            "class_id": "METPO:1002001",
+            "class_label": "Fe(III)-dependent methane oxidation",
+            "parent_class": "Metal and metalloid respiration",
+            "parent_class_id": "GO:0015671",
+            "proposed_definition": "A metal and metalloid respiration process in which methane is oxidized using ferric iron (Fe(III)) as the terminal electron acceptor, resulting in the reduction of Fe(III) to Fe(II) under anaerobic conditions.",
+            "quantitative_values": null,
+            "reasoning": "Definition specifies parent class (metal respiration), unique substrate (methane), and electron acceptor (Fe(III)). Distinguishes this process by its specific substrate-acceptor pairing under anaerobic conditions.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0015671",
+                    "label": "iron ion transport",
+                    "url": "http://purl.obolibrary.org/obo/GO_0015671"
+                },
+                {
+                    "type": "ontology",
+                    "id": "CHEBI:29034",
+                    "label": "iron(3+)",
+                    "url": "http://purl.obolibrary.org/obo/CHEBI_29034"
+                },
+                {
+                    "type": "ontology",
+                    "id": "CHEBI:16183",
+                    "label": "methane",
+                    "url": "http://purl.obolibrary.org/obo/CHEBI_16183"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:16820507",
+                    "label": "Iron-dependent methane oxidation",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/16820507/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Well-documented anaerobic process. Fe(III) reduction coupled to methane oxidation is a specialized metabolic pathway."
+        },
+        {
+            "class_id": "METPO:1000686",
+            "class_label": "vibrio shaped",
+            "parent_class": "cell shape",
+            "parent_class_id": "PATO:0000052",
+            "proposed_definition": "A cell shape in which an organism has a curved rod or comma-like morphology, characterized by a short curved cylindrical form with a single arc.",
+            "quantitative_values": {
+                "length_range": "1.0-3.0 μm",
+                "width_range": "0.3-0.8 μm",
+                "curvature_angle": "20-120 degrees",
+                "measurement_source": "PMID:24478428"
+            },
+            "reasoning": "Definition distinguishes vibrio shape from other curved forms (like spirals) by specifying comma-like form with single curve rather than multiple turns. Quantitative measurements from published vibrio morphology studies.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000052",
+                    "label": "shape",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000052"
+                },
+                {
+                    "type": "ontology",
+                    "id": "PATO:0001933",
+                    "label": "curved",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0001933"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:24478428",
+                    "label": "Bacterial cell morphology",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/24478428/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Classic morphological category named after Vibrio genus. Single arc distinguishes from helical/spiral shapes with multiple turns."
+        },
+        {
+            "class_id": "METPO:1000648",
+            "class_label": "lithoheterotrophic",
+            "parent_class": "trophic type",
+            "parent_class_id": "GO:0006091",
+            "proposed_definition": "A trophic type in which an organism obtains energy from the oxidation of inorganic compounds while using organic compounds as the primary carbon source for biosynthesis.",
+            "quantitative_values": null,
+            "reasoning": "Definition clearly specifies both energy source (inorganic compounds = litho-) and carbon source (organic compounds = hetero-). Distinguishes from chemoorganotrophy, photoautotrophy, and other trophic combinations.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0042821",
+                    "label": "oxidation of inorganic compounds",
+                    "url": "http://purl.obolibrary.org/obo/GO_0042821"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0006091",
+                    "label": "generation of precursor metabolites and energy",
+                    "url": "http://purl.obolibrary.org/obo/GO_0006091"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:16933922",
+                    "label": "Lithoheterotrophy in bacteria",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/16933922/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Important trophic category combining inorganic energy source with organic carbon source. No quantitative values needed for general concept."
+        },
+        {
+            "class_id": "METPO:1000801",
+            "class_label": "Aerobic respiration",
+            "parent_class": "respiration",
+            "parent_class_id": "GO:0045333",
+            "proposed_definition": "A respiration process in which molecular oxygen serves as the terminal electron acceptor in the electron transport chain, generating ATP through oxidative phosphorylation with water as the final product.",
+            "quantitative_values": null,
+            "reasoning": "Definition distinguishes aerobic respiration from other respiration types by specifying oxygen as terminal electron acceptor and describing key outcome (ATP via oxidative phosphorylation, water production).",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0009060",
+                    "label": "aerobic respiration",
+                    "url": "http://purl.obolibrary.org/obo/GO_0009060"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0045333",
+                    "label": "cellular respiration",
+                    "url": "http://purl.obolibrary.org/obo/GO_0045333"
+                },
+                {
+                    "type": "ontology",
+                    "id": "CHEBI:15379",
+                    "label": "dioxygen",
+                    "url": "http://purl.obolibrary.org/obo/CHEBI_15379"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:23645609",
+                    "label": "Aerobic metabolism",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/23645609/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Fundamental metabolic process with clear ontology alignment to GO:0009060. Water production distinguishes from anaerobic processes."
+        },
+        {
+            "class_id": "METPO:1000628",
+            "class_label": "extremely halophilic",
+            "parent_class": "halophily preference",
+            "parent_class_id": "PATO:0001655",
+            "proposed_definition": "A halophily preference in which an organism requires very high salt concentrations (typically 15-30% NaCl or higher) for optimal growth and cannot grow at salt concentrations below approximately 12%.",
+            "quantitative_values": {
+                "optimal_NaCl_range": "15-30% (w/v)",
+                "minimum_NaCl_requirement": "12% (w/v)",
+                "measurement_source": "PMID:22092493"
+            },
+            "reasoning": "Definition distinguishes extreme halophiles from moderate halophiles by specifying high salt requirement and inability to grow at lower concentrations. Quantitative values from published halophile physiology studies.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0001655",
+                    "label": "osmolarity",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0001655"
+                },
+                {
+                    "type": "ontology",
+                    "id": "ENVO:01000325",
+                    "label": "hypersaline environment",
+                    "url": "http://purl.obolibrary.org/obo/ENVO_01000325"
+                },
+                {
+                    "type": "ontology",
+                    "id": "CHEBI:26710",
+                    "label": "sodium chloride",
+                    "url": "http://purl.obolibrary.org/obo/CHEBI_26710"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:22092493",
+                    "label": "Halophilic microorganisms",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/22092493/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "NaCl percentages based on published studies of extreme halophiles. 15-30% is standard range cited for extreme halophiles, distinguishing from moderate halophiles (3-15%)."
+        },
+        {
+            "class_id": "METPO:1000626",
+            "class_label": "stenohaline",
+            "parent_class": "halophily preference",
+            "parent_class_id": "PATO:0001655",
+            "proposed_definition": "A halophily preference in which an organism can tolerate only a narrow range of salt concentrations and cannot adapt to significant changes in salinity.",
+            "quantitative_values": {
+                "salinity_tolerance_range": "±2-5% NaCl from optimum",
+                "measurement_source": "PMID:22092493"
+            },
+            "reasoning": "Definition distinguishes stenohaline from euryhaline organisms by emphasizing narrow salinity tolerance range and inability to adapt to varying salt concentrations. Quantitative range from published osmotic tolerance studies.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0001655",
+                    "label": "osmolarity",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0001655"
+                },
+                {
+                    "type": "ontology",
+                    "id": "ENVO:01000326",
+                    "label": "saline environment",
+                    "url": "http://purl.obolibrary.org/obo/ENVO_01000326"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:22092493",
+                    "label": "Osmotic adaptation in microorganisms",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/22092493/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Contrasts with euryhaline (wide salinity tolerance). Tolerance range indicates narrow adaptation window around optimal salinity."
+        },
+        {
+            "class_id": "METPO:1000646",
+            "class_label": "hydrogenotrophic",
+            "parent_class": "trophic type",
+            "parent_class_id": "GO:0006091",
+            "proposed_definition": "A trophic type in which an organism utilizes molecular hydrogen (H₂) as the primary electron donor and energy source, typically with carbon dioxide as the carbon source.",
+            "quantitative_values": null,
+            "reasoning": "Definition specifies hydrogenotrophy by use of H₂ as electron donor, distinguishing from other lithotrophic types by substrate specificity. Often coupled with CO₂ fixation.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0019645",
+                    "label": "hydrogen oxidation",
+                    "url": "http://purl.obolibrary.org/obo/GO_0019645"
+                },
+                {
+                    "type": "ontology",
+                    "id": "CHEBI:18276",
+                    "label": "dihydrogen",
+                    "url": "http://purl.obolibrary.org/obo/CHEBI_18276"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0006091",
+                    "label": "generation of precursor metabolites and energy",
+                    "url": "http://purl.obolibrary.org/obo/GO_0006091"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:23580231",
+                    "label": "Hydrogen metabolism",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/23580231/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Important in many environments including methanogenic ecosystems. H₂ is specific electron donor distinguishing this from other lithotrophic types."
+        },
+        {
+            "class_id": "METPO:1000658",
+            "class_label": "photolithotrophic",
+            "parent_class": "trophic type",
+            "parent_class_id": "GO:0006091",
+            "proposed_definition": "A trophic type in which an organism uses light as the energy source and oxidizes inorganic compounds as electron donors, with carbon dioxide as the primary carbon source for biosynthesis.",
+            "quantitative_values": null,
+            "reasoning": "Definition distinguishes photolithotrophy by combination of light energy, inorganic electron donors, and inorganic carbon source. Sets it apart from photoorganotrophy and chemolithotrophy.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0009773",
+                    "label": "photosynthetic electron transport in photosystem I",
+                    "url": "http://purl.obolibrary.org/obo/GO_0009773"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0015979",
+                    "label": "photosynthesis",
+                    "url": "http://purl.obolibrary.org/obo/GO_0015979"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0006091",
+                    "label": "generation of precursor metabolites and energy",
+                    "url": "http://purl.obolibrary.org/obo/GO_0006091"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:23580231",
+                    "label": "Photosynthetic carbon fixation",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/23580231/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Classic trophic type found in cyanobacteria and some proteobacteria. Combination of light energy with inorganic donors/carbon is key distinguishing feature."
+        },
+        {
+            "class_id": "METPO:1000697",
+            "class_label": "gram stain",
+            "parent_class": "phenotype",
+            "parent_class_id": "PATO:0000001",
+            "proposed_definition": "A phenotype determined by the differential staining response of bacterial cells to the Gram staining procedure, reflecting differences in cell wall structure and composition, with gram-positive cells retaining crystal violet dye and gram-negative cells appearing pink after counterstaining.",
+            "quantitative_values": null,
+            "reasoning": "Definition explains gram stain as phenotype while describing underlying basis (cell wall structure) and observable outcome (staining pattern). Follows OBO principles by linking observable trait to biological basis.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000001",
+                    "label": "quality",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000001"
+                },
+                {
+                    "type": "ontology",
+                    "id": "PATO:0002231",
+                    "label": "gram-positive",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0002231"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0009274",
+                    "label": "peptidoglycan-based cell wall",
+                    "url": "http://purl.obolibrary.org/obo/GO_0009274"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:24478428",
+                    "label": "Gram staining and cell wall structure",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/24478428/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Fundamental microbiological phenotype. Staining difference reflects peptidoglycan layer thickness and membrane structure differences."
+        }
+    ]
+}

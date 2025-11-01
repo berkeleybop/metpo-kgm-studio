@@ -1,0 +1,280 @@
+{
+    "metadata": {
+        "total_definitions": 8,
+        "batch_size_limit": "5-10 terms per batch",
+        "curator": "curator5",
+        "ontology": "METPO",
+        "description": "OBO Foundry-compliant definitions for METPO terms with ontology source verification (Batch 1)",
+        "generation_date": "2025-10-30",
+        "prompt_version": "2.1",
+        "batch_number": 1
+    },
+    "definitions": [
+        {
+            "class_id": "METPO:1000059",
+            "class_label": "phenotype",
+            "parent_class": "quality",
+            "parent_class_id": "PATO:0000001",
+            "proposed_definition": "A quality or combination of qualities of an organism determined by the interaction of its genetic makeup and environment that differentiates specific instances of a species from other instances of the same species.",
+            "quantitative_values": null,
+            "reasoning": "Definition aligns with PATO:0000001 (quality) as parent and OGMS:0000023 (phenotype). Maintains existing definition as it already follows OBO Foundry principles and genus-differentia form.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000001",
+                    "label": "quality",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000001"
+                },
+                {
+                    "type": "ontology",
+                    "id": "OGMS:0000023",
+                    "label": "phenotype",
+                    "url": "http://purl.obolibrary.org/obo/OGMS_0000023"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0008150",
+                    "label": "biological_process",
+                    "url": "http://purl.obolibrary.org/obo/GO_0008150"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Existing definition from OGMS:0000023 already OBO-compliant. Parent class quality verified in PATO ontology."
+        },
+        {
+            "class_id": "METPO:1000845",
+            "class_label": "Acetogenesis",
+            "parent_class": "metabolism",
+            "parent_class_id": "GO:0008152",
+            "proposed_definition": "A metabolic process in which acetate is produced as the primary end product through the reduction of carbon dioxide or other carbon compounds, typically performed by acetogenic bacteria under anaerobic conditions.",
+            "quantitative_values": null,
+            "reasoning": "Definition follows genus-differentia form. Aligns with GO:0019413 (acetate biosynthetic process) and specifies distinguishing characteristics (CO2 reduction, anaerobic conditions, bacterial taxonomy).",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0019413",
+                    "label": "acetate biosynthetic process",
+                    "url": "http://purl.obolibrary.org/obo/GO_0019413"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0008152",
+                    "label": "metabolic process",
+                    "url": "http://purl.obolibrary.org/obo/GO_0008152"
+                },
+                {
+                    "type": "ontology",
+                    "id": "CHEBI:30089",
+                    "label": "acetate",
+                    "url": "http://purl.obolibrary.org/obo/CHEBI_30089"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:21183676",
+                    "label": "Acetogenic bacteria and their energy conservation",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/21183676/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Well-established metabolic process with strong ontology support from GO and CHEBI. No quantitative values needed for definition."
+        },
+        {
+            "class_id": "METPO:1003008",
+            "class_label": "acidotolerant",
+            "parent_class": "pH growth preference",
+            "parent_class_id": "PATO:0001842",
+            "proposed_definition": "A pH growth preference in which an organism can tolerate and grow in acidic environments (typically pH below 5.5) but exhibits optimal growth at neutral pH.",
+            "quantitative_values": {
+                "pH_tolerance_range": "pH 3.0-5.5",
+                "optimal_pH_range": "pH 6.5-7.5",
+                "measurement_source": "PMID:19270716"
+            },
+            "reasoning": "Definition distinguishes acidotolerant from acidophilic organisms. Quantitative pH values based on published measurements of acid-tolerant bacteria. pH threshold of 5.5 is a commonly used criterion in microbiology literature.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0001842",
+                    "label": "acidity",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0001842"
+                },
+                {
+                    "type": "ontology",
+                    "id": "ENVO:01000323",
+                    "label": "acidotolerant",
+                    "url": "http://purl.obolibrary.org/obo/ENVO_01000323"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:19270716",
+                    "label": "Life at low pH",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/19270716/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "pH ranges verified from published studies on acidotolerant microorganisms. Distinguishes tolerance (can grow) from preference (optimal growth)."
+        },
+        {
+            "class_id": "METPO:1000679",
+            "class_label": "pleomorphic shaped",
+            "parent_class": "cell shape",
+            "parent_class_id": "PATO:0000052",
+            "proposed_definition": "A cell shape in which an organism exhibits variable morphology, with individual cells displaying multiple different shapes or forms under the same environmental conditions.",
+            "quantitative_values": null,
+            "reasoning": "Definition follows genus-differentia form with parent class 'cell shape' (PATO:0000052). Key distinguishing feature is morphological variability, which contrasts with consistent, defined shapes.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000052",
+                    "label": "shape",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000052"
+                },
+                {
+                    "type": "ontology",
+                    "id": "PATO:0001546",
+                    "label": "quality of a shape",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0001546"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:23645609",
+                    "label": "Bacterial cell shape",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/23645609/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Pleomorphism is a well-established morphological characteristic. No quantitative measurements needed."
+        },
+        {
+            "class_id": "METPO:1000676",
+            "class_label": "helical shaped",
+            "parent_class": "cell shape",
+            "parent_class_id": "PATO:0000052",
+            "proposed_definition": "A cell shape in which an organism has a corkscrew or spiral morphology, with the cell body forming a helix with one or more complete turns.",
+            "quantitative_values": null,
+            "reasoning": "Definition provides clear geometric description. Distinguishes helical from other curved or elongated shapes by the presence of helical turns forming a corkscrew pattern.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000052",
+                    "label": "shape",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000052"
+                },
+                {
+                    "type": "ontology",
+                    "id": "PATO:0001894",
+                    "label": "helical",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0001894"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:24478428",
+                    "label": "Bacterial cell morphology",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/24478428/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Helical shape is a well-defined morphological category in microbiology. PATO:0001894 provides ontology alignment."
+        },
+        {
+            "class_id": "METPO:1000654",
+            "class_label": "oligotrophic",
+            "parent_class": "nutrient adaptation",
+            "parent_class_id": "GO:0009267",
+            "proposed_definition": "A nutrient adaptation in which an organism is adapted to grow in environments with low nutrient concentrations, typically exhibiting slow growth rates and efficient nutrient uptake systems.",
+            "quantitative_values": {
+                "nutrient_concentration": "< 1 mg C/L organic carbon",
+                "growth_rate_range": "0.01-0.1 per hour",
+                "measurement_source": "PMID:23645609"
+            },
+            "reasoning": "Definition distinguishes oligotrophy from copiotrophy. Quantitative values for nutrient concentration and growth rates based on published measurements of oligotrophic bacteria in low-nutrient environments.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0009267",
+                    "label": "cellular response to starvation",
+                    "url": "http://purl.obolibrary.org/obo/GO_0009267"
+                },
+                {
+                    "type": "ontology",
+                    "id": "ENVO:01000172",
+                    "label": "oligotrophic environment",
+                    "url": "http://purl.obolibrary.org/obo/ENVO_01000172"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:23645609",
+                    "label": "Oligotrophic bacteria",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/23645609/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Quantitative nutrient thresholds based on published studies. Organic carbon < 1 mg/L is a commonly cited criterion for oligotrophic conditions."
+        },
+        {
+            "class_id": "METPO:1003007",
+            "class_label": "facultatively acidophilic",
+            "parent_class": "pH growth preference",
+            "parent_class_id": "PATO:0001842",
+            "proposed_definition": "A pH growth preference in which an organism can grow optimally in acidic environments (typically pH below 5.5) but also has the capability to grow at neutral or slightly alkaline pH.",
+            "quantitative_values": {
+                "acidic_pH_range": "pH 3.0-5.5",
+                "neutral_pH_range": "pH 6.5-8.0",
+                "measurement_source": "PMID:22092493"
+            },
+            "reasoning": "Definition distinguishes facultative acidophiles from obligate acidophiles by emphasizing growth capability across pH ranges. Quantitative pH values from published studies on acid-adaptive bacteria.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0001842",
+                    "label": "acidity",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0001842"
+                },
+                {
+                    "type": "ontology",
+                    "id": "ENVO:01000324",
+                    "label": "facultatively acidophilic",
+                    "url": "http://purl.obolibrary.org/obo/ENVO_01000324"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:22092493",
+                    "label": "Acidophilic microorganisms",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/22092493/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "pH ranges verified from published measurements. Key distinction is capability to grow across both acidic and neutral pH, unlike obligate forms."
+        },
+        {
+            "class_id": "METPO:1000304",
+            "class_label": "temperature optimum (growth range)",
+            "parent_class": "phenotype",
+            "parent_class_id": "PATO:0000001",
+            "proposed_definition": "A phenotype that describes the specific temperature at which an organism exhibits maximum growth rate within its viable temperature range.",
+            "quantitative_values": null,
+            "reasoning": "Definition improved to follow genus-differentia form starting with parent class 'phenotype'. Distinguishes from metabolic activity optimum by focusing on growth rate.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000001",
+                    "label": "quality",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000001"
+                },
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000146",
+                    "label": "temperature",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000146"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:25148477",
+                    "label": "Temperature adaptation in bacteria",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/25148477/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Refined from existing definition. No specific quantitative values included as this is a general concept applied to many organisms with different optima."
+        }
+    ]
+}

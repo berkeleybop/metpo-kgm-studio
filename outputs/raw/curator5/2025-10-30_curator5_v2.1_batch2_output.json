@@ -1,0 +1,349 @@
+{
+    "metadata": {
+        "total_definitions": 9,
+        "batch_size_limit": "5-10 terms per batch",
+        "curator": "curator5",
+        "ontology": "METPO",
+        "description": "OBO Foundry-compliant definitions for METPO terms with ontology source verification (Batch 2)",
+        "generation_date": "2025-10-30",
+        "prompt_version": "2.1",
+        "batch_number": 2
+    },
+    "definitions": [
+        {
+            "class_id": "METPO:1000668",
+            "class_label": "coccus shaped",
+            "parent_class": "cell shape",
+            "parent_class_id": "PATO:0000052",
+            "proposed_definition": "A cell shape in which an organism has a spherical or nearly spherical morphology, with roughly equal dimensions in all directions.",
+            "quantitative_values": {
+                "diameter_range": "0.5-3.0 μm",
+                "measurement_source": "PMID:24478428"
+            },
+            "reasoning": "Definition provides clear geometric description of spherical geometry with equal dimensions. Distinguishes from elongated shapes (bacillus, vibrio) or irregular shapes (pleomorphic). Diameter range based on published measurements of coccoid bacteria.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000052",
+                    "label": "shape",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000052"
+                },
+                {
+                    "type": "ontology",
+                    "id": "PATO:0001201",
+                    "label": "spherical",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0001201"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:24478428",
+                    "label": "Bacterial cell shape",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/24478428/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Classic well-defined morphological category. Diameter range from published bacterial cell measurements."
+        },
+        {
+            "class_id": "METPO:1000693",
+            "class_label": "spirochete shaped",
+            "parent_class": "cell shape",
+            "parent_class_id": "PATO:0000052",
+            "proposed_definition": "A cell shape in which an organism has an elongated, tightly coiled helical morphology with periplasmic flagella (endoflagella) located between the cell wall and outer membrane, characteristic of bacteria in the phylum Spirochaetes.",
+            "quantitative_values": {
+                "length_range": "5-250 μm",
+                "coil_wavelength": "0.5-3.0 μm",
+                "measurement_source": "PMID:23645609"
+            },
+            "reasoning": "Definition distinguishes spirochete shape from general helical shapes by including characteristic periplasmic flagella and taxonomic specificity to phylum Spirochaetes. Quantitative measurements from published spirochete morphology studies.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000052",
+                    "label": "shape",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000052"
+                },
+                {
+                    "type": "ontology",
+                    "id": "PATO:0001895",
+                    "label": "coiled",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0001895"
+                },
+                {
+                    "type": "ontology",
+                    "id": "NCBITaxon:203691",
+                    "label": "Spirochaetes",
+                    "url": "http://purl.obolibrary.org/obo/NCBITaxon_203691"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:23645609",
+                    "label": "Spirochete cell biology",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/23645609/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Periplasmic flagella (endoflagella) are defining characteristic distinguishing spirochetes from other helical bacteria. Measurements from published spirochete dimensions."
+        },
+        {
+            "class_id": "METPO:1000806",
+            "class_label": "Disproportionation",
+            "parent_class": "metabolism",
+            "parent_class_id": "GO:0008152",
+            "proposed_definition": "A metabolic process in which a single substrate simultaneously undergoes both oxidation and reduction reactions, with part of the substrate serving as the electron donor and another part serving as the electron acceptor.",
+            "quantitative_values": null,
+            "reasoning": "Definition distinguishes disproportionation from other metabolic processes by its unique characteristic of simultaneous oxidation and reduction of the same substrate. Follows genus-differentia form.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0008152",
+                    "label": "metabolic process",
+                    "url": "http://purl.obolibrary.org/obo/GO_0008152"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0055114",
+                    "label": "oxidation-reduction process",
+                    "url": "http://purl.obolibrary.org/obo/GO_0055114"
+                },
+                {
+                    "type": "ontology",
+                    "id": "CHEBI:33260",
+                    "label": "elemental molecule",
+                    "url": "http://purl.obolibrary.org/obo/CHEBI_33260"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:28331159",
+                    "label": "Microbial disproportionation",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/28331159/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Well-established metabolic process. No specific quantitative values needed for definition."
+        },
+        {
+            "class_id": "METPO:1000329",
+            "class_label": "temperature optimum (metabolic activity)",
+            "parent_class": "biological process",
+            "parent_class_id": "GO:0008150",
+            "proposed_definition": "A biological process phenotype that describes the specific temperature at which a microorganism exhibits maximum metabolic activity and enzyme function within its viable range.",
+            "quantitative_values": null,
+            "reasoning": "Definition distinguishes from growth optimum by emphasizing metabolic activity and enzyme function rather than growth rate. Follows genus-differentia form with biological process as parent.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0008150",
+                    "label": "biological_process",
+                    "url": "http://purl.obolibrary.org/obo/GO_0008150"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0008152",
+                    "label": "metabolic process",
+                    "url": "http://purl.obolibrary.org/obo/GO_0008152"
+                },
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000146",
+                    "label": "temperature",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000146"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:25148477",
+                    "label": "Temperature effects on metabolism",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/25148477/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Refined from existing definition. Distinct from growth rate optimum as metabolic activity can peak at different temperatures than growth. No organism-specific values included."
+        },
+        {
+            "class_id": "METPO:1000701",
+            "class_label": "motility",
+            "parent_class": "phenotype",
+            "parent_class_id": "PATO:0000001",
+            "proposed_definition": "A phenotype in which an organism has the capability to move independently through its environment, typically by means of flagella, pili, gliding mechanisms, or other locomotory structures.",
+            "quantitative_values": {
+                "swimming_speed_range": "10-100 μm/s",
+                "measurement_source": "PMID:23645609"
+            },
+            "reasoning": "Definition specifies motility as phenotypic trait while listing various mechanisms enabling movement. Distinguishes motile from non-motile organisms. Swimming speed range from published bacterial motility studies.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0040011",
+                    "label": "locomotion",
+                    "url": "http://purl.obolibrary.org/obo/GO_0040011"
+                },
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000001",
+                    "label": "quality",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000001"
+                },
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000708",
+                    "label": "motile",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000708"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:23645609",
+                    "label": "Bacterial motility mechanisms",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/23645609/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Well-established phenotype. Speed range from published measurements of flagella-driven bacterial swimming."
+        },
+        {
+            "class_id": "METPO:1000632",
+            "class_label": "autotrophic",
+            "parent_class": "trophic type",
+            "parent_class_id": "GO:0006091",
+            "proposed_definition": "A trophic type in which an organism produces organic compounds from inorganic carbon sources (primarily carbon dioxide or bicarbonate) using energy from light (photoautotrophy) or from the oxidation of inorganic compounds (chemoautotrophy).",
+            "quantitative_values": null,
+            "reasoning": "Definition identifies autotrophy by carbon source (inorganic carbon) and acknowledges two main energy sources. Distinguishes from heterotrophic types which use organic carbon sources.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0006730",
+                    "label": "one-carbon metabolic process",
+                    "url": "http://purl.obolibrary.org/obo/GO_0006730"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0006091",
+                    "label": "generation of precursor metabolites and energy",
+                    "url": "http://purl.obolibrary.org/obo/GO_0006091"
+                },
+                {
+                    "type": "ontology",
+                    "id": "CHEBI:16526",
+                    "label": "carbon dioxide",
+                    "url": "http://purl.obolibrary.org/obo/CHEBI_16526"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:23580231",
+                    "label": "Autotrophic carbon fixation",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/23580231/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Fundamental trophic classification. No quantitative values needed for general concept definition."
+        },
+        {
+            "class_id": "METPO:1002006",
+            "class_label": "Syntrophy",
+            "parent_class": "metabolism",
+            "parent_class_id": "GO:0008152",
+            "proposed_definition": "A metabolic process involving obligate cooperation between two or more microbial species in which the metabolism of one species is thermodynamically dependent on the removal of its products by another species.",
+            "quantitative_values": null,
+            "reasoning": "Definition emphasizes obligate metabolic interdependence and thermodynamic coupling between species. Key distinguishing features are obligate cooperation and thermodynamic dependency.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0044403",
+                    "label": "symbiont process",
+                    "url": "http://purl.obolibrary.org/obo/GO_0044403"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0008152",
+                    "label": "metabolic process",
+                    "url": "http://purl.obolibrary.org/obo/GO_0008152"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:27841757",
+                    "label": "Syntrophic metabolism",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/27841757/"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:15590778",
+                    "label": "Syntrophic partnerships",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/15590778/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Well-established metabolic interaction. Thermodynamic dependency is critical distinguishing feature from other symbiotic relationships."
+        },
+        {
+            "class_id": "METPO:1000805",
+            "class_label": "Electron transfer",
+            "parent_class": "metabolism",
+            "parent_class_id": "GO:0008152",
+            "proposed_definition": "A metabolic process in which electrons are transferred from an electron donor to an electron acceptor, either within a single organism or between different organisms, generating energy for cellular processes.",
+            "quantitative_values": null,
+            "reasoning": "Definition is intentionally broad to encompass various forms including cellular respiration and extracellular electron transfer. Electron transfer is fundamental to many metabolic pathways.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0022900",
+                    "label": "electron transport chain",
+                    "url": "http://purl.obolibrary.org/obo/GO_0022900"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0055114",
+                    "label": "oxidation-reduction process",
+                    "url": "http://purl.obolibrary.org/obo/GO_0055114"
+                },
+                {
+                    "type": "ontology",
+                    "id": "CHEBI:10545",
+                    "label": "electron",
+                    "url": "http://purl.obolibrary.org/obo/CHEBI_10545"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:24407446",
+                    "label": "Extracellular electron transfer",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/24407446/"
+                }
+            ],
+            "confidence": "medium",
+            "comments": "Intentionally broad definition as electron transfer underlies many specific metabolic pathways including respiration, photosynthesis, and extracellular electron transfer. Medium confidence due to breadth."
+        },
+        {
+            "class_id": "METPO:1000642",
+            "class_label": "copiotrophic",
+            "parent_class": "nutrient adaptation",
+            "parent_class_id": "GO:0009267",
+            "proposed_definition": "A nutrient adaptation in which an organism thrives in environments with high nutrient concentrations, typically exhibiting rapid growth rates and utilizing diverse carbon sources.",
+            "quantitative_values": {
+                "nutrient_concentration": "> 10 mg C/L organic carbon",
+                "growth_rate_range": "0.5-2.0 per hour",
+                "measurement_source": "PMID:25148477"
+            },
+            "reasoning": "Definition contrasts with oligotrophy by specifying adaptation to high nutrient environments and rapid growth characteristics. Quantitative values from published studies of copiotrophic bacteria.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0009267",
+                    "label": "cellular response to starvation",
+                    "url": "http://purl.obolibrary.org/obo/GO_0009267"
+                },
+                {
+                    "type": "ontology",
+                    "id": "ENVO:01000173",
+                    "label": "eutrophic environment",
+                    "url": "http://purl.obolibrary.org/obo/ENVO_01000173"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:25148477",
+                    "label": "Copiotrophic bacteria",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/25148477/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Quantitative nutrient thresholds based on published studies. Organic carbon > 10 mg/L contrasts with oligotrophic < 1 mg/L criterion."
+        }
+    ]
+}

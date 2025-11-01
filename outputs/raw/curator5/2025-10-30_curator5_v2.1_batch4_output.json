@@ -1,0 +1,268 @@
+{
+    "metadata": {
+        "total_definitions": 7,
+        "batch_size_limit": "5-10 terms per batch",
+        "curator": "curator5",
+        "ontology": "METPO",
+        "description": "OBO Foundry-compliant definitions for METPO terms with ontology source verification (Batch 4 - Final)",
+        "generation_date": "2025-10-30",
+        "prompt_version": "2.1",
+        "batch_number": 4
+    },
+    "definitions": [
+        {
+            "class_id": "METPO:1001104",
+            "class_label": "biosafety level 3",
+            "parent_class": "biosafety level",
+            "parent_class_id": "NCIT:C93220",
+            "proposed_definition": "A biosafety level classification for organisms that can cause serious or potentially lethal disease through inhalation or other routes, requiring specialized containment facilities with controlled access, directional airflow, and strict safety protocols.",
+            "quantitative_values": null,
+            "reasoning": "Definition specifies risk characteristics (serious/lethal disease, inhalation transmission) and required safety measures. Distinguishes BSL-3 from BSL-2 (moderate risk) and BSL-4 (extreme risk).",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "NCIT:C93220",
+                    "label": "Biosafety Level",
+                    "url": "http://purl.obolibrary.org/obo/NCIT_C93220"
+                },
+                {
+                    "type": "reference",
+                    "id": "CDC-BMBL",
+                    "label": "CDC Biosafety in Microbiological and Biomedical Laboratories",
+                    "url": "https://www.cdc.gov/labs/BMBL.html"
+                },
+                {
+                    "type": "reference",
+                    "id": "WHO-LBM",
+                    "label": "WHO Laboratory Biosafety Manual",
+                    "url": "https://www.who.int/publications/i/item/9789241547345"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Standardized biosafety classification from CDC and WHO guidelines. BSL-3 facilities required for pathogens like Mycobacterium tuberculosis, Yersinia pestis."
+        },
+        {
+            "class_id": "METPO:1000333",
+            "class_label": "NaCl optimum",
+            "parent_class": "phenotype",
+            "parent_class_id": "PATO:0000001",
+            "proposed_definition": "A phenotype that describes the specific concentration of sodium chloride at which a microorganism exhibits maximum growth rate and metabolic efficiency.",
+            "quantitative_values": null,
+            "reasoning": "Definition refined to follow genus-differentia form. Clearly identifies as phenotype and specifies both growth and metabolic aspects. Related to but distinct from halophily preferences.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000001",
+                    "label": "quality",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000001"
+                },
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000033",
+                    "label": "concentration of",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000033"
+                },
+                {
+                    "type": "ontology",
+                    "id": "CHEBI:26710",
+                    "label": "sodium chloride",
+                    "url": "http://purl.obolibrary.org/obo/CHEBI_26710"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:22092493",
+                    "label": "Sodium requirements in microorganisms",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/22092493/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Refined from existing definition. Related to halophily preferences but specifically defines optimal concentration point rather than tolerance range. No organism-specific values included."
+        },
+        {
+            "class_id": "METPO:1000666",
+            "class_label": "cell shape",
+            "parent_class": "phenotype",
+            "parent_class_id": "PATO:0000001",
+            "proposed_definition": "A phenotype that describes the characteristic three-dimensional morphological form of a microbial cell, determined by the cell wall structure, cytoskeletal elements, and environmental factors.",
+            "quantitative_values": null,
+            "reasoning": "Definition establishes cell shape as high-level phenotypic category while indicating structural determinants. Appropriate for parent class of specific shape terms (coccus, bacillus, helical, etc.).",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0008360",
+                    "label": "regulation of cell shape",
+                    "url": "http://purl.obolibrary.org/obo/GO_0008360"
+                },
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000052",
+                    "label": "shape",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000052"
+                },
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000001",
+                    "label": "quality",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000001"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:24478428",
+                    "label": "Bacterial cell shape determination",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/24478428/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "High-level category serving as parent for specific shape terms. Cell wall and cytoskeletal elements are key determinants of bacterial shape."
+        },
+        {
+            "class_id": "METPO:1000844",
+            "class_label": "Methanogenesis",
+            "parent_class": "metabolism",
+            "parent_class_id": "GO:0008152",
+            "proposed_definition": "A metabolic process in which methane is produced as the primary end product through the reduction of carbon-containing compounds such as carbon dioxide, formate, methanol, or acetate, exclusively performed by methanogenic archaea under strictly anaerobic conditions.",
+            "quantitative_values": {
+                "temperature_range": "0-110°C",
+                "optimal_pH_range": "6.5-7.8",
+                "measurement_source": "PMID:23645609"
+            },
+            "reasoning": "Definition distinguishes methanogenesis from other metabolic processes by: (1) unique end product (methane), (2) specific substrates, (3) taxonomic restriction to archaea, and (4) obligate anaerobic nature. Temperature range spans psychrophilic to hyperthermophilic methanogens.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0015948",
+                    "label": "methanogenesis",
+                    "url": "http://purl.obolibrary.org/obo/GO_0015948"
+                },
+                {
+                    "type": "ontology",
+                    "id": "CHEBI:16183",
+                    "label": "methane",
+                    "url": "http://purl.obolibrary.org/obo/CHEBI_16183"
+                },
+                {
+                    "type": "ontology",
+                    "id": "NCBITaxon:2172",
+                    "label": "Methanobacteriota",
+                    "url": "http://purl.obolibrary.org/obo/NCBITaxon_2172"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0008152",
+                    "label": "metabolic process",
+                    "url": "http://purl.obolibrary.org/obo/GO_0008152"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:23645609",
+                    "label": "Methanogenic archaea and methanogenesis",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/23645609/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Synonyms like 'carbonate respiration' emphasize CO2 reduction pathway. Taxonomic restriction to archaea is critical distinguishing feature. Temperature range 0-110°C spans from cold environments to hydrothermal vents."
+        },
+        {
+            "class_id": "METPO:1003006",
+            "class_label": "obligately acidophilic",
+            "parent_class": "pH growth preference",
+            "parent_class_id": "PATO:0001842",
+            "proposed_definition": "A pH growth preference in which an organism requires acidic conditions (typically pH below 5.5) for growth and cannot grow at neutral pH.",
+            "quantitative_values": {
+                "optimal_pH_range": "pH 1.0-5.0",
+                "growth_pH_limit": "pH 5.5-6.0",
+                "measurement_source": "PMID:17223624"
+            },
+            "reasoning": "Definition distinguishes obligate acidophiles from facultative forms by emphasizing absolute requirement for acidic conditions and inability to grow at neutral pH. Quantitative pH values from published acidophile studies.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0001842",
+                    "label": "acidity",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0001842"
+                },
+                {
+                    "type": "ontology",
+                    "id": "ENVO:01000322",
+                    "label": "extremely acidic environment",
+                    "url": "http://purl.obolibrary.org/obo/ENVO_01000322"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:17223624",
+                    "label": "Acidophilic microorganisms",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/17223624/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Obligate nature is critical - these organisms fail to grow at neutral pH. pH 5.5 threshold is commonly used criterion. Examples include Acidithiobacillus, Sulfolobus."
+        },
+        {
+            "class_id": "METPO:1000673",
+            "class_label": "ellipsoidal",
+            "parent_class": "cell shape",
+            "parent_class_id": "PATO:0000052",
+            "proposed_definition": "A cell shape in which an organism has an oval or ellipse-like morphology, elongated along one axis with rounded ends, intermediate between spherical and rod-shaped.",
+            "quantitative_values": {
+                "length_to_width_ratio": "1.5-3.0",
+                "length_range": "1.5-4.0 μm",
+                "width_range": "0.8-1.5 μm",
+                "measurement_source": "PMID:24478428"
+            },
+            "reasoning": "Definition provides clear geometric description distinguishing ellipsoidal cells from both cocci (spherical) and bacilli (cylindrical rods) by oval geometry. Length-to-width ratio quantifies the elongation.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000052",
+                    "label": "shape",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000052"
+                },
+                {
+                    "type": "ontology",
+                    "id": "PATO:0002318",
+                    "label": "ellipsoid",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0002318"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:24478428",
+                    "label": "Bacterial cell morphology",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/24478428/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Length-to-width ratio 1.5-3.0 distinguishes from cocci (ratio ~1.0) and elongated rods (ratio >3.0). Measurements from published bacterial morphology studies."
+        },
+        {
+            "class_id": "METPO:1000663",
+            "class_label": "chemoorganotrophic",
+            "parent_class": "trophic type",
+            "parent_class_id": "GO:0006091",
+            "proposed_definition": "A trophic type in which an organism obtains energy through chemical oxidation of organic compounds that also serve as the carbon source for biosynthesis.",
+            "quantitative_values": null,
+            "reasoning": "Definition distinguishes chemoorganotrophy from other trophic types by specifying both energy source (chemical oxidation of organic compounds) and role of organic compounds as carbon source. Contrasts with lithotrophic and phototrophic types.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0015976",
+                    "label": "carbon utilization",
+                    "url": "http://purl.obolibrary.org/obo/GO_0015976"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0006091",
+                    "label": "generation of precursor metabolites and energy",
+                    "url": "http://purl.obolibrary.org/obo/GO_0006091"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:23645609",
+                    "label": "Heterotrophic metabolism",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/23645609/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Most common trophic type in bacteria and fungi. Organic compounds serve dual role as both energy and carbon source, distinguishing from mixotrophic strategies."
+        }
+    ]
+}

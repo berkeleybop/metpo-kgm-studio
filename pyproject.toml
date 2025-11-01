@@ -121,7 +121,7 @@ skip = [
     "*.tsv",
     "*.json",
 ]
-ignore-words-list = []
+ignore-words-list = "formate"
 quiet-level = 3
 
 [tool.typos.default.extend-words]

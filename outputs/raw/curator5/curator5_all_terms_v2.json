@@ -1,15 +1,4 @@
 {
-  "metadata": {
-    "curator": "curator5",
-    "generation_date": "2025-10-09",
-    "review_date": "2025-10-09",
-    "ontology": "METPO",
-    "description": "Reviewed and approved OBO Foundry-compliant definitions for METPO terms following FP-006 principles",
-    "total_definitions": 26,
-    "prompt_version": "2.0",
-    "status": "reviewed",
-    "reviewer_notes": "All definitions verified for scientific accuracy, OBO compliance, and source validity. Ready for integration into curator5.tsv."
-  },
   "definitions": [
     {
       "class_id": "METPO:1000845",

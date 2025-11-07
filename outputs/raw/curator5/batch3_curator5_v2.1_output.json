@@ -1,14 +1,4 @@
 {
-    "metadata": {
-        "total_definitions": 9,
-        "batch_size_limit": "5-10 terms per batch",
-        "curator": "curator5",
-        "ontology": "METPO",
-        "description": "OBO Foundry-compliant definitions for METPO terms with ontology source verification (Batch 3)",
-        "generation_date": "2025-10-30",
-        "prompt_version": "2.1",
-        "batch_number": 3
-    },
     "definitions": [
         {
             "class_id": "METPO:1002001",

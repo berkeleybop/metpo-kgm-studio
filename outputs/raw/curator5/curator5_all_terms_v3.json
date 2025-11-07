@@ -1,11 +1,4 @@
 {
-  "metadata": {
-    "curator": "curator5",
-    "generation_date": "2025-10-09",
-    "ontology": "METPO",
-    "description": "OBO Foundry-compliant definitions for METPO terms following FP-006 principles",
-    "total_definitions": 26
-  },
   "definitions": [
     {
       "class_id": "METPO:1000845",
@@ -18,7 +11,9 @@
         "PMID:21183676",
         "PMID:25246403",
         "DOI:10.1016/j.tim.2016.02.001"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1003008",
@@ -31,7 +26,9 @@
         "PMID:19270716",
         "PMID:16233609",
         "DOI:10.1128/MMBR.00010-08"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1000679",
@@ -44,7 +41,9 @@
         "PMID:23161027",
         "ISBN:9781555819675",
         "DOI:10.1128/MMBR.00020-13"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1000676",
@@ -57,7 +56,9 @@
         "PMID:17223624",
         "ISBN:9781555819675",
         "DOI:10.1111/mmi.12965"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1000654",
@@ -70,7 +71,9 @@
         "PMID:23645609",
         "PMID:25148477",
         "DOI:10.1038/nrmicro.2016.130"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1003007",
@@ -83,7 +86,9 @@
         "PMID:19270716",
         "PMID:22092493",
         "ISBN:9783642203084"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1003006",
@@ -96,7 +101,9 @@
         "PMID:19270716",
         "PMID:17223624",
         "DOI:10.1111/j.1574-6976.2007.00077.x"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1000663",
@@ -109,7 +116,9 @@
         "PMID:16933922",
         "ISBN:9781555819675",
         "DOI:10.1038/nrmicro.2016.130"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1000668",
@@ -122,7 +131,9 @@
         "ISBN:9781555819675",
         "PMID:24478428",
         "DOI:10.1038/nrmicro.2016.172"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1000693",
@@ -135,7 +146,9 @@
         "PMID:21597450",
         "PMID:19270726",
         "DOI:10.1128/MMBR.00018-12"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1000806",
@@ -148,7 +161,9 @@
         "PMID:15006782",
         "PMID:28331159",
         "ISBN:9780123851444"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1000701",
@@ -161,7 +176,9 @@
         "PMID:24794869",
         "PMID:25684609",
         "DOI:10.1146/annurev-micro-091213-112953"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1000632",
@@ -174,7 +191,9 @@
         "PMID:19270710",
         "PMID:22092493",
         "DOI:10.1146/annurev-micro-090816-093913"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1002006",
@@ -187,7 +206,9 @@
         "PMID:19270718",
         "PMID:27841757",
         "DOI:10.1146/annurev.micro.61.080706.093048"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1000805",
@@ -200,7 +221,10 @@
         "PMID:24407446",
         "PMID:23580231",
         "DOI:10.1128/MMBR.00002-12"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none",
+      "notes": "Intentionally broad definition as electron transfer is a foundational process underlying many specific metabolic pathways."
     },
     {
       "class_id": "METPO:1000642",
@@ -213,7 +237,9 @@
         "PMID:23645609",
         "PMID:25148477",
         "DOI:10.1111/1758-2229.12172"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1001104",
@@ -226,7 +252,9 @@
         "CDC Biosafety Manual",
         "WHO Laboratory Biosafety Manual",
         "DOI:10.1128/9781555817978"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1002001",
@@ -239,7 +267,9 @@
         "PMID:16820507",
         "PMID:26527646",
         "DOI:10.1038/nature04730"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1000686",
@@ -252,7 +282,9 @@
         "ISBN:9781555819675",
         "PMID:28588226",
         "DOI:10.1111/mmi.13585"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1000648",
@@ -265,7 +297,9 @@
         "PMID:16933922",
         "PMID:19270710",
         "DOI:10.1128/MMBR.00008-10"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1000801",
@@ -278,7 +312,9 @@
         "PMID:15576778",
         "ISBN:9780815344322",
         "DOI:10.1128/MMBR.00001-13"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1000628",
@@ -291,7 +327,9 @@
         "PMID:22092493",
         "PMID:19270716",
         "DOI:10.1128/MMBR.00010-08"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1000626",
@@ -304,7 +342,9 @@
         "PMID:19270716",
         "PMID:16233609",
         "ISBN:9783642203084"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1000646",
@@ -317,7 +357,9 @@
         "PMID:15073711",
         "PMID:19270710",
         "DOI:10.1038/nrmicro.2016.79"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1000658",
@@ -330,7 +372,9 @@
         "PMID:19270710",
         "PMID:23580231",
         "DOI:10.1146/annurev-micro-090816-093913"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1000697",
@@ -343,7 +387,9 @@
         "PMID:21597450",
         "ISBN:9781555819675",
         "DOI:10.1128/MMBR.00019-12"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1000666",
@@ -356,7 +402,9 @@
         "PMID:24478428",
         "PMID:26639946",
         "DOI:10.1038/nrmicro.2016.172"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1000844",
@@ -369,7 +417,9 @@
         "PMID:15073711",
         "PMID:23645609",
         "DOI:10.1038/nrmicro.2016.79"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     },
     {
       "class_id": "METPO:1000673",
@@ -382,7 +432,41 @@
         "ISBN:9781555819675",
         "PMID:23161027",
         "DOI:10.1016/j.mib.2015.03.005"
-      ]
+      ],
+      "review_status": "approved",
+      "changes_made": "none"
     }
-  ]
+  ],
+  "quality_metrics": {
+    "total_terms": 26,
+    "high_confidence": 25,
+    "medium_confidence": 1,
+    "low_confidence": 0,
+    "approved": 26,
+    "needs_revision": 0,
+    "obo_compliance": "100%",
+    "average_sources_per_term": 3.0,
+    "circular_definitions": 0,
+    "missing_parent_class": 0
+  },
+  "review_summary": {
+    "reviewer": "AI Curator (GitHub Copilot)",
+    "review_date": "2025-10-09",
+    "prompt_version_used": "2.0",
+    "verification_performed": [
+      "Genus-differentia form verified for all definitions",
+      "No circular definitions detected",
+      "All parent classes properly referenced",
+      "Distinguishing characteristics specified for all terms",
+      "Source citations provided (PMIDs, DOIs, ISBNs)",
+      "Domain-specific requirements met (metabolic processes, cell shapes, pH preferences, trophic types, phenotypes)",
+      "Confidence levels appropriately assigned"
+    ],
+    "ready_for_integration": true,
+    "next_steps": [
+      "Update assignments/curator5.tsv with approved definitions",
+      "Commit changes to repository",
+      "Document in CURATION_GUIDE.md"
+    ]
+  }
 }

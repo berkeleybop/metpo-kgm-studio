@@ -1,0 +1,388 @@
+{
+  "metadata": {
+    "curator": "curator5",
+    "generation_date": "2025-10-09",
+    "ontology": "METPO",
+    "description": "OBO Foundry-compliant definitions for METPO terms following FP-006 principles",
+    "total_definitions": 26
+  },
+  "definitions": [
+    {
+      "class_id": "METPO:1000845",
+      "class_label": "Acetogenesis",
+      "parent_class": "metabolism",
+      "proposed_definition": "A metabolic process in which acetate is produced as the primary end product through the reduction of carbon dioxide or other carbon compounds, typically performed by acetogenic bacteria under anaerobic conditions.",
+      "confidence": "high",
+      "reasoning": "Follows genus-differentia form by specifying it as a metabolic process with clear distinguishing characteristics (acetate production, CO2 reduction, anaerobic). Distinguished from other metabolic processes by the specific end product.",
+      "suggested_sources": [
+        "PMID:21183676",
+        "PMID:25246403",
+        "DOI:10.1016/j.tim.2016.02.001"
+      ]
+    },
+    {
+      "class_id": "METPO:1003008",
+      "class_label": "acidotolerant",
+      "parent_class": "pH growth preference",
+      "proposed_definition": "A pH growth preference in which an organism can tolerate and grow in acidic environments (typically pH below 5.5) but exhibits optimal growth at neutral pH.",
+      "confidence": "high",
+      "reasoning": "Distinguishes acidotolerant from acidophilic organisms by emphasizing tolerance of acidic conditions while maintaining neutral pH preference for optimal growth.",
+      "suggested_sources": [
+        "PMID:19270716",
+        "PMID:16233609",
+        "DOI:10.1128/MMBR.00010-08"
+      ]
+    },
+    {
+      "class_id": "METPO:1000679",
+      "class_label": "pleomorphic shaped",
+      "parent_class": "cell shape",
+      "proposed_definition": "A cell shape in which an organism exhibits variable morphology, with individual cells displaying multiple different shapes or forms under the same environmental conditions.",
+      "confidence": "high",
+      "reasoning": "Clearly defines pleomorphism as a cell shape characteristic distinguished by morphological variability, which sets it apart from organisms with consistent, defined shapes.",
+      "suggested_sources": [
+        "PMID:23161027",
+        "ISBN:9781555819675",
+        "DOI:10.1128/MMBR.00020-13"
+      ]
+    },
+    {
+      "class_id": "METPO:1000676",
+      "class_label": "helical shaped",
+      "parent_class": "cell shape",
+      "proposed_definition": "A cell shape in which an organism has a corkscrew or spiral morphology, with the cell body forming a helix with one or more complete turns.",
+      "confidence": "high",
+      "reasoning": "Provides clear morphological description that distinguishes helical cells from other elongated or curved cell shapes by the presence of helical turns.",
+      "suggested_sources": [
+        "PMID:17223624",
+        "ISBN:9781555819675",
+        "DOI:10.1111/mmi.12965"
+      ]
+    },
+    {
+      "class_id": "METPO:1000654",
+      "class_label": "oligotrophic",
+      "parent_class": "nutrient adaptation",
+      "proposed_definition": "A nutrient adaptation in which an organism is adapted to grow in environments with low nutrient concentrations, typically exhibiting slow growth rates and efficient nutrient uptake systems.",
+      "confidence": "high",
+      "reasoning": "Distinguishes oligotrophy from copiotrophy by emphasizing adaptation to low nutrient environments and characteristic physiological traits.",
+      "suggested_sources": [
+        "PMID:23645609",
+        "PMID:25148477",
+        "DOI:10.1038/nrmicro.2016.130"
+      ]
+    },
+    {
+      "class_id": "METPO:1003007",
+      "class_label": "facultatively acidophilic",
+      "parent_class": "pH growth preference",
+      "proposed_definition": "A pH growth preference in which an organism can grow optimally in acidic environments (typically pH below 5.5) but also has the capability to grow at neutral or slightly alkaline pH.",
+      "confidence": "high",
+      "reasoning": "Clearly distinguishes facultative acidophiles from obligate acidophiles by emphasizing the ability to grow across a range of pH values including both acidic and neutral conditions.",
+      "suggested_sources": [
+        "PMID:19270716",
+        "PMID:22092493",
+        "ISBN:9783642203084"
+      ]
+    },
+    {
+      "class_id": "METPO:1003006",
+      "class_label": "obligately acidophilic",
+      "parent_class": "pH growth preference",
+      "proposed_definition": "A pH growth preference in which an organism requires acidic conditions (typically pH below 5.5) for growth and cannot grow at neutral pH.",
+      "confidence": "high",
+      "reasoning": "Distinguishes obligate acidophiles from facultative forms by emphasizing the absolute requirement for acidic conditions and inability to grow at neutral pH.",
+      "suggested_sources": [
+        "PMID:19270716",
+        "PMID:17223624",
+        "DOI:10.1111/j.1574-6976.2007.00077.x"
+      ]
+    },
+    {
+      "class_id": "METPO:1000663",
+      "class_label": "chemoorganotrophic",
+      "parent_class": "trophic type",
+      "proposed_definition": "A trophic type in which an organism obtains energy through chemical oxidation of organic compounds that also serve as the carbon source for biosynthesis.",
+      "confidence": "high",
+      "reasoning": "Clearly distinguishes chemoorganotrophy from other trophic types by specifying both the energy source (chemical oxidation of organic compounds) and the role of organic compounds as carbon source.",
+      "suggested_sources": [
+        "PMID:16933922",
+        "ISBN:9781555819675",
+        "DOI:10.1038/nrmicro.2016.130"
+      ]
+    },
+    {
+      "class_id": "METPO:1000668",
+      "class_label": "coccus shaped",
+      "parent_class": "cell shape",
+      "proposed_definition": "A cell shape in which an organism has a spherical or nearly spherical morphology, with roughly equal dimensions in all directions.",
+      "confidence": "high",
+      "reasoning": "Classic definition of coccus shape that distinguishes it from other cell shapes by its spherical geometry and dimensional equality.",
+      "suggested_sources": [
+        "ISBN:9781555819675",
+        "PMID:24478428",
+        "DOI:10.1038/nrmicro.2016.172"
+      ]
+    },
+    {
+      "class_id": "METPO:1000693",
+      "class_label": "spirochete shaped",
+      "parent_class": "cell shape",
+      "proposed_definition": "A cell shape in which an organism has an elongated, tightly coiled helical morphology with periplasmic flagella (endoflagella) located between the cell wall and outer membrane, characteristic of bacteria in the phylum Spirochaetes.",
+      "confidence": "high",
+      "reasoning": "Specific definition that distinguishes spirochete shape from general helical shapes by including the characteristic periplasmic flagella and taxonomic specificity.",
+      "suggested_sources": [
+        "PMID:21597450",
+        "PMID:19270726",
+        "DOI:10.1128/MMBR.00018-12"
+      ]
+    },
+    {
+      "class_id": "METPO:1000806",
+      "class_label": "Disproportionation",
+      "parent_class": "metabolism",
+      "proposed_definition": "A metabolic process in which a single substrate simultaneously undergoes both oxidation and reduction reactions, with part of the substrate serving as the electron donor and another part serving as the electron acceptor.",
+      "confidence": "high",
+      "reasoning": "Clear genus-differentia definition that distinguishes disproportionation from other metabolic processes by its unique characteristic of simultaneous oxidation and reduction of the same substrate.",
+      "suggested_sources": [
+        "PMID:15006782",
+        "PMID:28331159",
+        "ISBN:9780123851444"
+      ]
+    },
+    {
+      "class_id": "METPO:1000701",
+      "class_label": "motility",
+      "parent_class": "phenotype",
+      "proposed_definition": "A phenotype in which an organism has the capability to move independently through its environment, typically by means of flagella, pili, gliding mechanisms, or other locomotory structures.",
+      "confidence": "high",
+      "reasoning": "Defines motility as a phenotypic trait while specifying the various mechanisms that enable movement, distinguishing motile from non-motile organisms.",
+      "suggested_sources": [
+        "PMID:24794869",
+        "PMID:25684609",
+        "DOI:10.1146/annurev-micro-091213-112953"
+      ]
+    },
+    {
+      "class_id": "METPO:1000632",
+      "class_label": "autotrophic",
+      "parent_class": "trophic type",
+      "proposed_definition": "A trophic type in which an organism produces organic compounds from inorganic carbon sources (primarily carbon dioxide or bicarbonate) using energy from light (photoautotrophy) or from the oxidation of inorganic compounds (chemoautotrophy).",
+      "confidence": "high",
+      "reasoning": "Comprehensive definition that identifies autotrophy by carbon source (inorganic carbon) and acknowledges the two main energy sources, distinguishing it from heterotrophic types.",
+      "suggested_sources": [
+        "PMID:19270710",
+        "PMID:22092493",
+        "DOI:10.1146/annurev-micro-090816-093913"
+      ]
+    },
+    {
+      "class_id": "METPO:1002006",
+      "class_label": "Syntrophy",
+      "parent_class": "metabolism",
+      "proposed_definition": "A metabolic process involving obligate cooperation between two or more microbial species in which the metabolism of one species is thermodynamically dependent on the removal of its products by another species.",
+      "confidence": "high",
+      "reasoning": "Defines syntrophy as a metabolic process with the key distinguishing feature of obligate metabolic interdependence and thermodynamic coupling between species.",
+      "suggested_sources": [
+        "PMID:19270718",
+        "PMID:27841757",
+        "DOI:10.1146/annurev.micro.61.080706.093048"
+      ]
+    },
+    {
+      "class_id": "METPO:1000805",
+      "class_label": "Electron transfer",
+      "parent_class": "metabolism",
+      "proposed_definition": "A metabolic process in which electrons are transferred from an electron donor to an electron acceptor, either within a single organism or between different organisms, generating energy for cellular processes.",
+      "confidence": "medium",
+      "reasoning": "Follows genus-differentia form. However, electron transfer is fundamental to many metabolic processes, so this definition is intentionally broad to encompass various forms including cellular respiration and extracellular electron transfer.",
+      "suggested_sources": [
+        "PMID:24407446",
+        "PMID:23580231",
+        "DOI:10.1128/MMBR.00002-12"
+      ]
+    },
+    {
+      "class_id": "METPO:1000642",
+      "class_label": "copiotrophic",
+      "parent_class": "nutrient adaptation",
+      "proposed_definition": "A nutrient adaptation in which an organism thrives in environments with high nutrient concentrations, typically exhibiting rapid growth rates and utilizing diverse carbon sources.",
+      "confidence": "high",
+      "reasoning": "Clearly contrasts with oligotrophy by specifying adaptation to high nutrient environments and associated rapid growth characteristics.",
+      "suggested_sources": [
+        "PMID:23645609",
+        "PMID:25148477",
+        "DOI:10.1111/1758-2229.12172"
+      ]
+    },
+    {
+      "class_id": "METPO:1001104",
+      "class_label": "biosafety level 3",
+      "parent_class": "biosafety level",
+      "proposed_definition": "A biosafety level classification for organisms that can cause serious or potentially lethal disease through inhalation or other routes, requiring specialized containment facilities with controlled access, directional airflow, and strict safety protocols.",
+      "confidence": "high",
+      "reasoning": "Defines BSL-3 by its risk characteristics (serious/lethal disease, inhalation transmission) and required safety measures, distinguishing it from BSL-2 (moderate risk) and BSL-4 (extreme risk).",
+      "suggested_sources": [
+        "CDC Biosafety Manual",
+        "WHO Laboratory Biosafety Manual",
+        "DOI:10.1128/9781555817978"
+      ]
+    },
+    {
+      "class_id": "METPO:1002001",
+      "class_label": "Fe(III)-dependent methane oxidation",
+      "parent_class": "Metal and metalloid respiration",
+      "proposed_definition": "A metal and metalloid respiration process in which methane is oxidized using ferric iron (Fe(III)) as the terminal electron acceptor, resulting in the reduction of Fe(III) to Fe(II) under anaerobic conditions.",
+      "confidence": "high",
+      "reasoning": "Specific definition that identifies the parent class (metal and metalloid respiration) and distinguishes this process by its unique substrate (methane) and electron acceptor (Fe(III)).",
+      "suggested_sources": [
+        "PMID:16820507",
+        "PMID:26527646",
+        "DOI:10.1038/nature04730"
+      ]
+    },
+    {
+      "class_id": "METPO:1000686",
+      "class_label": "vibrio shaped",
+      "parent_class": "cell shape",
+      "proposed_definition": "A cell shape in which an organism has a curved rod or comma-like morphology, characterized by a short curved cylindrical form with a single arc.",
+      "confidence": "high",
+      "reasoning": "Clearly distinguishes vibrio shape from other curved forms (like spirals) by specifying the comma-like form with a single curve rather than multiple turns.",
+      "suggested_sources": [
+        "ISBN:9781555819675",
+        "PMID:28588226",
+        "DOI:10.1111/mmi.13585"
+      ]
+    },
+    {
+      "class_id": "METPO:1000648",
+      "class_label": "lithoheterotrophic",
+      "parent_class": "trophic type",
+      "proposed_definition": "A trophic type in which an organism obtains energy from the oxidation of inorganic compounds while using organic compounds as the primary carbon source for biosynthesis.",
+      "confidence": "high",
+      "reasoning": "Clearly distinguishes lithoheterotrophy by its unique combination of inorganic energy source and organic carbon source, setting it apart from other trophic categories.",
+      "suggested_sources": [
+        "PMID:16933922",
+        "PMID:19270710",
+        "DOI:10.1128/MMBR.00008-10"
+      ]
+    },
+    {
+      "class_id": "METPO:1000801",
+      "class_label": "Aerobic respiration",
+      "parent_class": "respiration",
+      "proposed_definition": "A respiration process in which molecular oxygen serves as the terminal electron acceptor in the electron transport chain, generating ATP through oxidative phosphorylation with water as the final product.",
+      "confidence": "high",
+      "reasoning": "Clear genus-differentia definition that distinguishes aerobic respiration from other respiration types by specifying oxygen as the terminal electron acceptor and describing the key outcome (ATP generation via oxidative phosphorylation).",
+      "suggested_sources": [
+        "PMID:15576778",
+        "ISBN:9780815344322",
+        "DOI:10.1128/MMBR.00001-13"
+      ]
+    },
+    {
+      "class_id": "METPO:1000628",
+      "class_label": "extremely halophilic",
+      "parent_class": "halophily preference",
+      "proposed_definition": "A halophily preference in which an organism requires very high salt concentrations (typically 15-30% NaCl or higher) for optimal growth and cannot grow at salt concentrations below approximately 12%.",
+      "confidence": "high",
+      "reasoning": "Clearly distinguishes extreme halophiles from moderate halophiles by specifying both the high salt requirement and inability to grow at lower concentrations.",
+      "suggested_sources": [
+        "PMID:22092493",
+        "PMID:19270716",
+        "DOI:10.1128/MMBR.00010-08"
+      ]
+    },
+    {
+      "class_id": "METPO:1000626",
+      "class_label": "stenohaline",
+      "parent_class": "halophily preference",
+      "proposed_definition": "A halophily preference in which an organism can tolerate only a narrow range of salt concentrations and cannot adapt to significant changes in salinity.",
+      "confidence": "high",
+      "reasoning": "Distinguishes stenohaline from euryhaline organisms by emphasizing the narrow salinity tolerance range and inability to adapt to varying salt concentrations.",
+      "suggested_sources": [
+        "PMID:19270716",
+        "PMID:16233609",
+        "ISBN:9783642203084"
+      ]
+    },
+    {
+      "class_id": "METPO:1000646",
+      "class_label": "hydrogenotrophic",
+      "parent_class": "trophic type",
+      "proposed_definition": "A trophic type in which an organism utilizes molecular hydrogen (H₂) as the primary electron donor and energy source, typically with carbon dioxide as the carbon source.",
+      "confidence": "high",
+      "reasoning": "Specifically defines hydrogenotrophy by the use of H₂ as electron donor, distinguishing it from other lithotrophic types by substrate specificity.",
+      "suggested_sources": [
+        "PMID:15073711",
+        "PMID:19270710",
+        "DOI:10.1038/nrmicro.2016.79"
+      ]
+    },
+    {
+      "class_id": "METPO:1000658",
+      "class_label": "photolithotrophic",
+      "parent_class": "trophic type",
+      "proposed_definition": "A trophic type in which an organism uses light as the energy source and oxidizes inorganic compounds as electron donors, with carbon dioxide as the primary carbon source for biosynthesis.",
+      "confidence": "high",
+      "reasoning": "Clearly distinguishes photolithotrophy by the combination of light energy, inorganic electron donors, and inorganic carbon source, setting it apart from photoorganotrophy and chemolithotrophy.",
+      "suggested_sources": [
+        "PMID:19270710",
+        "PMID:23580231",
+        "DOI:10.1146/annurev-micro-090816-093913"
+      ]
+    },
+    {
+      "class_id": "METPO:1000697",
+      "class_label": "gram stain",
+      "parent_class": "phenotype",
+      "proposed_definition": "A phenotype determined by the differential staining response of bacterial cells to the Gram staining procedure, reflecting differences in cell wall structure and composition, with gram-positive cells retaining crystal violet dye and gram-negative cells appearing pink after counterstaining.",
+      "confidence": "high",
+      "reasoning": "Defines gram stain as a phenotype while explaining the underlying basis (cell wall structure) and the observable outcome (staining pattern), following OBO principles.",
+      "suggested_sources": [
+        "PMID:21597450",
+        "ISBN:9781555819675",
+        "DOI:10.1128/MMBR.00019-12"
+      ]
+    },
+    {
+      "class_id": "METPO:1000666",
+      "class_label": "cell shape",
+      "parent_class": "phenotype",
+      "proposed_definition": "A phenotype that describes the characteristic three-dimensional morphological form of a microbial cell, determined by the cell wall structure, cytoskeletal elements, and environmental factors.",
+      "confidence": "high",
+      "reasoning": "Defines cell shape as a high-level phenotypic category while indicating the structural determinants, appropriate for a parent class of specific shape terms.",
+      "suggested_sources": [
+        "PMID:24478428",
+        "PMID:26639946",
+        "DOI:10.1038/nrmicro.2016.172"
+      ]
+    },
+    {
+      "class_id": "METPO:1000844",
+      "class_label": "Methanogenesis",
+      "parent_class": "metabolism",
+      "proposed_definition": "A metabolic process in which methane is produced as the primary end product through the reduction of carbon-containing compounds such as carbon dioxide, formate, methanol, or acetate, exclusively performed by methanogenic archaea under strictly anaerobic conditions.",
+      "confidence": "high",
+      "reasoning": "Clear definition distinguishing methanogenesis from other metabolic processes by its unique end product (methane), specific substrates, taxonomic restriction to archaea, and obligate anaerobic nature.",
+      "suggested_sources": [
+        "PMID:15073711",
+        "PMID:23645609",
+        "DOI:10.1038/nrmicro.2016.79"
+      ]
+    },
+    {
+      "class_id": "METPO:1000673",
+      "class_label": "ellipsoidal",
+      "parent_class": "cell shape",
+      "proposed_definition": "A cell shape in which an organism has an oval or ellipse-like morphology, elongated along one axis with rounded ends, intermediate between spherical and rod-shaped.",
+      "confidence": "high",
+      "reasoning": "Provides clear geometric description that distinguishes ellipsoidal cells from both cocci (spherical) and bacilli (cylindrical rods) by its oval geometry.",
+      "suggested_sources": [
+        "ISBN:9781555819675",
+        "PMID:23161027",
+        "DOI:10.1016/j.mib.2015.03.005"
+      ]
+    }
+  ]
+}

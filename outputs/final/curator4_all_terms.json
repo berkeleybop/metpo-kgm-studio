@@ -1,0 +1,400 @@
+{
+    "definitions": [
+        {
+            "class_id": "METPO:1000059",
+            "class_label": "phenotype",
+            "proposed_definition": "A quality or combination of qualities of an organism that results from the interaction between its genetic makeup and environmental factors, distinguishing specific instances of a species from other instances of the same species.",
+            "reasoning": "Follows genus-differentia form with 'quality' as genus. Aligns with OGMS definition and PATO quality concepts. Emphasizes genotype-environment interaction as differentia.",
+            "sources": [
+                "OGMS:0000023 (phenotype)",
+                "PATO:0000001 (quality)",
+                "BFO:0000019 (quality)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000623",
+            "class_label": "moderately halophilic",
+            "proposed_definition": "A halophily preference characterized by optimal growth in environments with moderate salt concentrations, typically between 3-15% NaCl.",
+            "reasoning": "Specifies the moderate range that distinguishes this from slightly or extremely halophilic organisms. Based on established halophile classifications.",
+            "sources": [
+                "ENVO:00002230 (saline environment)",
+                "PATO:0001404 (concentration)",
+                "MEO:0000210 (halophile)"
+            ],
+            "confidence": "medium"
+        },
+        {
+            "class_id": "METPO:1000639",
+            "class_label": "chemolithotrophic",
+            "proposed_definition": "A trophic type characterized by the use of inorganic chemical compounds as electron donors and carbon dioxide as the primary carbon source for energy generation and biosynthesis.",
+            "reasoning": "Follows genus-differentia pattern. Distinguishes from other trophic types by specifying both inorganic electron donors and CO2 fixation.",
+            "sources": [
+                "ENVO:00002152 (chemolithotrophic organism)",
+                "GO:0015980 (energy derivation by oxidation of reduced inorganic compounds)",
+                "MEO:0000056 (chemolithotroph)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000803",
+            "class_label": "Oxidative phosphorylation",
+            "proposed_definition": "A metabolic process that generates ATP through the transfer of electrons from electron donors to electron acceptors via redox reactions, coupled to the pumping of protons across a membrane to create an electrochemical gradient.",
+            "reasoning": "Standard definition following genus-differentia form. Aligns with GO oxidative phosphorylation process.",
+            "sources": [
+                "GO:0006119 (oxidative phosphorylation)",
+                "KEGG:00190 (Oxidative phosphorylation)",
+                "MetaCyc:PWY-5690"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1002002",
+            "class_label": "Mn(IV)-dependent methane oxidation",
+            "proposed_definition": "A metal and metalloid respiration process that oxidizes methane using manganese(IV) as the terminal electron acceptor under anaerobic conditions.",
+            "reasoning": "Specifies the unique coupling of methane oxidation with Mn(IV) reduction. Distinguishes from other methane oxidation pathways.",
+            "sources": [
+                "GO:0015977 (carbon fixation)",
+                "CHEBI:35108 (manganese(IV))",
+                "ENVO:01000680 (methane-rich environment)"
+            ],
+            "confidence": "medium"
+        },
+        {
+            "class_id": "METPO:1000667",
+            "class_label": "bacillus shaped",
+            "proposed_definition": "A cell shape characterized by an elongated, rod-like cylindrical morphology with relatively parallel sides and rounded ends.",
+            "reasoning": "Describes the characteristic rod shape. Aligns with standard microbiological morphology descriptions.",
+            "sources": [
+                "PATO:0002219 (cylindrical)",
+                "GO:0009877 (bacillus-type cell morphology)",
+                "BTO:0000112 (bacterial cell)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000656",
+            "class_label": "photoautotrophic",
+            "proposed_definition": "A trophic type characterized by the use of light as the energy source and carbon dioxide as the primary carbon source for biosynthesis.",
+            "reasoning": "Combines photo- (light energy) and autotrophic (CO2 fixation) characteristics. Standard definition in microbiology.",
+            "sources": [
+                "ENVO:00002033 (photoautotrophic organism)",
+                "GO:0015979 (photosynthesis)",
+                "MEO:0000089 (photoautotroph)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000678",
+            "class_label": "oval shaped",
+            "proposed_definition": "A cell shape characterized by an ellipsoidal morphology with rounded ends, resembling an elongated sphere.",
+            "reasoning": "Describes the oval/ellipsoidal geometry distinguishing it from spherical or rod shapes.",
+            "sources": [
+                "PATO:0002266 (ellipsoidal)",
+                "GO:0008360 (regulation of cell shape)",
+                "BTO:0000112 (bacterial cell)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1001102",
+            "class_label": "biosafety level 1",
+            "proposed_definition": "A biosafety level designation indicating organisms that pose minimal potential hazard to laboratory workers and the environment, requiring only standard microbiological practices.",
+            "reasoning": "Follows CDC/WHO biosafety level definitions. Emphasizes minimal risk as differentia.",
+            "sources": [
+                "NCIT:C93202 (Biosafety Level 1)",
+                "OBI:0001929 (biosafety level)",
+                "CDC Biosafety Guidelines"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000060",
+            "class_label": "metabolism",
+            "proposed_definition": "A biological process comprising the chemical reactions and pathways that maintain life in an organism, including the breakdown of substances for energy and the synthesis of cellular components.",
+            "reasoning": "Standard definition encompassing both catabolism and anabolism. Aligns with GO metabolic process.",
+            "sources": [
+                "GO:0008152 (metabolic process)",
+                "NCIT:C16858 (Metabolism)",
+                "BTO:0001087 (metabolic pathway)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000670",
+            "class_label": "curved shaped",
+            "proposed_definition": "A cell shape characterized by a bent or curved cylindrical morphology, including comma-shaped, S-shaped, or spiral forms.",
+            "reasoning": "Encompasses various curved morphologies. Distinguishes from straight rod shapes.",
+            "sources": [
+                "PATO:0002007 (curved)",
+                "GO:0008360 (regulation of cell shape)",
+                "BTO:0001758 (vibrio)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000800",
+            "class_label": "respiration",
+            "proposed_definition": "A metabolic process that generates energy through the oxidation of electron donors coupled to the reduction of terminal electron acceptors, involving electron transport chains and chemiosmotic ATP synthesis.",
+            "reasoning": "Definition provided in TSV emphasizes terminal electron acceptors. Aligns with cellular respiration concepts.",
+            "sources": [
+                "GO:0045333 (cellular respiration)",
+                "KEGG:00190 (Oxidative phosphorylation)",
+                "MetaCyc:RESPIRATION"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000664",
+            "class_label": "organoheterotrophic",
+            "proposed_definition": "A trophic type characterized by the use of organic compounds as both electron donors and primary carbon sources for energy generation and biosynthesis.",
+            "reasoning": "Specifies organic compound utilization for both energy and carbon. Standard heterotroph definition.",
+            "sources": [
+                "ENVO:00002035 (heterotrophic organism)",
+                "GO:0009055 (electron carrier activity)",
+                "MEO:0000068 (heterotroph)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000334",
+            "class_label": "NaCl range",
+            "proposed_definition": "A phenotype defined by the span of sodium chloride concentrations within which a microorganism maintains osmotic balance, cellular functions, and growth capability.",
+            "reasoning": "Uses provided definition emphasizing osmotic balance and functional range. Relates to halotolerance phenotypes.",
+            "sources": [
+                "PATO:0001682 (salt concentration)",
+                "ENVO:00002230 (saline environment)",
+                "PATO:0000060 (spatial pattern)"
+            ],
+            "confidence": "medium"
+        },
+        {
+            "class_id": "METPO:1000660",
+            "class_label": "phototrophic",
+            "proposed_definition": "A trophic type characterized by the use of light as the primary energy source for metabolic processes, regardless of carbon source.",
+            "reasoning": "Emphasizes light energy utilization. Parent category for photoautotrophs and photoheterotrophs.",
+            "sources": [
+                "ENVO:00002034 (phototrophic organism)",
+                "GO:0015979 (photosynthesis)",
+                "MEO:0000088 (phototroph)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1003013",
+            "class_label": "radiophilic",
+            "proposed_definition": "A trophic type characterized by the ability to tolerate or thrive in environments with high levels of ionizing radiation.",
+            "reasoning": "Based on TSV comment 'high radiation'. Defines organisms adapted to radiation exposure.",
+            "sources": [
+                "ENVO:01001525 (radiation environment)",
+                "PATO:0001439 (ionizing radiation quality)",
+                "NCIT:C17053 (Radiation)"
+            ],
+            "confidence": "medium"
+        },
+        {
+            "class_id": "METPO:1002008",
+            "class_label": "Nitrogen fixation",
+            "proposed_definition": "A nitrogen compound respiration process that converts atmospheric nitrogen gas (N2) into ammonia or related nitrogenous compounds, making nitrogen available for biological use.",
+            "reasoning": "Standard nitrogen fixation definition. Emphasizes N2 to ammonia conversion. Aligns with GO process.",
+            "sources": [
+                "GO:0009399 (nitrogen fixation)",
+                "KEGG:00910 (Nitrogen metabolism)",
+                "MetaCyc:PWY-7888"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1003001",
+            "class_label": "neutrophilic",
+            "proposed_definition": "A pH growth preference characterized by optimal growth at near-neutral pH values, typically between pH 6.5 and 7.5.",
+            "reasoning": "Defines the neutral pH range preference. Distinguishes from acidophiles and alkaliphiles.",
+            "sources": [
+                "PATO:0001842 (pH)",
+                "ENVO:01001854 (neutral pH environment)",
+                "MEO:0000174 (neutrophile)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000692",
+            "class_label": "spindle shaped",
+            "proposed_definition": "A cell shape characterized by a fusiform morphology that tapers at both ends, resembling a spindle with a wider central region.",
+            "reasoning": "Describes the characteristic tapered morphology. Distinct from cylindrical or spherical shapes.",
+            "sources": [
+                "PATO:0002267 (fusiform)",
+                "GO:0008360 (regulation of cell shape)",
+                "BTO:0000112 (bacterial cell)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1002036",
+            "class_label": "Nitrite oxidation",
+            "proposed_definition": "A nitrogen compound respiration process that oxidizes nitrite (NO2-) to nitrate (NO3-) to generate energy, typically performed by nitrite-oxidizing bacteria.",
+            "reasoning": "Specifies nitrite to nitrate conversion. Key step in nitrification. Aligns with nitrogen cycle processes.",
+            "sources": [
+                "GO:0019329 (nitrite oxidation)",
+                "KEGG:00910 (Nitrogen metabolism)",
+                "CHEBI:16301 (nitrite)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000638",
+            "class_label": "chemolithoheterotrophic",
+            "proposed_definition": "A trophic type characterized by the use of inorganic chemical compounds as electron donors for energy generation while utilizing organic compounds as the primary carbon source.",
+            "reasoning": "Combines chemolithotrophic energy generation with heterotrophic carbon assimilation. Less common trophic strategy.",
+            "sources": [
+                "ENVO:00002152 (chemolithotrophic organism)",
+                "ENVO:00002035 (heterotrophic organism)",
+                "MEO:0000057 (chemolithoheterotroph)"
+            ],
+            "confidence": "medium"
+        },
+        {
+            "class_id": "METPO:1000682",
+            "class_label": "spore shaped",
+            "proposed_definition": "A cell shape characterized by a morphology associated with dormant, stress-resistant spore structures, typically spherical to oval with thick protective walls.",
+            "reasoning": "Describes spore morphology as a cell shape category. Associated with endospore formation.",
+            "sources": [
+                "GO:0030435 (sporulation)",
+                "BTO:0001268 (spore)",
+                "PATO:0000052 (shape)"
+            ],
+            "confidence": "medium"
+        },
+        {
+            "class_id": "METPO:1000186",
+            "class_label": "material entity",
+            "proposed_definition": "An independent continuant that consists of matter, including objects, portions of substances, or mixtures of substances.",
+            "reasoning": "Top-level BFO class definition. Uses provided definition emphasizing matter composition.",
+            "sources": [
+                "BFO:0000040 (material entity)",
+                "ENVO:00010483 (environmental material)",
+                "CHEBI:59999 (chemical substance)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000720",
+            "class_label": "facultative psychrophilic",
+            "proposed_definition": "A temperature preference characterized by the ability to grow at low temperatures (typically below 20°C) while maintaining optimal growth at moderate temperatures.",
+            "reasoning": "Distinguishes from obligate psychrophiles by maintaining mesophilic growth capability. Facultative cold adaptation.",
+            "sources": [
+                "ENVO:01000339 (cold environment)",
+                "PATO:0000146 (temperature)",
+                "MEO:0000195 (psychrophile)"
+            ],
+            "confidence": "medium"
+        },
+        {
+            "class_id": "METPO:1000683",
+            "class_label": "sphere shaped",
+            "proposed_definition": "A cell shape characterized by a spherical or nearly spherical morphology with approximately equal dimensions in all directions.",
+            "reasoning": "Standard coccus morphology description. Distinguishes from elongated or irregular shapes.",
+            "sources": [
+                "PATO:0000947 (spherical)",
+                "GO:0009877 (coccus-type cell morphology)",
+                "BTO:0000112 (bacterial cell)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000845",
+            "class_label": "Acetogenesis",
+            "proposed_definition": "A metabolic process that produces acetate as the primary end product through the reduction of carbon dioxide or other carbon compounds using the Wood-Ljungdahl pathway, typically performed by acetogenic bacteria under anaerobic conditions.",
+            "reasoning": "Specifies acetate production via CO2 reduction. Distinguishes from acetate fermentation. Aligns with acetogenic metabolism.",
+            "sources": [
+                "GO:0015946 (acetate biosynthetic process)",
+                "KEGG:00720 (Carbon fixation pathways)",
+                "MetaCyc:PWY-5088"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1003008",
+            "class_label": "acidotolerant",
+            "proposed_definition": "A pH growth preference characterized by the ability to tolerate acidic environments (typically pH below 5.5) while maintaining optimal growth near neutral pH.",
+            "reasoning": "Distinguishes acidotolerant from acidophilic by emphasizing tolerance without preference. Can survive but doesn't prefer acid.",
+            "sources": [
+                "PATO:0001796 (acid tolerance)",
+                "ENVO:01000240 (acidic environment)",
+                "MEO:0000162 (acidophile)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000679",
+            "class_label": "pleomorphic shaped",
+            "proposed_definition": "A cell shape characterized by variable and irregular morphology, where individual cells within a population exhibit multiple distinct shapes.",
+            "reasoning": "Emphasizes morphological variability as the defining characteristic. Distinguishes from fixed morphologies.",
+            "sources": [
+                "PATO:0001863 (morphology)",
+                "GO:0008360 (regulation of cell shape)",
+                "BTO:0000112 (bacterial cell)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000676",
+            "class_label": "helical shaped",
+            "proposed_definition": "A cell shape characterized by a three-dimensional spiral or helical morphology, with regular coiling along the longitudinal axis.",
+            "reasoning": "Describes helical/spiral geometry. Distinguishes from simple curved or straight shapes. Typical of spirochetes.",
+            "sources": [
+                "PATO:0001795 (helical)",
+                "GO:0009877 (helical cell morphology)",
+                "BTO:0001276 (spirochete)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1000654",
+            "class_label": "oligotrophic",
+            "proposed_definition": "A nutrient adaptation characterized by the ability to thrive in environments with very low nutrient concentrations, typically possessing efficient nutrient uptake and utilization systems.",
+            "reasoning": "Emphasizes low-nutrient adaptation. Distinguishes from copiotrophic organisms. Common in aquatic microbiology.",
+            "sources": [
+                "ENVO:01000253 (oligotrophic environment)",
+                "PATO:0001655 (nutrient concentration)",
+                "MEO:0000177 (oligotroph)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1003007",
+            "class_label": "facultatively acidophilic",
+            "proposed_definition": "A pH growth preference characterized by optimal growth in acidic environments (pH below 5.5) with the capacity to also grow at near-neutral pH values.",
+            "reasoning": "Distinguishes from obligate acidophiles by retaining growth capability across broader pH range. Facultative acid preference.",
+            "sources": [
+                "PATO:0001842 (pH)",
+                "ENVO:01000240 (acidic environment)",
+                "MEO:0000162 (acidophile)"
+            ],
+            "confidence": "medium"
+        },
+        {
+            "class_id": "METPO:1000304",
+            "class_label": "temperature optimum (growth range)",
+            "proposed_definition": "A phenotype defined by the specific temperature at which an organism exhibits its maximum growth rate within its viable temperature range.",
+            "reasoning": "Uses provided definition emphasizing maximum growth rate. Relates to cardinal temperature concepts.",
+            "sources": [
+                "PATO:0000146 (temperature)",
+                "ENVO:09200001 (temperature regime)",
+                "GO:0040007 (growth)"
+            ],
+            "confidence": "high"
+        },
+        {
+            "class_id": "METPO:1003006",
+            "class_label": "obligately acidophilic",
+            "proposed_definition": "A pH growth preference characterized by the requirement for acidic environments (pH below 5.5) for growth, with inability to grow at neutral or alkaline pH values.",
+            "reasoning": "Emphasizes obligate requirement for low pH. Distinguishes from facultative acidophiles by lack of neutral pH growth.",
+            "sources": [
+                "PATO:0001842 (pH)",
+                "ENVO:01000240 (acidic environment)",
+                "MEO:0000162 (acidophile)"
+            ],
+            "confidence": "high"
+        }
+    ]
+}

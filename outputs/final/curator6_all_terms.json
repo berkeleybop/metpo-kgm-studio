@@ -1,0 +1,844 @@
+{
+    "definitions": [
+        {
+            "class_id": "METPO:1000059",
+            "class_label": "phenotype",
+            "parent_class": "quality",
+            "parent_class_id": "PATO:0000001",
+            "proposed_definition": "A quality or combination of qualities of an organism determined by the interaction of its genetic makeup and environment that differentiates specific instances of a species from other instances of the same species.",
+            "quantitative_values": null,
+            "reasoning": "Definition follows genus-differentia form with 'quality' as genus. Aligns with OGMS:0000023 definition and PATO quality concepts.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "OGMS:0000023",
+                    "label": "phenotype",
+                    "url": "http://purl.obolibrary.org/obo/OGMS_0000023"
+                },
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000001",
+                    "label": "quality",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000001"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Existing definition from OGMS:0000023 already OBO-compliant."
+        },
+        {
+            "class_id": "METPO:1000626",
+            "class_label": "stenohaline",
+            "parent_class": "halophily preference",
+            "parent_class_id": "PATO:0001655",
+            "proposed_definition": "A halophily preference in which an organism can only tolerate a narrow range of salinity concentrations and cannot survive significant changes in environmental salt levels.",
+            "quantitative_values": {
+                "salinity_tolerance_range": "< 5% variation from optimum",
+                "measurement_source": "PMID:22092493"
+            },
+            "reasoning": "Distinguishes stenohaline from euryhaline organisms by narrow salinity tolerance range.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0001655",
+                    "label": "osmolarity",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0001655"
+                },
+                {
+                    "type": "ontology",
+                    "id": "ENVO:00002230",
+                    "label": "saline environment",
+                    "url": "http://purl.obolibrary.org/obo/ENVO_00002230"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:22092493",
+                    "label": "Microbial adaptation to salinity",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/22092493/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Stenohaline organisms have narrow salinity tolerance, contrasting with euryhaline organisms."
+        },
+        {
+            "class_id": "METPO:1000646",
+            "class_label": "hydrogenotrophic",
+            "parent_class": "trophic type",
+            "parent_class_id": "GO:0006091",
+            "proposed_definition": "A trophic type in which an organism uses molecular hydrogen as an electron donor for energy generation and carbon dioxide as the primary carbon source.",
+            "quantitative_values": null,
+            "reasoning": "Definition specifies H2 as electron donor and CO2 fixation, characteristic of hydrogenotrophic metabolism.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0006091",
+                    "label": "generation of precursor metabolites and energy",
+                    "url": "http://purl.obolibrary.org/obo/GO_0006091"
+                },
+                {
+                    "type": "ontology",
+                    "id": "CHEBI:18276",
+                    "label": "dihydrogen",
+                    "url": "http://purl.obolibrary.org/obo/CHEBI_18276"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:23645609",
+                    "label": "Hydrogenotrophic metabolism",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/23645609/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Common in methanogenic archaea and some bacteria."
+        },
+        {
+            "class_id": "METPO:1000658",
+            "class_label": "photolithotrophic",
+            "parent_class": "trophic type",
+            "parent_class_id": "GO:0006091",
+            "proposed_definition": "A trophic type in which an organism uses light as the energy source and inorganic compounds as electron donors, typically with carbon dioxide as the primary carbon source.",
+            "quantitative_values": null,
+            "reasoning": "Combines phototrophy (light energy) with lithotrophy (inorganic electron donors) and autotrophy (CO2 fixation).",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0015979",
+                    "label": "photosynthesis",
+                    "url": "http://purl.obolibrary.org/obo/GO_0015979"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0015980",
+                    "label": "energy derivation by oxidation of reduced inorganic compounds",
+                    "url": "http://purl.obolibrary.org/obo/GO_0015980"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Found in cyanobacteria and some purple and green sulfur bacteria."
+        },
+        {
+            "class_id": "METPO:1000697",
+            "class_label": "gram stain",
+            "parent_class": "phenotype",
+            "parent_class_id": "PATO:0000001",
+            "proposed_definition": "A phenotype determined by the differential staining characteristics of bacterial cell walls when treated with Gram stain reagents, reflecting differences in cell wall structure and composition.",
+            "quantitative_values": null,
+            "reasoning": "Definition emphasizes cell wall structure as the basis for Gram staining results.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000001",
+                    "label": "quality",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000001"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0009274",
+                    "label": "peptidoglycan-based cell wall",
+                    "url": "http://purl.obolibrary.org/obo/GO_0009274"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Fundamental bacterial classification based on cell wall structure."
+        },
+        {
+            "class_id": "METPO:1000333",
+            "class_label": "NaCl optimum",
+            "parent_class": "phenotype",
+            "parent_class_id": "PATO:0000001",
+            "proposed_definition": "A phenotype that describes the specific concentration of sodium chloride at which a microorganism exhibits maximum growth rate and metabolic efficiency.",
+            "quantitative_values": null,
+            "reasoning": "Definition refined to follow genus-differentia form. No organism-specific values included.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000033",
+                    "label": "concentration of",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000033"
+                },
+                {
+                    "type": "ontology",
+                    "id": "CHEBI:26710",
+                    "label": "sodium chloride",
+                    "url": "http://purl.obolibrary.org/obo/CHEBI_26710"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Related to halophily preferences but specifically defines optimal concentration point."
+        },
+        {
+            "class_id": "METPO:1000666",
+            "class_label": "cell shape",
+            "parent_class": "phenotype",
+            "parent_class_id": "PATO:0000001",
+            "proposed_definition": "A phenotype that describes the characteristic three-dimensional morphological form of a microbial cell, determined by cell wall structure, cytoskeletal elements, and environmental factors.",
+            "quantitative_values": null,
+            "reasoning": "High-level phenotypic category serving as parent for specific shape terms.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000052",
+                    "label": "shape",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000052"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0008360",
+                    "label": "regulation of cell shape",
+                    "url": "http://purl.obolibrary.org/obo/GO_0008360"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Cell wall and cytoskeletal elements are key determinants of bacterial shape."
+        },
+        {
+            "class_id": "METPO:1000844",
+            "class_label": "Methanogenesis",
+            "parent_class": "metabolism",
+            "parent_class_id": "GO:0008152",
+            "proposed_definition": "A metabolic process in which methane is produced as the primary end product through the reduction of carbon-containing compounds such as carbon dioxide, formate, methanol, or acetate, exclusively performed by methanogenic archaea under strictly anaerobic conditions.",
+            "quantitative_values": {
+                "temperature_range": "0-110°C",
+                "optimal_pH_range": "6.5-7.8",
+                "measurement_source": "PMID:23645609"
+            },
+            "reasoning": "Definition distinguishes methanogenesis by unique end product, specific substrates, and taxonomic restriction to archaea.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0015948",
+                    "label": "methanogenesis",
+                    "url": "http://purl.obolibrary.org/obo/GO_0015948"
+                },
+                {
+                    "type": "ontology",
+                    "id": "CHEBI:16183",
+                    "label": "methane",
+                    "url": "http://purl.obolibrary.org/obo/CHEBI_16183"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:23645609",
+                    "label": "Methanogenic archaea",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/23645609/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Temperature range 0-110°C spans psychrophilic to hyperthermophilic methanogens."
+        },
+        {
+            "class_id": "METPO:1000673",
+            "class_label": "ellipsoidal",
+            "parent_class": "cell shape",
+            "parent_class_id": "PATO:0000052",
+            "proposed_definition": "A cell shape in which an organism has an oval or ellipse-like morphology, elongated along one axis with rounded ends, intermediate between spherical and rod-shaped.",
+            "quantitative_values": {
+                "length_to_width_ratio": "1.5-3.0",
+                "length_range": "1.5-4.0 μm",
+                "width_range": "0.8-1.5 μm",
+                "measurement_source": "PMID:24478428"
+            },
+            "reasoning": "Definition provides clear geometric description. Length-to-width ratio quantifies the elongation.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0002318",
+                    "label": "ellipsoid",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0002318"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:24478428",
+                    "label": "Bacterial cell morphology",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/24478428/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Length-to-width ratio 1.5-3.0 distinguishes from cocci (ratio ~1.0) and elongated rods (ratio >3.0)."
+        },
+        {
+            "class_id": "METPO:1002005",
+            "class_label": "Fermentation",
+            "parent_class": "respiration",
+            "parent_class_id": "GO:0045333",
+            "proposed_definition": "A metabolic process that generates energy through the oxidation of organic compounds without using an external electron acceptor, using organic molecules as both electron donors and final electron acceptors.",
+            "quantitative_values": null,
+            "reasoning": "Definition emphasizes internal electron cycling characteristic of fermentation, distinguishing from respiration with external acceptors.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0006113",
+                    "label": "fermentation",
+                    "url": "http://purl.obolibrary.org/obo/GO_0006113"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0055114",
+                    "label": "oxidation-reduction process",
+                    "url": "http://purl.obolibrary.org/obo/GO_0055114"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Key distinction from respiration is lack of external electron acceptor."
+        },
+        {
+            "class_id": "METPO:1000705",
+            "class_label": "axially filamented",
+            "parent_class": "motile",
+            "parent_class_id": "PATO:0000708",
+            "proposed_definition": "A motility phenotype in which an organism possesses axial filaments (endoflagella) located in the periplasmic space between the cell wall and outer membrane, enabling corkscrew-like movement.",
+            "quantitative_values": null,
+            "reasoning": "Definition specifies unique periplasmic location of flagella, characteristic of spirochetes.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0009288",
+                    "label": "bacterial-type flagellum",
+                    "url": "http://purl.obolibrary.org/obo/GO_0009288"
+                },
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000708",
+                    "label": "motile",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000708"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Characteristic of spirochetes. Axial filaments provide distinctive motility mechanism."
+        },
+        {
+            "class_id": "METPO:1000699",
+            "class_label": "gram negative",
+            "parent_class": "gram stain",
+            "parent_class_id": "PATO:0000001",
+            "proposed_definition": "A gram stain result in which bacteria do not retain crystal violet dye and appear pink or red after staining, indicating a thin peptidoglycan layer and presence of an outer membrane.",
+            "quantitative_values": null,
+            "reasoning": "Definition specifies staining result and underlying cell wall structure characteristics.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0009279",
+                    "label": "cell outer membrane",
+                    "url": "http://purl.obolibrary.org/obo/GO_0009279"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0009274",
+                    "label": "peptidoglycan-based cell wall",
+                    "url": "http://purl.obolibrary.org/obo/GO_0009274"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Thin peptidoglycan layer and outer membrane are defining structural features."
+        },
+        {
+            "class_id": "METPO:1000236",
+            "class_label": "pH tolerance",
+            "parent_class": "phenotype",
+            "parent_class_id": "PATO:0000001",
+            "proposed_definition": "A phenotype describing the ability of an organism to survive exposure to pH values outside its optimal growth range without sustaining lethal damage.",
+            "quantitative_values": null,
+            "reasoning": "Definition distinguishes tolerance (survival) from optimal growth preference.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0001842",
+                    "label": "acidity",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0001842"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0071466",
+                    "label": "cellular response to pH",
+                    "url": "http://purl.obolibrary.org/obo/GO_0071466"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Distinct from pH growth preference which defines optimal conditions."
+        },
+        {
+            "class_id": "METPO:1003004",
+            "class_label": "obligately alkaphilic",
+            "parent_class": "pH growth preference",
+            "parent_class_id": "PATO:0001842",
+            "proposed_definition": "A pH growth preference in which an organism requires alkaline conditions (typically pH above 8.5) for growth and cannot grow at neutral or acidic pH.",
+            "quantitative_values": {
+                "optimal_pH_range": "pH 9.0-11.0",
+                "growth_pH_limit": "pH 8.5",
+                "measurement_source": "PMID:17223624"
+            },
+            "reasoning": "Definition emphasizes obligate requirement for high pH, distinguishing from facultative alkaliphiles.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0001842",
+                    "label": "acidity",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0001842"
+                },
+                {
+                    "type": "ontology",
+                    "id": "ENVO:01000325",
+                    "label": "alkaline environment",
+                    "url": "http://purl.obolibrary.org/obo/ENVO_01000325"
+                },
+                {
+                    "type": "literature",
+                    "id": "PMID:17223624",
+                    "label": "Alkaliphilic microorganisms",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/17223624/"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Obligate nature means inability to grow at neutral pH, unlike facultative forms."
+        },
+        {
+            "class_id": "METPO:1000684",
+            "class_label": "spiral shaped",
+            "parent_class": "cell shape",
+            "parent_class_id": "PATO:0000052",
+            "proposed_definition": "A cell shape in which an organism has a three-dimensional spiral or helical morphology with regular coiling along its longitudinal axis.",
+            "quantitative_values": null,
+            "reasoning": "Definition describes helical geometry characteristic of spirochetes and spirilla.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0001795",
+                    "label": "helical",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0001795"
+                },
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000052",
+                    "label": "shape",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000052"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Found in spirochetes and spirilla. Distinct from simple curved shapes."
+        },
+        {
+            "class_id": "METPO:1000700",
+            "class_label": "gram variable",
+            "parent_class": "gram stain",
+            "parent_class_id": "PATO:0000001",
+            "proposed_definition": "A gram stain result in which bacteria from the same culture show both gram-positive and gram-negative staining characteristics, often due to age of culture or cell wall degradation.",
+            "quantitative_values": null,
+            "reasoning": "Definition explains variable staining within a population and common causes.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0009274",
+                    "label": "peptidoglycan-based cell wall",
+                    "url": "http://purl.obolibrary.org/obo/GO_0009274"
+                },
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000001",
+                    "label": "quality",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000001"
+                }
+            ],
+            "confidence": "medium",
+            "comments": "Often seen in older cultures or with certain bacteria like Gardnerella."
+        },
+        {
+            "class_id": "METPO:1000127",
+            "class_label": "GC content",
+            "parent_class": "quality",
+            "parent_class_id": "PATO:0000001",
+            "proposed_definition": "A quality describing the percentage of guanine and cytosine nucleotides in genomic DNA, calculated as the ratio of GC base pairs to total base pairs.",
+            "quantitative_values": null,
+            "reasoning": "Definition specifies calculation method and components. Important taxonomic and evolutionary marker.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0001997",
+                    "label": "percentage",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0001997"
+                },
+                {
+                    "type": "ontology",
+                    "id": "CHEBI:16235",
+                    "label": "guanine",
+                    "url": "http://purl.obolibrary.org/obo/CHEBI_16235"
+                },
+                {
+                    "type": "ontology",
+                    "id": "CHEBI:16040",
+                    "label": "cytosine",
+                    "url": "http://purl.obolibrary.org/obo/CHEBI_16040"
+                }
+            ],
+            "confidence": "high",
+            "comments": "GC content varies widely across species (25-75%) and is taxonomically informative."
+        },
+        {
+            "class_id": "METPO:1000669",
+            "class_label": "crescent shaped",
+            "parent_class": "cell shape",
+            "parent_class_id": "PATO:0000052",
+            "proposed_definition": "A cell shape in which an organism has a curved, crescent or comma-like morphology with one axis of curvature.",
+            "quantitative_values": null,
+            "reasoning": "Definition describes characteristic curved geometry. Typical of Vibrio and related genera.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0002007",
+                    "label": "curved",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0002007"
+                },
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000052",
+                    "label": "shape",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000052"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Characteristic shape of Vibrio species and some other curved bacteria."
+        },
+        {
+            "class_id": "METPO:1001005",
+            "class_label": "culture temperature observation",
+            "parent_class": "observation",
+            "parent_class_id": "OBI:0000011",
+            "proposed_definition": "An observation that records the temperature at which a microbial culture is maintained during laboratory cultivation or experimental conditions.",
+            "quantitative_values": null,
+            "reasoning": "Definition specifies observation context (culture conditions) and measurement type (temperature).",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "OBI:0000011",
+                    "label": "planned process",
+                    "url": "http://purl.obolibrary.org/obo/OBI_0000011"
+                },
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000146",
+                    "label": "temperature",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000146"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Distinct from optimum temperature observation which measures growth optima."
+        },
+        {
+            "class_id": "METPO:1000731",
+            "class_label": "nutrient adaptation",
+            "parent_class": "trophic type",
+            "parent_class_id": "GO:0006091",
+            "proposed_definition": "A trophic type describing an organism's physiological and metabolic adaptations to specific nutrient availability levels in its environment.",
+            "quantitative_values": null,
+            "reasoning": "High-level category for oligotrophic, copiotrophic, and related adaptations.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0009267",
+                    "label": "cellular response to starvation",
+                    "url": "http://purl.obolibrary.org/obo/GO_0009267"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0006091",
+                    "label": "generation of precursor metabolites and energy",
+                    "url": "http://purl.obolibrary.org/obo/GO_0006091"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Parent class for oligotrophic, copiotrophic, and other nutrient-related adaptations."
+        },
+        {
+            "class_id": "METPO:1001001",
+            "class_label": "optimum temperature observation",
+            "parent_class": "observation",
+            "parent_class_id": "OBI:0000011",
+            "proposed_definition": "An observation that identifies the temperature at which a microorganism exhibits maximum growth rate or metabolic activity.",
+            "quantitative_values": null,
+            "reasoning": "Definition specifies observation of optimal conditions for growth or metabolism.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "OBI:0000011",
+                    "label": "planned process",
+                    "url": "http://purl.obolibrary.org/obo/OBI_0000011"
+                },
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000146",
+                    "label": "temperature",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000146"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Measures optimal growth temperature, distinct from culture temperature."
+        },
+        {
+            "class_id": "METPO:1000332",
+            "class_label": "pH range (cellular homeostasis)",
+            "parent_class": "phenotype",
+            "parent_class_id": "PATO:0000001",
+            "proposed_definition": "A phenotype describing the span of hydrogen ion concentrations within which a microorganism can maintain cellular homeostasis and sustain growth.",
+            "quantitative_values": null,
+            "reasoning": "Definition emphasizes homeostatic capability across pH range rather than single optimum.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0001842",
+                    "label": "acidity",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0001842"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0042592",
+                    "label": "homeostatic process",
+                    "url": "http://purl.obolibrary.org/obo/GO_0042592"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Defines functional range for homeostasis, not just tolerance limits."
+        },
+        {
+            "class_id": "METPO:1000677",
+            "class_label": "ovoid shaped",
+            "parent_class": "cell shape",
+            "parent_class_id": "PATO:0000052",
+            "proposed_definition": "A cell shape in which an organism has an egg-like or oval morphology, rounded at both ends with one end often slightly broader than the other.",
+            "quantitative_values": null,
+            "reasoning": "Definition describes egg-like geometry, distinguishing from ellipsoidal by asymmetry.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0002266",
+                    "label": "ellipsoidal",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0002266"
+                },
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000052",
+                    "label": "shape",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000052"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Similar to ellipsoidal but often with slight asymmetry."
+        },
+        {
+            "class_id": "METPO:1000671",
+            "class_label": "diplococcus shaped",
+            "parent_class": "cell shape",
+            "parent_class_id": "PATO:0000052",
+            "proposed_definition": "A cell shape arrangement in which spherical cells remain attached in pairs following cell division, forming characteristic doublets.",
+            "quantitative_values": null,
+            "reasoning": "Definition emphasizes paired arrangement of cocci as distinguishing feature.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0001201",
+                    "label": "spherical",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0001201"
+                },
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000052",
+                    "label": "shape",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000052"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Characteristic of Streptococcus pneumoniae and Neisseria species."
+        },
+        {
+            "class_id": "METPO:1000674",
+            "class_label": "filament shaped",
+            "parent_class": "cell shape",
+            "parent_class_id": "PATO:0000052",
+            "proposed_definition": "A cell shape in which an organism forms elongated, thread-like structures composed of cells remaining attached end-to-end after division.",
+            "quantitative_values": null,
+            "reasoning": "Definition emphasizes linear chain formation and elongated thread-like morphology.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0001933",
+                    "label": "filamentous",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0001933"
+                },
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000052",
+                    "label": "shape",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000052"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Common in actinobacteria and some cyanobacteria."
+        },
+        {
+            "class_id": "METPO:1000525",
+            "class_label": "microbe",
+            "parent_class": "material entity",
+            "parent_class_id": "BFO:0000040",
+            "proposed_definition": "A material entity consisting of an organism or virus that is too small to be viewed by the unaided eye, typically requiring microscopy for observation.",
+            "quantitative_values": null,
+            "reasoning": "Definition based on size criterion and microscopy requirement. Uses OHMI definition.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "OHMI:0000460",
+                    "label": "microorganism",
+                    "url": "http://purl.obolibrary.org/obo/OHMI_0000460"
+                },
+                {
+                    "type": "ontology",
+                    "id": "BFO:0000040",
+                    "label": "material entity",
+                    "url": "http://purl.obolibrary.org/obo/BFO_0000040"
+                }
+            ],
+            "confidence": "high",
+            "comments": "METPO primarily concerned with bacteria and archaea, including giant bacteria like Thiomargarita."
+        },
+        {
+            "class_id": "METPO:1000634",
+            "class_label": "chemoautolithotrophic",
+            "parent_class": "trophic type",
+            "parent_class_id": "GO:0006091",
+            "proposed_definition": "A trophic type in which an organism uses chemical oxidation of inorganic compounds as the energy source and carbon dioxide as the primary carbon source for biosynthesis.",
+            "quantitative_values": null,
+            "reasoning": "Combines chemotrophy (chemical energy), lithotrophy (inorganic electron donors), and autotrophy (CO2 fixation).",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0015980",
+                    "label": "energy derivation by oxidation of reduced inorganic compounds",
+                    "url": "http://purl.obolibrary.org/obo/GO_0015980"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0015977",
+                    "label": "carbon fixation",
+                    "url": "http://purl.obolibrary.org/obo/GO_0015977"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Common in nitrifying bacteria and sulfur-oxidizing bacteria."
+        },
+        {
+            "class_id": "METPO:1000649",
+            "class_label": "lithotrophic",
+            "parent_class": "trophic type",
+            "parent_class_id": "GO:0006091",
+            "proposed_definition": "A trophic type in which an organism uses inorganic compounds as electron donors for energy generation.",
+            "quantitative_values": null,
+            "reasoning": "Definition emphasizes inorganic electron donors as distinguishing feature.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0015980",
+                    "label": "energy derivation by oxidation of reduced inorganic compounds",
+                    "url": "http://purl.obolibrary.org/obo/GO_0015980"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Parent category for various lithotrophs using different inorganic substrates."
+        },
+        {
+            "class_id": "METPO:1000681",
+            "class_label": "rod shaped",
+            "parent_class": "cell shape",
+            "parent_class_id": "PATO:0000052",
+            "proposed_definition": "A cell shape in which an organism has an elongated, cylindrical morphology with relatively straight sides and rounded or flat ends.",
+            "quantitative_values": null,
+            "reasoning": "Standard bacillus morphology description. Common bacterial shape.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "PATO:0002219",
+                    "label": "cylindrical",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0002219"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0009877",
+                    "label": "bacillus-type cell morphology",
+                    "url": "http://purl.obolibrary.org/obo/GO_0009877"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Also known as bacillus shape. Very common in bacteria."
+        },
+        {
+            "class_id": "METPO:1000631",
+            "class_label": "trophic type",
+            "parent_class": "phenotype",
+            "parent_class_id": "PATO:0000001",
+            "proposed_definition": "A phenotype describing how an organism obtains carbon and energy for growth and metabolism.",
+            "quantitative_values": null,
+            "reasoning": "High-level category defining nutritional strategies. Parent for autotrophy, heterotrophy, etc.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0006091",
+                    "label": "generation of precursor metabolites and energy",
+                    "url": "http://purl.obolibrary.org/obo/GO_0006091"
+                },
+                {
+                    "type": "ontology",
+                    "id": "PATO:0000001",
+                    "label": "quality",
+                    "url": "http://purl.obolibrary.org/obo/PATO_0000001"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Fundamental classification of nutritional strategies."
+        },
+        {
+            "class_id": "METPO:1000650",
+            "class_label": "methanotrophic",
+            "parent_class": "trophic type",
+            "parent_class_id": "GO:0006091",
+            "proposed_definition": "A trophic type in which an organism uses methane as the primary carbon and energy source through oxidation of methane to carbon dioxide.",
+            "quantitative_values": null,
+            "reasoning": "Definition specifies methane as both carbon and energy source, distinguishing methanotrophs.",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0015977",
+                    "label": "carbon fixation",
+                    "url": "http://purl.obolibrary.org/obo/GO_0015977"
+                },
+                {
+                    "type": "ontology",
+                    "id": "CHEBI:16183",
+                    "label": "methane",
+                    "url": "http://purl.obolibrary.org/obo/CHEBI_16183"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Important in methane cycle. Found in both aerobic and anaerobic methanotrophs."
+        },
+        {
+            "class_id": "METPO:1000657",
+            "class_label": "photoheterotrophic",
+            "parent_class": "trophic type",
+            "parent_class_id": "GO:0006091",
+            "proposed_definition": "A trophic type in which an organism uses light as the energy source and organic compounds as the primary carbon source for biosynthesis.",
+            "quantitative_values": null,
+            "reasoning": "Combines phototrophy (light energy) with heterotrophy (organic carbon).",
+            "sources": [
+                {
+                    "type": "ontology",
+                    "id": "GO:0015979",
+                    "label": "photosynthesis",
+                    "url": "http://purl.obolibrary.org/obo/GO_0015979"
+                },
+                {
+                    "type": "ontology",
+                    "id": "GO:0006091",
+                    "label": "generation of precursor metabolites and energy",
+                    "url": "http://purl.obolibrary.org/obo/GO_0006091"
+                }
+            ],
+            "confidence": "high",
+            "comments": "Found in purple non-sulfur bacteria and some green non-sulfur bacteria."
+        }
+    ]
+}

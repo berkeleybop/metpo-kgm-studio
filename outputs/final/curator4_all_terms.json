@@ -3,6 +3,8 @@
         {
             "class_id": "METPO:1000059",
             "class_label": "phenotype",
+            "parent_class": "quality",
+            "parent_class_id": "PATO:0000001",
             "proposed_definition": "A quality or combination of qualities of an organism that results from the interaction between its genetic makeup and environmental factors, distinguishing specific instances of a species from other instances of the same species.",
             "reasoning": "Follows genus-differentia form with 'quality' as genus. Aligns with OGMS definition and PATO quality concepts. Emphasizes genotype-environment interaction as differentia.",
             "sources": [
@@ -15,6 +17,8 @@
         {
             "class_id": "METPO:1000623",
             "class_label": "moderately halophilic",
+            "parent_class": "halophily preference",
+            "parent_class_id": "PATO:0001655",
             "proposed_definition": "A halophily preference characterized by optimal growth in environments with moderate salt concentrations, typically between 3-15% NaCl.",
             "reasoning": "Specifies the moderate range that distinguishes this from slightly or extremely halophilic organisms. Based on established halophile classifications.",
             "sources": [
@@ -34,7 +38,9 @@
                 "GO:0015980 (energy derivation by oxidation of reduced inorganic compounds)",
                 "MEO:0000056 (chemolithotroph)"
             ],
-            "confidence": "high"
+            "confidence": "high",
+            "parent_class": "trophic type",
+            "parent_class_id": "GO:0006091"
         },
         {
             "class_id": "METPO:1000803",
@@ -46,7 +52,9 @@
                 "KEGG:00190 (Oxidative phosphorylation)",
                 "MetaCyc:PWY-5690"
             ],
-            "confidence": "high"
+            "confidence": "high",
+            "parent_class": "metabolic process",
+            "parent_class_id": "GO:0008152"
         },
         {
             "class_id": "METPO:1002002",
@@ -58,7 +66,9 @@
                 "CHEBI:35108 (manganese(IV))",
                 "ENVO:01000680 (methane-rich environment)"
             ],
-            "confidence": "medium"
+            "confidence": "medium",
+            "parent_class": "metal and metalloid respiration",
+            "parent_class_id": "GO:0015977"
         },
         {
             "class_id": "METPO:1000667",
@@ -70,7 +80,9 @@
                 "GO:0009877 (bacillus-type cell morphology)",
                 "BTO:0000112 (bacterial cell)"
             ],
-            "confidence": "high"
+            "confidence": "high",
+            "parent_class": "cell shape",
+            "parent_class_id": "PATO:0000052"
         },
         {
             "class_id": "METPO:1000656",
@@ -82,7 +94,9 @@
                 "GO:0015979 (photosynthesis)",
                 "MEO:0000089 (photoautotroph)"
             ],
-            "confidence": "high"
+            "confidence": "high",
+            "parent_class": "trophic type",
+            "parent_class_id": "GO:0006091"
         },
         {
             "class_id": "METPO:1000678",
@@ -94,7 +108,9 @@
                 "GO:0008360 (regulation of cell shape)",
                 "BTO:0000112 (bacterial cell)"
             ],
-            "confidence": "high"
+            "confidence": "high",
+            "parent_class": "cell shape",
+            "parent_class_id": "PATO:0000052"
         },
         {
             "class_id": "METPO:1001102",
@@ -106,7 +122,9 @@
                 "OBI:0001929 (biosafety level)",
                 "CDC Biosafety Guidelines"
             ],
-            "confidence": "high"
+            "confidence": "high",
+            "parent_class": "biosafety level",
+            "parent_class_id": "NCIT:C93220"
         },
         {
             "class_id": "METPO:1000060",
@@ -118,7 +136,9 @@
                 "NCIT:C16858 (Metabolism)",
                 "BTO:0001087 (metabolic pathway)"
             ],
-            "confidence": "high"
+            "confidence": "high",
+            "parent_class": "biological process",
+            "parent_class_id": "GO:0008150"
         },
         {
             "class_id": "METPO:1000670",
@@ -130,7 +150,9 @@
                 "GO:0008360 (regulation of cell shape)",
                 "BTO:0001758 (vibrio)"
             ],
-            "confidence": "high"
+            "confidence": "high",
+            "parent_class": "cell shape",
+            "parent_class_id": "PATO:0000052"
         },
         {
             "class_id": "METPO:1000800",
@@ -142,7 +164,9 @@
                 "KEGG:00190 (Oxidative phosphorylation)",
                 "MetaCyc:RESPIRATION"
             ],
-            "confidence": "high"
+            "confidence": "high",
+            "parent_class": "metabolic process",
+            "parent_class_id": "GO:0008152"
         },
         {
             "class_id": "METPO:1000664",
@@ -154,7 +178,9 @@
                 "GO:0009055 (electron carrier activity)",
                 "MEO:0000068 (heterotroph)"
             ],
-            "confidence": "high"
+            "confidence": "high",
+            "parent_class": "trophic type",
+            "parent_class_id": "GO:0006091"
         },
         {
             "class_id": "METPO:1000334",
@@ -166,7 +192,9 @@
                 "ENVO:00002230 (saline environment)",
                 "PATO:0000060 (spatial pattern)"
             ],
-            "confidence": "medium"
+            "confidence": "medium",
+            "parent_class": "phenotype",
+            "parent_class_id": "PATO:0000001"
         },
         {
             "class_id": "METPO:1000660",
@@ -178,7 +206,9 @@
                 "GO:0015979 (photosynthesis)",
                 "MEO:0000088 (phototroph)"
             ],
-            "confidence": "high"
+            "confidence": "high",
+            "parent_class": "trophic type",
+            "parent_class_id": "GO:0006091"
         },
         {
             "class_id": "METPO:1003013",
@@ -190,7 +220,9 @@
                 "PATO:0001439 (ionizing radiation quality)",
                 "NCIT:C17053 (Radiation)"
             ],
-            "confidence": "medium"
+            "confidence": "medium",
+            "parent_class": "trophic type",
+            "parent_class_id": "GO:0006091"
         },
         {
             "class_id": "METPO:1002008",
@@ -202,7 +234,9 @@
                 "KEGG:00910 (Nitrogen metabolism)",
                 "MetaCyc:PWY-7888"
             ],
-            "confidence": "high"
+            "confidence": "high",
+            "parent_class": "nitrogen compound respiration",
+            "parent_class_id": "GO:0006091"
         },
         {
             "class_id": "METPO:1003001",
@@ -214,7 +248,9 @@
                 "ENVO:01001854 (neutral pH environment)",
                 "MEO:0000174 (neutrophile)"
             ],
-            "confidence": "high"
+            "confidence": "high",
+            "parent_class": "pH growth preference",
+            "parent_class_id": "PATO:0001842"
         },
         {
             "class_id": "METPO:1000692",
@@ -226,7 +262,9 @@
                 "GO:0008360 (regulation of cell shape)",
                 "BTO:0000112 (bacterial cell)"
             ],
-            "confidence": "high"
+            "confidence": "high",
+            "parent_class": "cell shape",
+            "parent_class_id": "PATO:0000052"
         },
         {
             "class_id": "METPO:1002036",
@@ -238,7 +276,9 @@
                 "KEGG:00910 (Nitrogen metabolism)",
                 "CHEBI:16301 (nitrite)"
             ],
-            "confidence": "high"
+            "confidence": "high",
+            "parent_class": "nitrogen compound respiration",
+            "parent_class_id": "GO:0006091"
         },
         {
             "class_id": "METPO:1000638",
@@ -250,7 +290,9 @@
                 "ENVO:00002035 (heterotrophic organism)",
                 "MEO:0000057 (chemolithoheterotroph)"
             ],
-            "confidence": "medium"
+            "confidence": "medium",
+            "parent_class": "trophic type",
+            "parent_class_id": "GO:0006091"
         },
         {
             "class_id": "METPO:1000682",
@@ -262,7 +304,9 @@
                 "BTO:0001268 (spore)",
                 "PATO:0000052 (shape)"
             ],
-            "confidence": "medium"
+            "confidence": "medium",
+            "parent_class": "cell shape",
+            "parent_class_id": "PATO:0000052"
         },
         {
             "class_id": "METPO:1000186",
@@ -274,19 +318,23 @@
                 "ENVO:00010483 (environmental material)",
                 "CHEBI:59999 (chemical substance)"
             ],
-            "confidence": "high"
+            "confidence": "high",
+            "parent_class": "independent continuant",
+            "parent_class_id": "BFO:0000004"
         },
         {
             "class_id": "METPO:1000720",
             "class_label": "facultative psychrophilic",
-            "proposed_definition": "A temperature preference characterized by the ability to grow at low temperatures (typically below 20°C) while maintaining optimal growth at moderate temperatures.",
+            "proposed_definition": "A temperature preference characterized by the ability to grow at low temperatures (typically below 20\u00c2\u00b0C) while maintaining optimal growth at moderate temperatures.",
             "reasoning": "Distinguishes from obligate psychrophiles by maintaining mesophilic growth capability. Facultative cold adaptation.",
             "sources": [
                 "ENVO:01000339 (cold environment)",
                 "PATO:0000146 (temperature)",
                 "MEO:0000195 (psychrophile)"
             ],
-            "confidence": "medium"
+            "confidence": "medium",
+            "parent_class": "temperature preference",
+            "parent_class_id": "PATO:0000146"
         },
         {
             "class_id": "METPO:1000683",
@@ -298,7 +346,9 @@
                 "GO:0009877 (coccus-type cell morphology)",
                 "BTO:0000112 (bacterial cell)"
             ],
-            "confidence": "high"
+            "confidence": "high",
+            "parent_class": "cell shape",
+            "parent_class_id": "PATO:0000052"
         },
         {
             "class_id": "METPO:1000845",
@@ -310,7 +360,9 @@
                 "KEGG:00720 (Carbon fixation pathways)",
                 "MetaCyc:PWY-5088"
             ],
-            "confidence": "high"
+            "confidence": "high",
+            "parent_class": "metabolic process",
+            "parent_class_id": "GO:0008152"
         },
         {
             "class_id": "METPO:1003008",
@@ -322,7 +374,9 @@
                 "ENVO:01000240 (acidic environment)",
                 "MEO:0000162 (acidophile)"
             ],
-            "confidence": "high"
+            "confidence": "high",
+            "parent_class": "pH growth preference",
+            "parent_class_id": "PATO:0001842"
         },
         {
             "class_id": "METPO:1000679",
@@ -334,7 +388,9 @@
                 "GO:0008360 (regulation of cell shape)",
                 "BTO:0000112 (bacterial cell)"
             ],
-            "confidence": "high"
+            "confidence": "high",
+            "parent_class": "cell shape",
+            "parent_class_id": "PATO:0000052"
         },
         {
             "class_id": "METPO:1000676",
@@ -346,7 +402,9 @@
                 "GO:0009877 (helical cell morphology)",
                 "BTO:0001276 (spirochete)"
             ],
-            "confidence": "high"
+            "confidence": "high",
+            "parent_class": "cell shape",
+            "parent_class_id": "PATO:0000052"
         },
         {
             "class_id": "METPO:1000654",
@@ -358,7 +416,9 @@
                 "PATO:0001655 (nutrient concentration)",
                 "MEO:0000177 (oligotroph)"
             ],
-            "confidence": "high"
+            "confidence": "high",
+            "parent_class": "nutrient adaptation",
+            "parent_class_id": "GO:0009267"
         },
         {
             "class_id": "METPO:1003007",
@@ -370,7 +430,9 @@
                 "ENVO:01000240 (acidic environment)",
                 "MEO:0000162 (acidophile)"
             ],
-            "confidence": "medium"
+            "confidence": "medium",
+            "parent_class": "pH growth preference",
+            "parent_class_id": "PATO:0001842"
         },
         {
             "class_id": "METPO:1000304",
@@ -382,7 +444,9 @@
                 "ENVO:09200001 (temperature regime)",
                 "GO:0040007 (growth)"
             ],
-            "confidence": "high"
+            "confidence": "high",
+            "parent_class": "phenotype",
+            "parent_class_id": "PATO:0000001"
         },
         {
             "class_id": "METPO:1003006",
@@ -394,7 +458,9 @@
                 "ENVO:01000240 (acidic environment)",
                 "MEO:0000162 (acidophile)"
             ],
-            "confidence": "high"
+            "confidence": "high",
+            "parent_class": "pH growth preference",
+            "parent_class_id": "PATO:0001842"
         }
     ]
 }
